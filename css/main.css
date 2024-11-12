@@ -1,0 +1,119 @@
+/* Trang trí cho navbar thông báo */
+.navbar_1 {
+    background-color: #c91515;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Trang trí cho các liên kết trong navbar thông báo */
+.navbar_1 a {
+    color: #ff0505;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hiệu ứng nhấp nháy cho chữ */
+.text-blinking {
+    animation: blinkingText 1s infinite;
+}
+
+/* Định nghĩa hiệu ứng nhấp nháy */
+@keyframes blinkingText {
+    0%, 100% { color: #ffffff; }
+    50% { color: #f4e02f; }
+}
+
+/* Định dạng cho Navbar chính */
+.navbar {
+    padding: 10px 0;
+    border-top: 4px solid #f4e02f; 
+    background-color: #c91515; 
+}
+
+
+/* Logo */
+.navbar .navbar-brand img {
+    max-height: 40px;
+}
+.category-form {
+    flex: 1;
+    max-width: 200px; /* Đặt chiều rộng tối đa cho phần chọn danh mục */
+}
+
+.category-form select {
+    padding-left: 20px;
+    border-radius: 0; /* Bỏ bo tròn */
+    height: 38px; /* Cân đối với chiều cao của các phần tử khác */
+}
+/* Thanh tìm kiếm */
+.search-form {
+    flex: 1;
+    max-width: 500px;
+}
+
+.search-form .form-control {
+    padding-left: 20px;
+    border-radius: 0;
+}
+
+.search-form button {
+    border-radius: 0;
+}
+
+.search-form button i {
+    color: #f90606; 
+}
+/* Định dạng cho các nút (giỏ hàng, đăng nhập) */
+.btn-outline-light {
+    padding: 10px 20px;
+    border: 2px solid #f2f4f3;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #ff0505; /* Màu chữ đỏ */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Hiệu ứng chuyển tiếp */
+}
+
+/* Hiệu ứng hover cho nút */
+.btn-outline-light:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+.btn-outline-light:hover a {
+    color: #ffffff; 
+}
+/* Thêm khoảng cách giữa các nút */
+.ms-3 {
+    margin-left: 1rem; 
+}
+
+/* Căn chỉnh icon và text cho nút */
+.btn-outline-light i {
+    font-size: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+    color:rgb(255, 0, 0);
+}
+.btn-outline-light a {
+    color: #ff0505;
+}
+.btn-outline-light:hover i {
+    color: #ffffff; 
+}
+/* Đảm bảo không có gạch chân cho các liên kết trong nút */
+.btn-outline-light a {
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-form {
+        max-width: 300px;
+    }
+
+    .navbar .navbar-brand img {
+        max-height: 30px;
+    }
+}
