@@ -29,11 +29,10 @@
     border-top: 4px solid #f4e02f; 
     background-color: #c91515; 
 }
-
-
 /* Logo */
 .navbar .navbar-brand img {
-    max-height: 40px;
+    width: 250px;
+    height: 40px;
 }
 .category-form {
     flex: 1;
