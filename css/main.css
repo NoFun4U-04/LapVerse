@@ -39,29 +39,46 @@
 /* Định dạng cho dropdown (Danh mục) */
 .dropdown-toggle {
     background-color: #ffffff;
-    border: 2px solid #f2f4f3; /* Tạo viền cho nút dropdown */
+    border: 2px solid #f2f4f3; 
     border-radius: 5px; /* Bo góc nhẹ */
-    padding: 10px 20px; /* Tăng padding để giống với ô tìm kiếm */
-    color: #ff0505; /* Màu chữ đỏ */
+    padding: 10px 20px; 
+    color: #ff0505; 
     font-weight: bold;
-    transition: all 0.3s ease; /* Hiệu ứng chuyển tiếp */
-    text-transform: uppercase;
+    transition: all 0.3s ease;
 }
-
+.category-menu .dropdown:hover .dropdown-menu {
+    display: block; 
+    opacity: 1;
+    visibility: visible;
+}
 .dropdown-menu {
-    border-radius: 5px; /* Bo góc cho menu dropdown */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng cho menu */
 }
+
+/*  tim kiem_icon */
+.navbar-toggler {
+    border: 2px solid #fff; 
+    border-radius: 50%;
+    padding: 12px 16px; 
+    background-color: #333; 
+}
+
+/* Thêm hiệu ứng hover   */
+.navbar-toggler:hover {
+    background-color: #ff5733; 
+    border-color: #ff5733; 
+}
+
 
 .dropdown-item {
     padding: 10px 20px;
     font-weight: bold;
-    color: #ff0505; /* Màu chữ đỏ */
+    color: #ff0505;
 }
 
 .dropdown-item:hover {
-    background-color: #ff0505; /* Màu nền khi hover */
-    color: white; /* Màu chữ khi hover */
+    background-color: #ff0505; 
+    color: white; 
 }
 
 /* Thanh tìm kiếm */
@@ -89,14 +106,14 @@
     border: 2px solid #f2f4f3;
     border-radius: 20px;
     background-color: #ffffff;
-    color: #ff0505; /* Màu chữ đỏ */
+    color: #ff0505; 
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease; /* Hiệu ứng chuyển tiếp */
 }
 .right-actions {
-    margin-left: auto; /* Đẩy phần tử sang bên phải */
+    margin-left: auto; 
 }
 
 /* Hiệu ứng hover cho nút */
@@ -107,9 +124,10 @@
 .btn-outline-light:hover a {
     color: #ffffff; 
 }
+
 /* Thêm khoảng cách giữa các nút */
 .ms-3 {
-    margin-left: 1rem; 
+    margin: 1rem; 
 }
 
 /* Căn chỉnh icon và text cho nút */
@@ -125,6 +143,7 @@
 .btn-outline-light:hover i {
     color: #ffffff; 
 }
+
 /* Đảm bảo không có gạch chân cho các liên kết trong nút */
 .btn-outline-light a {
     text-decoration: none;
@@ -136,12 +155,10 @@
         max-width: 300px;
     }
 
-    .navbar .navbar-brand img {
+.navbar .navbar-brand img {
         max-height: 30px;
     }
-
-    /* Cập nhật dropdown button khi thu nhỏ */
-    .dropdown-toggle {
-        padding: 8px 15px; /* Điều chỉnh padding cho dropdown */
+.dropdown-toggle {
+    padding: 8px 15px; /* Điều chỉnh padding cho dropdown */
     }
 }

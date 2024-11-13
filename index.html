@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
     <!-- Thêm file CSS của bạn -->
     <link rel="stylesheet" href="/css/main.css">
-    <script href = "js/main.js"></script>
+    <script href="js/main.js"></script>
 </head>
 <body>
     <!-- Thanh thông báo chào mừng -->
@@ -30,35 +30,22 @@
             <a href="index.html" class="navbar-brand">
                 <img src="./assets/LAPVERSE LOGO (270 x 40 px).png" alt="LAPVERSE Logo" class="img-fluid">
             </a>
-       <!-- Danh mục -->
+
+            <!-- Danh mục -->
             <div class="category-menu ms-3 position-relative">
-                <!-- Icon 3 gạch cho màn hình nhỏ -->
-                <button class="btn btn-outline-light p-1 px-2 d-inline d-md-none category-toggle" type="button" id="categoryButton">
-                    <i class="bi bi-list"></i>
-                </button>
-
-                <!-- Dropdown chọn danh mục (ẩn khi chưa nhấn icon) -->
-                <div id="mobileCategoryDropdown" class="d-none position-absolute top-100 start-0 mt-2 w-100">
-                    <select class="form-select" aria-label="Select category">
-                        <option selected>Chọn danh mục</option>
-                        <option value="1">Laptop</option>
-                        <option value="2">Máy tính bảng</option>
-                        <option value="3">Phụ kiện</option>
-                        <option value="4">Màn hình</option>
-                    </select>
+                <!-- Dropdown cho danh mục -->
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle p-2 " type="button" id="dropdownMenuButton" aria-expanded="false">
+                        Danh mục
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Laptop</a></li>
+                        <li><a class="dropdown-item" href="#">Máy tính bảng</a></li>
+                        <li><a class="dropdown-item" href="#">Phụ kiện</a></li>
+                        <li><a class="dropdown-item" href="#">Màn hình</a></li>
+                    </ul>
                 </div>
-
-                <!-- Dropdown chọn danh mục cho màn hình lớn -->
-                <form class="d-none d-md-inline category-form" action="#" method="get">
-                    <select class="form-select me-2" aria-label="Select category">
-                        <option selected>Chọn danh mục</option>
-                        <option value="1">Laptop</option>
-                        <option value="2">Máy tính bảng</option>
-                        <option value="3">Phụ kiện</option>
-                        <option value="4">Màn hình</option>
-                    </select>
-                </form>
-                
+            </div>
 
             <!-- Thanh tìm kiếm -->
             <form class="d-flex ms-3 search-form" action="#" method="get">
@@ -67,10 +54,8 @@
                     <i class="bi-search"></i>
                 </button>
             </form>
-            
 
             <!-- Các biểu tượng thông báo và giỏ hàng -->
-            <!-- Đăng nhập -->
             <div class="d-flex justify-content-end align-items-center right-actions">
                 <!-- Nút Đăng nhập -->
                 <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
@@ -79,7 +64,7 @@
                         <span class="d-none d-md-inline">Đăng nhập</span>
                     </a>
                 </button>
-            
+
                 <!-- Nút Giỏ hàng -->
                 <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn ms-2" type="button">
                     <a href="./pages/cart.html" class="d-flex align-items-center">
@@ -89,9 +74,12 @@
                     </a>
                 </button>
             </div>
-            
 
         </div>
     </nav>
+
+    <!-- Bootstrap JS và Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
