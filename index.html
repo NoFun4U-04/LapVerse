@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
     <!-- Thêm file CSS của bạn -->
     <link rel="stylesheet" href="/css/main.css">
+    <script href = "js/main.js"></script>
 </head>
 <body>
     <!-- Thanh thông báo chào mừng -->
@@ -16,7 +17,7 @@
         <nav>
             <div class="container-md px-4">
                 <div class="d-flex justify-content-between align-items-center">
-                   <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE</a>
+                   <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a> 
                 </div>
             </div>
         </nav>
@@ -27,42 +28,69 @@
         <div class="container">
             <!-- Logo -->
             <a href="index.html" class="navbar-brand">
-                <img src="./LAPVERSE LOGO (270 x 40 px).png" alt="LAPVERSE Logo" class="img-fluid">
+                <img src="./assets/LAPVERSE LOGO (270 x 40 px).png" alt="LAPVERSE Logo" class="img-fluid">
             </a>
+       <!-- Danh mục -->
+            <div class="category-menu ms-3 position-relative">
+                <!-- Icon 3 gạch cho màn hình nhỏ -->
+                <button class="btn btn-outline-light p-1 px-2 d-inline d-md-none category-toggle" type="button" id="categoryButton">
+                    <i class="bi bi-list"></i>
+                </button>
 
-        <!-- Danh mục -->
-        <form class="d-flex ms-3 category-form" action="#" method="get">
-            <select class="form-select me-2" aria-label="Select category">
-                <option selected>Chọn danh mục</option>
-                <option value="1">Laptop</option>
-                <option value="2">Máy tính bảng</option>
-                <option value="3">Phụ kiện</option>
-                <option value="4">Màn hình</option>
-            </select>
-        </form>
+                <!-- Dropdown chọn danh mục (ẩn khi chưa nhấn icon) -->
+                <div id="mobileCategoryDropdown" class="d-none position-absolute top-100 start-0 mt-2 w-100">
+                    <select class="form-select" aria-label="Select category">
+                        <option selected>Chọn danh mục</option>
+                        <option value="1">Laptop</option>
+                        <option value="2">Máy tính bảng</option>
+                        <option value="3">Phụ kiện</option>
+                        <option value="4">Màn hình</option>
+                    </select>
+                </div>
+
+                <!-- Dropdown chọn danh mục cho màn hình lớn -->
+                <form class="d-none d-md-inline category-form" action="#" method="get">
+                    <select class="form-select me-2" aria-label="Select category">
+                        <option selected>Chọn danh mục</option>
+                        <option value="1">Laptop</option>
+                        <option value="2">Máy tính bảng</option>
+                        <option value="3">Phụ kiện</option>
+                        <option value="4">Màn hình</option>
+                    </select>
+                </form>
+                
 
             <!-- Thanh tìm kiếm -->
             <form class="d-flex ms-3 search-form" action="#" method="get">
                 <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
-                <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn" type="submit"><i class="bi-search"></i></button>
+                <button class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-2 login-btn" type="submit">
+                    <i class="bi-search"></i>
+                </button>
             </form>
+            
 
             <!-- Các biểu tượng thông báo và giỏ hàng -->
-            <div class="d-flex align-items-center ms-auto">
-                <!-- Đăng nhập -->
-                <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn"">
-                    <a href="./pages/login.html">
-                        <i class="bi bi-person-fill me-1"></i> Đăng nhập
+            <!-- Đăng nhập -->
+            <div class="d-flex justify-content-end align-items-center right-actions">
+                <!-- Nút Đăng nhập -->
+                <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                    <a href="./pages/login.html" class="d-flex align-items-center">
+                        <i class="bi bi-person-fill me-1"></i>
+                        <span class="d-none d-md-inline">Đăng nhập</span>
                     </a>
                 </button>
-                <!-- Giỏ hàng -->
+            
+                <!-- Nút Giỏ hàng -->
                 <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn ms-2" type="button">
-                    <a href="./pages/cart.html">
-                        <i class="bi bi-cart-fill me-1"></i> Giỏ hàng <span class="badge bg-dark text-white">0</span>
+                    <a href="./pages/cart.html" class="d-flex align-items-center">
+                        <i class="bi bi-cart-fill me-1"></i>
+                        <span class="d-none d-md-inline">Giỏ hàng</span>
+                        <span class="badge bg-dark text-white">0</span>
                     </a>
                 </button>
             </div>
             
+
         </div>
     </nav>
 </body>

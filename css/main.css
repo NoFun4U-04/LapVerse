@@ -29,21 +29,41 @@
     border-top: 4px solid #f4e02f; 
     background-color: #c91515; 
 }
+
 /* Logo */
 .navbar .navbar-brand img {
     width: 250px;
     height: 40px;
 }
-.category-form {
-    flex: 1;
-    max-width: 200px; /* Đặt chiều rộng tối đa cho phần chọn danh mục */
+
+/* Định dạng cho dropdown (Danh mục) */
+.dropdown-toggle {
+    background-color: #ffffff;
+    border: 2px solid #f2f4f3; /* Tạo viền cho nút dropdown */
+    border-radius: 5px; /* Bo góc nhẹ */
+    padding: 10px 20px; /* Tăng padding để giống với ô tìm kiếm */
+    color: #ff0505; /* Màu chữ đỏ */
+    font-weight: bold;
+    transition: all 0.3s ease; /* Hiệu ứng chuyển tiếp */
+    text-transform: uppercase;
 }
 
-.category-form select {
-    padding-left: 20px;
-    border-radius: 0; /* Bỏ bo tròn */
-    height: 38px; /* Cân đối với chiều cao của các phần tử khác */
+.dropdown-menu {
+    border-radius: 5px; /* Bo góc cho menu dropdown */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng cho menu */
 }
+
+.dropdown-item {
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #ff0505; /* Màu chữ đỏ */
+}
+
+.dropdown-item:hover {
+    background-color: #ff0505; /* Màu nền khi hover */
+    color: white; /* Màu chữ khi hover */
+}
+
 /* Thanh tìm kiếm */
 .search-form {
     flex: 1;
@@ -62,6 +82,7 @@
 .search-form button i {
     color: #f90606; 
 }
+
 /* Định dạng cho các nút (giỏ hàng, đăng nhập) */
 .btn-outline-light {
     padding: 10px 20px;
@@ -73,6 +94,9 @@
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease; /* Hiệu ứng chuyển tiếp */
+}
+.right-actions {
+    margin-left: auto; /* Đẩy phần tử sang bên phải */
 }
 
 /* Hiệu ứng hover cho nút */
@@ -93,7 +117,7 @@
     font-size: 20px;
     margin-right: 8px;
     vertical-align: middle;
-    color:rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
 }
 .btn-outline-light a {
     color: #ff0505;
@@ -114,5 +138,10 @@
 
     .navbar .navbar-brand img {
         max-height: 30px;
+    }
+
+    /* Cập nhật dropdown button khi thu nhỏ */
+    .dropdown-toggle {
+        padding: 8px 15px; /* Điều chỉnh padding cho dropdown */
     }
 }
