@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAPVERSE - Vũ trụ Laptop</title>
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/assets/framework/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/framework/css/">
+    <link rel="stylesheet" href="/assets/framework/css/font-icon/bootstrap-icons.min.css">
     <!-- Thêm file CSS của bạn -->
     <link rel="stylesheet" href="css/main.css">
     <script href="js/main.js"></script>
 </head>
 <body>
+ <header>
+
+
     <!-- Thanh thông báo chào mừng -->
     <div class="navbar_1">
         <nav>
@@ -75,9 +79,117 @@
             </div>
         </div>
     </nav>
+ </header>
+ <main>
+    <!-- Slide-banner -->
+    <section class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <!-- Các nút chỉ báo slide -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          
+          <!-- Phần hình ảnh của carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/images/banner/1.jpg" class="d-block w-100" alt="banner-1">
+            </div>
+            <div class="carousel-item">
+              <img src="/images/banner/2.jpg" class="d-block w-100" alt="banner-2">
+            </div>
+            <div class="carousel-item">
+              <img src="/images/banner/3.jpg" class="d-block w-100" alt="banner-3">
+            </div>
+          </div>
+        
+          <!-- Nút chuyển slide -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" ></span> 
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      
+     <div id="sanphamnoibat">
+        <div class="container my-5">
+            <h2 class="text-center mb-4 bi bi-fire" style="color:aliceblue;padding-top: 1em; animation: blinkingText 1s infinite;">Sản phẩm nổi bật</h2>
+            <div class="product-grid " style="padding-bottom:1em">
+                <!-- Sản phẩm 1 -->
+                <div class="product-item">
+                    <a href="#">
+                        <div class="product-image">
+                            <img src="/images/product/Apple MacBook Air M1 256GB 2020.jpg" alt="Apple MacBook Air M1" >
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Apple MacBook Air M1 256GB 2020</h3>
+                            <div class="product-specs">Chip M1, RAM 8GB, SSD 256GB</div>
+                            <div class="product-price">27.990.000 đ</div>
+                            <button class="buy-now-btn">Mua ngay</button>
+                        </div>
+                    </a>
+                </div>
+        
+                <!-- Sản phẩm 2 -->
+                <div class="product-item">
+                    <a href="#">
+                        <div class="product-image">
+                            <img src="/images/product/asus/Laptop Asus ROG Strix G16 G614JU-N3135W.webp" alt="Dell XPS 13">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Laptop Asus ROG Strix G16 G614JU-N3135W</h3>
+                            <div class="product-specs">Intel i5-13450HX, RAM 8GB, SSD 512GB</div>
+                            <div class="product-price">35.990.000 đ</div>
+                            <button class="buy-now-btn">Mua ngay</button>
+                        </div>
+                    </a>
+                </div>
+        
+                <!-- Sản phẩm 3 -->
+                <div class="product-item">
+                    <a href="#">
+                        <div class="product-image">
+                            <img src="/images/product/lenovo/Laptop Lenovo Legion 7 16IRX9 83FD004MVN.jpg" alt="HP Spectre x360">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Laptop Lenovo Legion 7 16IRX9 83FD004MVN</h3>
+                            <div class="product-specs">Intel i9-14900HX, RAM 32GB, SSD 1TB</div>
+                            <div class="product-price">24.990.000 đ</div>
+                            <button class="buy-now-btn">Mua ngay</button>
+                        </div>
+                    </a>
+                </div>
+        
+                <!-- Sản phẩm 4 -->
+                <div class="product-item">
+                    <a href="./tainguyen/web-lenovo-thinkpad.html">
+                        <div class="product-image">
+                            <img src="/images/product/lenovo/Lenovo ThinkPad E14 Gen 5 21JK006BVN.jpg" alt="Lenovo ThinkPad X1">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Lenovo ThinkPad E14 Gen 5 21JK006BVN</h3>
+                            <div class="product-specs">Intel i5-1335U, RAM 16GB, SSD 512GB</div>
+                            <div class="product-price">39.990.000 đ</div>
+                            <button class="buy-now-btn">Mua ngay</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+  
 
+    </div>
+    
+
+ </main>
     <!-- Bootstrap JS và Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/framework/popper.min.js"></script>
+    <script src="/assets/framework/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/framework/js/bootstrap.js.map"></script>
 </body>
 </html>
