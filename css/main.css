@@ -40,7 +40,7 @@
 .dropdown-toggle {
     background-color: #ffffff;
     border: 2px solid #f2f4f3; 
-    border-radius: 5px; /* Bo góc nhẹ */
+    border-radius: 5px; 
     padding: 10px 20px; 
     color: #ff0505; 
     font-weight: bold;
@@ -110,7 +110,7 @@
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    transition: all 0.3s ease; /* Hiệu ứng chuyển tiếp */
+    transition: all 0.3s ease; 
 }
 .right-actions {
     margin-left: auto; 
@@ -159,6 +159,6 @@
         max-height: 30px;
     }
 .dropdown-toggle {
-    padding: 8px 15px; /* Điều chỉnh padding cho dropdown */
+    padding: 8px 15px; 
     }
 }
