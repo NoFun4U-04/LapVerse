@@ -26,7 +26,7 @@
 /* Định dạng cho Navbar chính */
 .navbar {
     padding: 10px 0;
-    border-top: 4px solid #f4e02f; 
+    border-top: 4px solid #f8f8f8; 
     background-color: #9e2222; 
 }
 
@@ -138,7 +138,7 @@
     color: #915555;
 }
 .btn-outline-light a {
-    color: #9e2222;
+    color: #cd0a0a;
 }
 .btn-outline-light:hover i {
     color: #ffffff; 
@@ -201,10 +201,10 @@
   
   /* Các chỉ báo slide */
   .carousel-indicators button {
-    background-color: hwb(0 4% 14% / 0.5); 
+    background-color: hwb(0 95% 5%); 
   }
 .carousel-indicators .active {
-    background-color: hsl(64, 95%, 52%); /
+    background-color: hsl(0, 0%, 100%); /
   }
   
 /* Section styling */
