@@ -1,13 +1,13 @@
 /* Trang trí cho navbar thông báo */
 .navbar_1 {
-    background-color: #ff0505;
+    background-color: #8b2828;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Trang trí cho các liên kết trong navbar thông báo */
 .navbar_1 a {
-    color: #ff0505;
+    color: #6e0d0d;
     text-decoration: none;
     font-weight: bold;
 }
@@ -27,7 +27,7 @@
 .navbar {
     padding: 10px 0;
     border-top: 4px solid #f4e02f; 
-    background-color: #ff0505; 
+    background-color: #9e2222; 
 }
 
 /* Logo */
@@ -42,7 +42,7 @@
     border: 2px solid #f2f4f3; 
     border-radius: 5px; 
     padding: 10px 20px; 
-    color: #ff0505; 
+    color: #9e2222; 
     font-weight: bold;
     transition: all 0.3s ease;
 }
@@ -66,18 +66,18 @@
 /* Thêm hiệu ứng hover   */
 .navbar-toggler:hover {
     background-color: #ff5733; 
-    border-color: #ff5733; 
+    border-color: #33e4ff; 
 }
 
 
 .dropdown-item {
     padding: 10px 20px;
     font-weight: bold;
-    color: #ff0505;
+    color: #9e2222;
 }
 
 .dropdown-item:hover {
-    background-color: #ff0505; 
+    background-color: #9e2222; 
     color: white; 
 }
 
@@ -97,7 +97,7 @@
 }
 
 .search-form button i {
-    color: #f90606; 
+    color: #9e2222; 
 }
 
 /* Định dạng cho các nút (giỏ hàng, đăng nhập) */
@@ -106,7 +106,7 @@
     border: 2px solid #f2f4f3;
     border-radius: 20px;
     background-color: #ffffff;
-    color: #ff0505; 
+    color: #9e2222; 
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
@@ -118,7 +118,7 @@
 
 /* Hiệu ứng hover cho nút */
 .btn-outline-light:hover {
-    background-color: #ff0000;
+    background-color: #9e2222;
     color: #ffffff;
 }
 .btn-outline-light:hover a {
@@ -135,10 +135,10 @@
     font-size: 20px;
     margin-right: 8px;
     vertical-align: middle;
-    color: rgb(255, 0, 0);
+    color: #915555;
 }
 .btn-outline-light a {
-    color: #ff0505;
+    color: #9e2222;
 }
 .btn-outline-light:hover i {
     color: #ffffff; 
@@ -201,7 +201,7 @@
   
   /* Các chỉ báo slide */
   .carousel-indicators button {
-    background-color: rgba(219, 9, 9, 0.5); 
+    background-color: hwb(0 4% 14% / 0.5); 
   }
 .carousel-indicators .active {
     background-color: hsl(64, 95%, 52%); /
@@ -212,7 +212,7 @@
 #sanphamnoibat .container {
     max-width: 1200px; 
     margin: 0 auto; 
-    background-color: #e00808; 
+    background-color: #9e2222; 
     padding: 2rem; 
     border-radius: 8px;
 }
@@ -273,7 +273,7 @@
 
 /* Nút mua ngay */
 .buy-now-btn {
-    background-color: #ff3b3f;
+    background-color: #9e2222;
     color: #fff;
     padding: 10px;
     width: 100%;
