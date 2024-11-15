@@ -19,22 +19,21 @@
 
 /* Định nghĩa hiệu ứng nhấp nháy */
 @keyframes blinkingText {
+    0%, 100% { color: #ffffff; }
+    50% { color: #f4e02f; }
+}
 
-    0%,
-    100% {
-        color: #ffffff;
-    }
-
-    50% {
-        color: #f4e02f;
-    }
+/* Định nghĩa hiệu ứng nhấp nháy nền trắng */
+@keyframes blinkingText_ {
+    0%, 100% { color: #ffffff; }
+    50% { color: #de0202da; }
 }
 
 /* Định dạng cho Navbar chính */
 .navbar {
     padding: 10px 0;
-    border-top: 4px solid #f8f8f8;
-    background-color: #9e2222;
+    border-top: 4px solid #f8f8f8; 
+    background-color: #9e2222; 
 }
 
 /* Logo */
@@ -46,37 +45,34 @@
 /* Định dạng cho dropdown (Danh mục) */
 .dropdown-toggle {
     background-color: #ffffff;
-    border: 2px solid #f2f4f3;
-    border-radius: 5px;
-    padding: 10px 20px;
-    color: #9e2222;
+    border: 2px solid #f2f4f3; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    color: #9e2222; 
     font-weight: bold;
     transition: all 0.3s ease;
 }
-
 .category-menu .dropdown:hover .dropdown-menu {
-    display: block;
+    display: block; 
     opacity: 1;
     visibility: visible;
 }
-
 .dropdown-menu {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Đổ bóng cho menu */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng cho menu */
 }
 
 /*  tim kiem_icon */
 .navbar-toggler {
-    border: 2px solid #fff;
+    border: 2px solid #fff; 
     border-radius: 50%;
-    padding: 12px 16px;
-    background-color: #333;
+    padding: 12px 16px; 
+    background-color: #333; 
 }
 
 /* Thêm hiệu ứng hover   */
 .navbar-toggler:hover {
-    background-color: #ff5733;
-    border-color: #33e4ff;
+    background-color: #ff5733; 
+    border-color: #33e4ff; 
 }
 
 
@@ -87,8 +83,8 @@
 }
 
 .dropdown-item:hover {
-    background-color: #9e2222;
-    color: white;
+    background-color: #9e2222; 
+    color: white; 
 }
 
 /* Thanh tìm kiếm */
@@ -107,7 +103,7 @@
 }
 
 .search-form button i {
-    color: #9e2222;
+    color: #9e2222; 
 }
 
 /* Định dạng cho các nút (giỏ hàng, đăng nhập) */
@@ -116,15 +112,14 @@
     border: 2px solid #f2f4f3;
     border-radius: 20px;
     background-color: #ffffff;
-    color: #9e2222;
+    color: #9e2222; 
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; 
 }
-
 .right-actions {
-    margin-left: auto;
+    margin-left: auto; 
 }
 
 /* Hiệu ứng hover cho nút */
@@ -132,14 +127,13 @@
     background-color: #9e2222;
     color: #ffffff;
 }
-
 .btn-outline-light:hover a {
-    color: #ffffff;
+    color: #ffffff; 
 }
 
 /* Thêm khoảng cách giữa các nút */
 .ms-3 {
-    margin: 1rem;
+    margin: 1rem; 
 }
 
 /* Căn chỉnh icon và text cho nút */
@@ -149,13 +143,11 @@
     vertical-align: middle;
     color: #915555;
 }
-
 .btn-outline-light a {
     color: #cd0a0a;
 }
-
 .btn-outline-light:hover i {
-    color: #ffffff;
+    color: #ffffff; 
 }
 
 /* Đảm bảo không có gạch chân cho các liên kết trong nút */
@@ -169,76 +161,72 @@
         max-width: 300px;
     }
 
-    .navbar .navbar-brand img {
+.navbar .navbar-brand img {
         max-height: 30px;
     }
-
-    .dropdown-toggle {
-        padding: 8px 15px;
+.dropdown-toggle {
+    padding: 8px 15px; 
     }
 }
-
 /* Slide banner */
-
+ 
 .carousel-container {
-    width: 100%;
+    width: 100%; 
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
-}
-
-#carouselExampleIndicators {
+  }
+  
+  #carouselExampleIndicators {
     position: relative;
     width: 100%;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 15px;
+    height: 400px; 
+    overflow: hidden; 
+    border-radius: 15px; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-inner {
-    display: flex;
+  }
+  
+  .carousel-inner {
+    display: flex; 
     width: 100%;
-}
-
-.carousel-item {
+  }
+  
+  .carousel-item {
     width: 100%;
     height: 100%;
-}
-
-/* Điều chỉnh ảnh sao cho vừa khung mà không bị méo */
-.carousel-inner img {
+  }
+  
+  /* Điều chỉnh ảnh sao cho vừa khung mà không bị méo */
+  .carousel-inner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     transition: opacity 0.5s ease;
-}
-
-/* Các chỉ báo slide */
-.carousel-indicators button {
-    background-color: hwb(0 95% 5%);
-}
-
+  }
+  
+  /* Các chỉ báo slide */
+  .carousel-indicators button {
+    background-color: hwb(0 95% 5%); 
+  }
 .carousel-indicators .active {
-    background-color: hsl(0, 0%, 100%);/
-}
-
+    background-color: hsl(0, 0%, 100%); /
+  }
+  
 /* Section styling */
 /* Thiết kế grid cho sản phẩm */
 #sanphamnoibat .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #9e2222;
-    padding: 2rem;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    background-color: #9e2222; 
+    padding: 2rem; 
     border-radius: 8px;
 }
-
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-
+    
 }
 
 /* Thiết kế item sản phẩm */
@@ -304,31 +292,58 @@
 .buy-now-btn:hover {
     background-color: #d32f2f;
 }
-
 .product-item a {
     text-decoration: none;
 }
-
 .product-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-/* button đăng ký*/
-.btn-submit {
-    padding: 8px;
-    background-color: #ec0b25;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    /* Hiệu ứng mượt cho cả màu nền và chữ */
+/** THÔNG TIN CÔNG NGHỆ**/
+#tintuccongnghe .container_news {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    background-color: #f6eaea7c; 
+    padding: 2rem; 
+    border-radius: 8px;
+}
+.container_news {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*tạo lưới cho tin tức*/
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    
 }
 
-.btn-submit:hover {
-    background-color: #a91111;
-    /* Màu nền khi hover */
-    color: #fcdd77;
-    /* Màu chữ khi hover */
+/* Thiết kế item tin tức */
+.news-item {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+/*hiệu ứng tin tức*/
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/*hình ảnh tin tức*/
+.news-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Thiết kế thông tin tin tức */
+.news-info {
+    padding: 10px;
+    text-align: left;
+}
+
