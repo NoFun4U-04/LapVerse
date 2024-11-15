@@ -11,7 +11,7 @@ Lớp học phần: Thiết kế web - Thứ 7 ca 2
 | :-- | :---    | :-------|
 | 1   | Lâm Đức Thịnh | 25A4042237 |
 | 2   | Vũ Diệu Linh  | 25A4041864 |
-| 3   | Đinh Thị Thu Hoài | ---- |
+| 3   | Đinh Thị Thu Hoài | 25A4041506 |
 | 4   | Bùi Phương Linh | 25A4041557 |
 
 
