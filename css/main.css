@@ -300,11 +300,10 @@
     height: 100%;
     object-fit: cover;
 }
+
 /* Tin tức công nghệ */
 .container_news{
     background-color: #9e2222;
-
-
 }
 /* Hiệu ứng hover cho card tin tức */
 .news-card {
