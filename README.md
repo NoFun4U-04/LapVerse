@@ -7,7 +7,7 @@ Lớp học phần: Thiết kế web - Thứ 7 ca 2
 
 :rocket:Danh sách thành viên
 
-| STT | Họ và tên | Mã sinh vien  |
+| STT | Họ và tên | Mã sinh viên  |
 | :-- | :---    | :-------|
 | 1   | Lâm Đức Thịnh | 25A4042237 |
 | 2   | Vũ Diệu Linh  | 25A4041864 |
