@@ -230,8 +230,10 @@
 }
 
 .special-offers {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    justify-content:center;
     padding: 40px;
     gap: 20px;
 }
@@ -257,9 +259,9 @@
 }
 
 .offer img {
-    width: 500px; /* Đặt chiều rộng cố định */
-    height: 200px; /* Đặt chiều cao cố định */
-    object-fit: cover; /* Cắt ảnh để phù hợp với khung, giữ tỷ lệ đẹp */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
     border-radius: 8px;
     margin-bottom: 20px;
 }
@@ -280,21 +282,26 @@
     margin-bottom: 40px;
 }
 
+/* Nút trong phần Offer */
 .offer button {
-    background-color: white;
-    color: #333;
-    border: none;
     padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+    border: 2px solid #f2f4f3;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #9e2222;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
+/* Hiệu ứng hover cho nút trong Offer */
 .offer button:hover {
-    background-color: #ddd;
-    color: #000;
+    background-color: #9e2222;
+    color: #ffffff;
+    border-color: #ffffff;
 }
+
 /* Section styling */
 /* Thiết kế grid cho sản phẩm */
 #sanphamnoibat .container {
