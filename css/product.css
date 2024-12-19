@@ -1,15 +1,16 @@
 /* Hiệu ứng của sản phẩm bán chạy*/
 #sanphambanchay .product-item:hover {
     transform: scale(1.05); 
-    transition: transform 0.3s ease-in-out; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 #sanphambanchay .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 3 columns for a row */
     gap: 1em;
     padding-bottom: 1em;
+    margin: 0 2em;
 }
 #sanphambanchay .product-item {
     border: 2px solid #d80808;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }

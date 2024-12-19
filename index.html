@@ -132,6 +132,7 @@
             <button>Mua Ngay</button>
         </div>
     </section>
+
     <!-- SẢN PHẨM NỔI BẬT-->
      <div id="sanphamnoibat">
         <div class="container my-5">
@@ -201,11 +202,12 @@
   
 
     </div>
+<section id = 'sanphambanchay' style="margin:0 10em 0 10em;">
     <div>
         <h2 class="text-center mb-4 bi bi-fire" style="background-color:#9e2222;padding: 0.55em; animation: blinkingText 1s infinite;"> SẢN PHẨM BÁN CHẠY</h2>
     </div>
  <!-- Các sản phẩm bán chạy-->
-  <section id = 'sanphambanchay'>
+
     <div productbanchay-container>
         <div class="product-grid " style="padding-bottom:1em">
             <!-- Sản phẩm 1 -->
@@ -331,6 +333,40 @@
     </div>
   </section>
 </main>
+<section style="background: #1d1d1d;">
+    <div class="logo-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Lenovo_logo_2015.svg" alt="Lenovo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Acer_Logo.svg" alt="Acer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/MSI_gaming_logo_2019.svg" alt="MSI">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HP_logo_2012.svg" alt="HP">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Dell_Logo.svg" alt="Dell">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Apple_logo_black.svg" alt="Apple">
+    </div>
+    <div class="form-container">
+        <h3>Đăng ký nhận tin</h3>
+        <form id="subscribeForm">
+            <input type="email" id="email" placeholder="Email nhận tin" required>
+            <button type="submit"><i>✉️</i> Đăng Ký</button>
+        </form>
+        <div id="successMessage" style="display:none; color: #ff4c4c; margin-top: 10px;">
+            Đăng ký thành công!
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var email = document.getElementById('email').value;
+            if (email) {
+                document.getElementById('successMessage').style.display = 'block';
+                setTimeout(function() {
+                    document.getElementById('successMessage').style.display = 'none'; 
+                }, 5000);
+                document.getElementById('email').value = '';
+            }
+        });
+    </script>
+</section>
  <!-- TIN TỨC CÔNG NGHỆ MỚI -->
  <section id="tintuccongnghe" class="mb-2">
     <div class="container_news">
@@ -441,12 +477,6 @@ style="background-color:#9e2222; color: white; padding: 15px 0; font-family: 'Ro
             <a href="#" style="color: white; text-decoration: none;">Instagram</a> |
             <a href="#" style="color: white; text-decoration: none;">Twitter</a>
         </p>
-        <p style="margin: 5px 0;">Đăng ký nhận để thông tin ưu đãi:</p>
-        <form>
-            <input type="email" placeholder="Nhập email"
-                style="padding: 8px; border: none; width: 70%; margin-right: 5px;">
-            <button type="submit" class="btn-submit">Đăng ký</button>
-        </form>
     </div>
 </div>
 <!-- Bản quyền -->
