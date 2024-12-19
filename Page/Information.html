@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAPVERSE - Vũ trụ Laptop</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="/assets/framework/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/framework/css/">
+    <link rel="stylesheet" href="/assets/framework/css/font-icon/bootstrap-icons.min.css">
+    
+    <!-- Thêm file CSs -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <script href="/js/main.js"></script>
+    <style>
+        /*banner*/
+        #banner_gioi_thieu img
+        {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: center; 
+        transition: opacity 0.5s ease;
+        }
+        /*phânf giới thiệu*/
+        .rectangle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, #6e0505, #de0b08);
+            color: white; 
+            padding: 30px;
+            margin: 10px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Phần văn bản */
+        .rectangle .text {
+            flex: 2;
+            padding-right: 20px;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .rectangle .text h2 {
+            margin-top: 0;
+        }
+
+        /* Phần ảnh */
+        .rectangle .image {
+            flex: 1;
+        }
+
+        .rectangle .image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .rectangle.flex-row-reverse {
+          flex-direction: row-reverse;
+        }
+
+    </style>
+</head>
+<body>
+ <header>
+
+
+        <!-- Thanh thông báo chào mừng -->
+        <div class="navbar_1">
+            <nav>
+                <div class="container-md px-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                       <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a> 
+                    </div>
+                </div>
+            </nav>
+        </div>
+    
+        <!-- Navbar chính -->
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
+            <div class="container">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="/images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
+                </a>
+                <!-- Thanh tìm kiếm -->
+                <form class="d-flex ms-3 search-form" action="#" method="get">
+                    <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                    <button class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn" type="submit">
+                        <i class="bi-search"></i>
+                    </button>
+                </form>
+    
+                <!-- Các biểu tượng đăng nhập và giỏ hàng -->
+                <div class="d-flex justify-content-end align-items-cnter right-actions">
+                    <!-- Nút Đăng nhập -->
+                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                        <a href="/Page/dangnhap.html" class="d-flex align-items-center">
+                            <i class="bi bi-person-fill me-1"></i>
+                            <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
+                        </a>
+                    </button>
+                    <span class="text-white mx-2">hoặc</span>
+                    <!-- Nút Đăng ký -->
+                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                        <a href="/Page/dangky.html" class="d-flex align-items-center">
+                            <i class="bi bi-person-fill me-1"></i>
+                            <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
+                        </a>
+                    </button>
+                </div>
+            </nav>
+            <!-- MENU start here -->
+    <nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
+        <div class="container-md d-flex justify-content-between align-items-center">
+            <!-- Logo và Nút Toggle Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Danh sách menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav gap-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="/index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" href="./introduction.html">Giới thiệu</a>
+                    </li>
+                    <!-- Dropdown Sản phẩm -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-semibold dropdown-toggle" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Tất cả sản phẩm</a></li>
+                            <li><a class="dropdown-item" href="#">Laptop Gaming</a></li>
+                            <li><a class="dropdown-item" href="#">Laptop Văn phòng</a></li>
+                            <li><a class="dropdown-item" href="#">Laptop Sinh viên</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./authors.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./contact.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Nút Giỏ hàng -->
+            <div>
+                <a href="./cart.html" class="btn btn-outline-dark d-flex align-items-center">
+                    <i class="bi bi-cart-fill me-1"></i>
+                    Giỏ hàng
+                    <span class="badge bg-dark text-white ms-2 rounded-pill">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+ </header>
+ <main>
+    <div id="banner_gioi_thieu">
+        <img src="/images/banner/ảnh giới thiệu.png"  alt="banner-1">
+    </div>
+    <section>
+        <div class="rectangle">
+            <div class="text">
+                <p style="text-align: justify;">
+                    <strong>LAPVERSE</strong> thương hiệu bán <strong>Laptop, linh kiện Laptop</strong> chính hãng được thành lập và đi vào hoạt động bán lẻ từ năm <strong>2024</strong>.
+                </p>
+                <p style="text-align: justify;">
+                    Bước sang năm 2024 với sự bùng nổ mạnh mẽ của ngành công nghệ thông tin. Con người đang bước trong thời kỳ thế giới số, 
+                    thế giới mà con người ai ai cũng cần một chiếc máy tính để có thể làm việc một cách hiệu quả nhất. Khi mà những chiếc máy 
+                    tính cây hay còn gọi là PC không được thuận tiện khi chỉ có thể để cố định một nơi thì sự thiếu linh hoạt đó đã dẫn đến nhu
+                     cầu ngày càng tăng đối với máy tính xách tay (laptop), thiết bị đáp ứng tốt hơn tính di động và hiệu quả làm việc.
+                </p>
+            </div>
+
+            <div class="image">
+                <img src="/images/logo/gioi_thieu.png" alt="ảnh shop 1">
+            </div>
+        </div>
+        
+    </section>
+    <section>
+        <div class="rectangle flex-row-reverse">
+            <div class="text">
+                <p style="text-align: justify;">
+                    Với sự đa dạng về các hãng laptop được người tiêu dùng lựa chọn nhiều nhất, 
+                    đa dạng nhiều mẫu mã sản phẩm. Laptop Dell, HP, Lenovo, Thinkpad, Asus, MSI, Acer, Surface, Macbook...
+                    Laptop Gaming, Laptop đồ họa, Laptop doanh nhân cao cấp mỏng nhẹ, laptop văn phòng giá rẻ, 
+                    linh kiện laptop chính hãng...
+                </p>
+                <p style="text-align: justify;">
+                    LapVerse luôn luôn nỗ lực để đem tới khách hàng những sản phẩm có chất lượng tốt nhất,
+                     chế độ bảo hành và hỗ trợ tốt nhất, mức giá thành cạnh tranh phù hợp nhất, 
+                     cùng trải nghiệm mua hàng tốt nhất xứng đáng với từng số tiền mà khách hàng bỏ ra.
+                </p>
+            </div>
+    
+            <div class="image" style="margin-right: 20px;">
+                <img src="/images/logo/gioi_thieu_2.png" alt="ảnh shop 2">
+            </div>
+        </div>
+    </section>
+    
+ </main>
+</body>
