@@ -99,7 +99,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-semibold" href="./tintuchtml">Tin tức</a>
+                    <a class="nav-link fw-semibold" href="./authors.html">Tin tức</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link fw-semibold" href="./contact.html">Liên hệ</a>
@@ -117,35 +117,40 @@
         </div>
     </div>
 </nav>
-    <!-- Đường dẫn-->
+        <!-- Đường dẫn-->
     <div class="bg-white">
         <div class="container-md py-3">
           <nav aria-label="breadcrumb" class="ms-2">
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item"><a href="/index.html">Trang chủ</a></li>
-              <li class="breadcrumb-item active text-primary text-opacity-75">Đăng nhập</li>
+              <li class="breadcrumb-item active text-primary text-opacity-75">Đăng ký</li>
             </ol>
           </nav>
         </div>
     </div>
 </header>
+
 <!-- Main content -->
-<main>
+  <main>
     <div class="d-flex justify-content-center py-5">
       <div class="col-10 col-md-6 col-xl-4">
-        <h2 class="text-center fw-bold mb-5">Đăng nhập</h2>
+        <h2 class="text-center fw-bold">Đăng ký</h2>
         <div id="errorMessage" class="text-danger fw-bold"></div>
-        <form action="/index.html">
+        <form action="/Page/dangnhap.html">
           <div class="col-12 form-floating my-3">
             <input type="text" class="form-control" id="usernameInput" placeholder="Username" required>
-            <label for="usernameInput" class="form-label">Tên tài khoản <span class="text-danger">*</span></label>
+            <label for="username" class="form-label">Tên tài khoản <span class="text-danger">*</span></label>
+          </div>
+
+          <div class="col-12 form-floating my-3">
+            <input type="email" class="form-control" id="email" placeholder="Email" required>
+            <label for="email" class="form-label bg-transparent">Email <span class="text-danger">*</span></label>
           </div>
 
           <div class="col-12 form-floating my-3">
             <input type="password" class="form-control" id="password" placeholder="Password" required>
-            <label for="passwordInput" class="form-label">Mật khẩu <span class="text-danger">*</span></label>
+            <label for="password" class="form-label">Mật khẩu <span class="text-danger">*</span></label>
           </div>
-
           <div class="form-check ms-2">
             <input class="form-check-input" type="checkbox" id="showPassword">
             <label class="form-check-label" for="showPassword">
@@ -153,11 +158,18 @@
             </label>
           </div>
 
-          <div class="col-12 my-4">
-            <button class="btn custom-red w-100" type="submit">Đăng nhập</button>
+          <div class="col-12 form-floating my-3">
+            <input type="password" class="form-control" id="passwordConfirmation" placeholder="Password" required>
+            <label for="passwordConfirmation" class="form-label">Xác nhận mật khẩu <span
+                class="text-danger">*</span></label>
+            <small class="errorMessage text-danger"></small>
           </div>
 
-          <p>Bạn không có tài khoản? <a href="/Page/dangky.html" class="link">Đăng ký</a></p>
+          <div class="col-12 my-4">
+            <button class="btn custom-red w-100" type="submit">Đăng ký</button>
+          </div>
+
+          <p>Bạn đã có tài khoản? <a href="./dangnhap.html" class="link">Đăng nhập</a></p>
         </form>
 
       </div>
@@ -167,13 +179,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Bootstrap -->
   <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
-  <!-- Custom js -->
-  <script src="../js/dangnhap.js"></script>
-
+   <!-- Custom js -->
+   <script src="../js/dangky.js"></script>
 </body>
-</html>
-        <!--Menu end here-->   
-        </div>
-    
-
-
