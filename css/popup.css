@@ -12,6 +12,7 @@
     z-index: 9999; /* Đảm bảo popup nằm trên cùng */
 }
 
+
 /* Container của popup */
 .popup-container {
     width: 80%; /* Hoặc bất kỳ giá trị phù hợp nào, như 60% nếu muốn nhỏ hơn */
@@ -23,6 +24,7 @@
    
     position: relative; /* Để nút đóng không bị lệch */
 }
+
 
 /* Nút đóng popup */
 .popup-close {
@@ -40,6 +42,7 @@
     text-align: center;
     line-height: 30px;
 }
+
 
 /* Hiệu ứng mở popup */
 @keyframes fadeIn {
