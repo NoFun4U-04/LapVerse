@@ -10,21 +10,20 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.7); /* Làm mờ nền */
     z-index: 9999; /* Đảm bảo popup nằm trên cùng */
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-
 
 /* Container của popup */
 .popup-container {
     width: 80%; /* Hoặc bất kỳ giá trị phù hợp nào, như 60% nếu muốn nhỏ hơn */
     max-width: 500px; /* Đặt giới hạn tối đa cho chiều rộng */
-   
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-   
     position: relative; /* Để nút đóng không bị lệch */
 }
-
 
 /* Nút đóng popup */
 .popup-close {
@@ -41,17 +40,4 @@
     cursor: pointer;
     text-align: center;
     line-height: 30px;
-}
-
-
-/* Hiệu ứng mở popup */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
