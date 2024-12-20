@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LIÊN HỆ </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Nhapemail.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Cham_soc_khach_hang.css">
+    <link rel="stylesheet" href="/assets/framework/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/framework/css/">
+    <link rel="stylesheet" href="/assets/framework/css/font-icon/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Kết nối file CSS -->
+    <link rel="stylesheet" href="/css/lienhe.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script href="/js/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- Thanh thông báo chào mừng -->
+        <div class="navbar_1">
+            <nav>
+                <div class="container-md px-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Navbar chính -->
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
+            <div class="container">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="/images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
+                </a>
+                <!-- Thanh tìm kiếm -->
+                <form class="d-flex ms-3 search-form" action="#" method="get">
+                    <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..."
+                        aria-label="Search">
+                    <button
+                        class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn"
+                        type="submit">
+                        <i class="bi-search"></i>
+                    </button>
+                </form>
+
+                <!-- Các biểu tượng đăng nhập và giỏ hàng -->
+                <div class="d-flex justify-content-end align-items-cnter right-actions">
+                    <!-- Nút Đăng nhập -->
+                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                        <a href="/Page/dangnhap.html" class="d-flex align-items-center">
+                            <i class="bi bi-person-fill me-1"></i>
+                            <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
+                        </a>
+                    </button>
+                    <span class="text-white mx-2">hoặc</span>
+                    <!-- Nút Đăng ký -->
+                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                        <a href="/Page/dangky.html" class="d-flex align-items-center">
+                            <i class="bi bi-person-fill me-1"></i>
+                            <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
+                        </a>
+                    </button>
+                </div>
+        </nav>
+        <!-- MENU start here -->
+        <nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
+            <div class="container-md d-flex justify-content-between align-items-center">
+                <!-- Logo và Nút Toggle Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Danh sách menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav gap-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold active" href="/index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="./introduction.html">Giới thiệu</a>
+                        </li>
+                        <!-- Dropdown Sản phẩm -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fw-semibold dropdown-toggle" href="#" id="dropdownMenuButton"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Tất cả sản phẩm</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Gaming</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Văn phòng</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Sinh viên</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="./authors.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="./contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Nút Giỏ hàng -->
+                <div>
+                    <a href="./cart.html" class="btn btn-outline-dark d-flex align-items-center">
+                        <i class="bi bi-cart-fill me-1"></i>
+                        Giỏ hàng
+                        <span class="badge bg-dark text-white ms-2 rounded-pill">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="d-flex justify-content-center py-5">
+            <div class="col-10 col-md-6 col-xl-4">
+                <h2 class="text-center fw-bold">Liên hệ với chúng tôi</h2>
+                <form id="contactForm" class="formlh">
+                    <div class="col-12 form-floating my-3">
+                        <input type="text" class="form-control" id="fullName" placeholder="Họ tên & tên" required>
+                        <label for="fullName" class="form-label">Họ tên của bạn <span
+                                class="text-danger">(*)</span></label>
+                    </div>
+
+                    <div class="col-12 form-floating my-3">
+                        <input type="tel" class="form-control" id="phone" placeholder="Số điện thoại" required>
+                        <label for="phone" class="form-label">Số điện thoại <span class="text-danger">(*)</span></label>
+                    </div>
+
+                    <div class="col-12 form-floating my-3">
+                        <input type="email" class="form-control" id="email" placeholder="Nhập email" required>
+                        <label for="email" class="form-label">Email <span class="text-danger">(*)</span></label>
+                    </div>
+
+                    <div class="col-12 form-floating my-3">
+                        <textarea class="form-control" id="message" placeholder="Nhập nội dung mà bạn muốn liên hệ"
+                            required></textarea>
+                        <label for="message" class="form-label">Nội dung <span class="text-danger">(*)</span></label>
+                    </div>
+
+                    <div class="col-12 my-4">
+                        <button class="btn btn-danger w-100" type="submit">Gửi thông tin</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Link đến Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lienhe.js"></script>
+</body>
+
+<hr>
+<footer class="bg text-dark pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>CỬA HÀNG LAPVERSE</h5>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-geo-alt-fill"></i> Số 167 Hoàng Văn Thái, Phường Khương Trung, Quận Thanh Xuân,
+                        Hà Nội
+                    </li>
+                    <li><i class="bi bi-telephone-fill"></i> 0349296461</li>
+                    <li><i class="bi bi-envelope-fill"></i> lapverse0611@gmail.com</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61568214846575" class="bi bi-facebook"></a>
+                    <a href="mailto:lapverse0611@gmail.com" class="bi bi-envelope"></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+                <ul class="list-unstyled">
+                    <li> <a href="huong-dan-mua-hang-truc-tuyen.html">Hướng dẫn mua hàng trực tuyến</a></li>
+                    <li> <a href="huong-dan-thanh-toan.html">Hướng dẫn thanh toán</a> </li>
+                    <li> <a href="gop-y-khieu-nai.html">Góp ý, Khiếu Nại</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>CHÍNH SÁCH CHUNG</h5>
+                <ul class="list-unstyled">
+                    <li> <a href="Chính sách, quy định chung.html">Chính sách, quy định chung</a></li>
+                    <li> <a href="Chính sách vận chuyển.html">Chính sách vận chuyển</a></li>
+                    <li> <a href="Chính sách bảo hành.html">Chính sách bảo hành</a></li>
+                    <li> <a href="Chính sách đổi trả và hoàn tiền.html">Chính sách đổi trả và hoàn tiền</a></li>
+                    <li> <a href="Chính sách xử lý khiếu nại.html">Chính sách xử lý khiếu nại</a></li>
+                    <li> <a href="BẢO MẬT THÔNG TIN KHÁCH HÀNG.html">Bảo mật thông tin khách hàng</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="col-inner iframe-facebook">
+                    <div class="row row-small" id="row-298520120">
+                        <div id="col-884698408" class="col small-12 large-12">
+                            <div class="col-inner">
+
+                                <iframe
+                                    src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/profile.php?id=61568214846575&amp;tabs=cover&amp;width=340&amp;height=300&amp;small_header=false&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=false&amp;appId=1259082827813860"
+                                    frameborder="0" class="iframe-footer" scrolling="no"
+                                    allow="autoplay; encrypted-media; picture-in-picture; web-share">
+                                </iframe>
+
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.456324711869!2d105.82304731488365!3d20.99721725750485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac88b99e4dbd%3A0x689b9adf640c2ba0!2zMTY3IFAuIEjhu41uZyBWxINuIFRo4bqjLCBLxaluZyBUcnVuZywgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1svi!2s!4v1718559022737!5m2!1svi!2s"
+                                    width="340" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    class="iframe-footer" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </p>
+    </div>
+    <hr>
+    <div class="footer-finnal">
+        <div class="copyright-footer">
+            Copyright 2024 © <strong>Alrights reserved CuahangLapVerse</strong>
+        </div>
+    </div>
+</footer>
+
+</html>
