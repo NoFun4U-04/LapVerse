@@ -18,16 +18,6 @@ ul.list-unstyled li a:hover {
     height: 125px;
 }
 
-.footer-finnal {
-    style="background-color:#9e2222;
- color: white;
-    padding: 15px 0;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-    font-size: 14px;
-
-}
-
 .finnal-footer ul li a {
     text-transform: uppercase;
     color: rgba(255, 255, 255, .5);
