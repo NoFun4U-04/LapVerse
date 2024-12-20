@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="/assets/framework/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/framework/css/">
     <link rel="stylesheet" href="/assets/framework/css/font-icon/bootstrap-icons.min.css">
-    
+
     <!-- Thêm file CSs -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/popup.css">
     <script href="/js/main.js"></script>
+    <script href="/js/popup.js"></script>
 </head>
 <body>
  <header>
@@ -113,6 +115,20 @@
 </nav>
 </header>
  <main>
+    <!-- Popup start -->
+       <!-- Popup Overlay -->
+       <div class="popup-overlay" id="popupOverlay">
+        <a href="/Page/Information.html" id="popupLink">
+            <div class="popup-container" id="popupContainer">
+                <img src="/images/banner/popup.png" alt="Popup" class="popup-image" id="popupImage">
+                <button class="popup-close" id="closePopup" type="button">&times;</button>
+            </div>
+        </a>
+    </div>
+
+       
+    <!-- Popup end-->    
+
     <!-- Slide-banner -->
     <section class="carousel-container">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -522,5 +538,6 @@ style="background-color:#9e2222; color: white; padding: 15px 0; font-family: 'Ro
     <script src="assets/framework/popper.min.js"></script>
     <script src="assets/framework/js/bootstrap.bundle.min.js"></script>
     <script src="assets/framework/js/bootstrap.js.map"></script>
+    <script href="/js/popup.js"></script>
 </body>
 </html>
