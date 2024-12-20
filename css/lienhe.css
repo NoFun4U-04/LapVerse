@@ -27,21 +27,6 @@
     color: #333;
 }
 
-.formlh input,
-.formlh textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-.formlh input::placeholder,
-.formlh textarea::placeholder {
-    color: #999;
-}
-
 .btn-danger {
     padding: 10px 20px;
     border: 2px solid #f2f4f3;
