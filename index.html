@@ -14,11 +14,9 @@
     <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="/css/popup.css">
     <script href="/js/main.js"></script>
-    <script href="/js/popup.js"></script>
 </head>
 <body>
  <header>
-
 
     <!-- Thanh thông báo chào mừng -->
     <div class="navbar_1">
@@ -114,7 +112,8 @@
     </div>
 </nav>
 </header>
- <main>
+
+<main>
     <!-- Popup start -->
        <!-- Popup Overlay -->
        <div class="popup-overlay" id="popupOverlay">
@@ -126,8 +125,6 @@
         </div>
     </div>
     
-
-       
     <!-- Popup end-->    
 
     <!-- Slide-banner -->
@@ -381,6 +378,7 @@
     </div>
   </section>
 </main>
+
 <section style="background: #1d1d1d;">
     <div class="logo-container">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Lenovo_logo_2015.svg" alt="Lenovo">
@@ -539,6 +537,27 @@ style="background-color:#9e2222; color: white; padding: 15px 0; font-family: 'Ro
     <script src="assets/framework/popper.min.js"></script>
     <script src="assets/framework/js/bootstrap.bundle.min.js"></script>
     <script src="assets/framework/js/bootstrap.js.map"></script>
-    <script href="/js/popup.js"></script>
+    <!-- js pop up start-->
+    <script>
+        // Lấy các phần tử cần sử dụng
+            const popupOverlay = document.getElementById('popupOverlay');
+            const popupContainer = document.getElementById('popupContainer');
+            const closePopup = document.getElementById('closePopup');
+
+        // Gán sự kiện click cho nút đóng
+            closePopup.addEventListener('click', function () {
+                console.log("hello");
+                popupOverlay.style.display = 'none';
+            });
+
+        // Gán sự kiện click cho overlay
+            popupOverlay.addEventListener('click', function (event) {
+        // Kiểm tra nếu click không nằm trong popupContainer
+            if (!popupContainer.contains(event.target)) {
+                popupOverlay.style.display = 'none';
+            }
+            }); 
+    </script>
+    <!-- js pop up end-->
 </body>
 </html>
