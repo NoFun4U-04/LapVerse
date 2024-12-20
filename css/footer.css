@@ -19,11 +19,13 @@ ul.list-unstyled li a:hover {
 }
 
 .footer-finnal {
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    justify-content: space-between;
-    font-size: 12px;
-    margin-bottom: 10px;
+    style="background-color:#9e2222;
+ color: white;
+    padding: 15px 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 14px;
+
 }
 
 .finnal-footer ul li a {
@@ -39,5 +41,6 @@ ul.list-unstyled li a:hover {
 }
 
 .copyright-footer {
-    color: #000000
+    color: #000000;
+    text-align: center;
 }
