@@ -1,0 +1,64 @@
+.contact {
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    color: #fff;
+}
+
+.contact-info {
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    /* Nền trắng mờ */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.formlh label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.formlh input,
+.formlh textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.formlh input::placeholder,
+.formlh textarea::placeholder {
+    color: #999;
+}
+
+.btn-danger {
+    padding: 10px 20px;
+    border: 2px solid #f2f4f3;
+    border-radius: 20px;
+    background-color: #9e2222;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #ffffff;
+    color: #9e2222;
+}
+
+.smaller-btn {
+    width: 100px;
+    /* Cụ thể nhỏ lại */
+}
