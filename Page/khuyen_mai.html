@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +24,8 @@
         .content-wrapper {
             padding: 20px;
             margin: 0 auto;
-            max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+            max-width: 1200px;
+            /* Giới hạn chiều rộng tối đa */
             background-color: #f9f9f9;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -42,131 +44,158 @@
         }
     </style>
 </head>
+
 <body>
-<header>
-    <!-- Thanh thông báo chào mừng -->
-    <div class="navbar_1">
-        <nav>
-            <div class="container-md px-4">
-                <div class="d-flex justify-content-between align-items-center">
-                   <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a> 
+    <header>
+        <!-- Thanh thông báo chào mừng -->
+        <div class="navbar_1">
+            <nav>
+                <div class="container-md px-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Navbar chính -->
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
+            <div class="container">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="/images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
+                </a>
+                <!-- Thanh tìm kiếm -->
+                <form class="d-flex ms-3 search-form" action="#" method="get">
+                    <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..."
+                        aria-label="Search">
+                    <button
+                        class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn"
+                        type="submit">
+                        <i class="bi-search"></i>
+                    </button>
+                </form>
+
+                <!-- Các biểu tượng đăng nhập và giỏ hàng -->
+                <div class="d-flex justify-content-end align-items-center right-actions">
+                    <!-- Nút Đăng nhập -->
+                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                        <a href="/Page/dangnhap.html" class="d-flex align-items-center">
+                            <i class="bi bi-person-fill me-1"></i>
+                            <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
+                        </a>
+                    </button>
+                    <span class="text-white mx-2">hoặc</span>
+                    <!-- Nút Đăng ký -->
+                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                        <a href="/Page/dangky.html" class="d-flex align-items-center">
+                            <i class="bi bi-person-fill me-1"></i>
+                            <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
+                        </a>
+                    </button>
                 </div>
             </div>
         </nav>
-    </div>
 
-    <!-- Navbar chính -->
-    <nav class="navbar navbar-expand-md navbar-light shadow-sm">
-        <div class="container">
-            <!-- Logo -->
-            <a href="index.html" class="navbar-brand">
-                <img src="/images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
-            </a>
-            <!-- Thanh tìm kiếm -->
-            <form class="d-flex ms-3 search-form" action="#" method="get">
-                <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
-                <button class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn" type="submit">
-                    <i class="bi-search"></i>
+        <!-- MENU -->
+        <nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
+            <div class="container-md d-flex justify-content-between align-items-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </form>
 
-            <!-- Các biểu tượng đăng nhập và giỏ hàng -->
-            <div class="d-flex justify-content-end align-items-center right-actions">
-                <!-- Nút Đăng nhập -->
-                <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
-                    <a href="/Page/dangnhap.html" class="d-flex align-items-center">
-                        <i class="bi bi-person-fill me-1"></i>
-                        <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav gap-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold active" href="/index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="./Page/Information.html">Giới thiệu</a>
+                        </li>
+                        <!-- Dropdown Sản phẩm -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fw-semibold dropdown-toggle" href="#" id="dropdownMenuButton"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Tất cả sản phẩm</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Gaming</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Văn phòng</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Sinh viên</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="./authors.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="/Page/lienhe.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Nút Giỏ hàng -->
+                <div>
+                    <a href="./cart.html" class="btn btn-outline-dark d-flex align-items-center">
+                        <i class="bi bi-cart-fill me-1"></i>
+                        Giỏ hàng
                     </a>
-                </button>
-                <span class="text-white mx-2">hoặc</span>
-                <!-- Nút Đăng ký -->
-                <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
-                    <a href="/Page/dangky.html" class="d-flex align-items-center">
-                        <i class="bi bi-person-fill me-1"></i>
-                        <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
-                    </a>
-                </button>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- MENU -->
-    <nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
-        <div class="container-md d-flex justify-content-between align-items-center">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav gap-lg-4">
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold active" href="/index.html">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="./Page/Information.html">Giới thiệu</a>
-                    </li>
-                    <!-- Dropdown Sản phẩm -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link fw-semibold dropdown-toggle" href="#" id="dropdownMenuButton" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Sản phẩm
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Tất cả sản phẩm</a></li>
-                            <li><a class="dropdown-item" href="#">Laptop Gaming</a></li>
-                            <li><a class="dropdown-item" href="#">Laptop Văn phòng</a></li>
-                            <li><a class="dropdown-item" href="#">Laptop Sinh viên</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="./authors.html">Tin tức</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="./contact.html">Liên hệ</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Nút Giỏ hàng -->
-            <div>
-                <a href="./cart.html" class="btn btn-outline-dark d-flex align-items-center">
-                    <i class="bi bi-cart-fill me-1"></i>
-                    Giỏ hàng
-                </a>
-            </div>
-        </div>
-    </nav>
-</header>
-
-<main>
-    <div class="content-wrapper">
-        <p><strong>Cùng LapVerse đón chào một mùa Giáng sinh thật ý nghĩa. Hãy để chúng tôi giúp bạn tìm kiếm người bạn đồng hành hoàn hảo, đáp ứng mọi nhu cầu làm việc và giải trí của bạn. Theo đó khách hàng khi mua các sản phẩm Laptop qua các kênh mua hàng online và offline của LapVerse sẽ được hưởng ngay ưu đãi giảm giá lên đến 30% và kèm theo các ưu đãi giá trị khác. Hãy nhanh chóng đặt hàng ngay thôi.</strong></p>
-        <p><img src="/images/banner/3.png" alt="Promotion Banner"></p>
-        <p><strong>Thời gian khuyến mãi:</strong> Từ ngày <strong>01/12/2024</strong> đến ngày <strong>31/12/2024</strong></p>
-        <p><strong>Đối tượng khuyến mãi:</strong> Khách hàng là người tiêu dùng cuối</p>
-        <p><strong>Địa điểm áp dụng khuyến mãi:</strong> Áp dụng tại cửa hàng và các kênh mua hàng Online của LapVerse (qua Website, Facebook, gọi điện trực tiếp...)</p>
-        <p><strong>Nội dung chương trình:</strong></p>
-        <ul>
-            <li>Khách hàng mua laptop qua các kênh Online và Offline tại LapVerse sẽ được <strong>giảm ngay tới 5%</strong> khi mua Laptop tại LapVerse.</li>
-            <li>Cùng với đó khách hàng sẽ được nhận bộ quà tặng trị giá lên đến <strong>2.000.000 đồng</strong>, bao gồm:</li>
+    <main>
+        <div class="content-wrapper">
+            <p><strong>Cùng LapVerse đón chào một mùa Giáng sinh thật ý nghĩa. Hãy để chúng tôi giúp bạn tìm kiếm người
+                    bạn đồng hành hoàn hảo, đáp ứng mọi nhu cầu làm việc và giải trí của bạn. Theo đó khách hàng khi mua
+                    các sản phẩm Laptop qua các kênh mua hàng online và offline của LapVerse sẽ được hưởng ngay ưu đãi
+                    giảm giá lên đến 30% và kèm theo các ưu đãi giá trị khác. Hãy nhanh chóng đặt hàng ngay
+                    thôi.</strong></p>
+            <p><img src="/images/banner/3.png" alt="Promotion Banner"></p>
+            <p><strong>Thời gian khuyến mãi:</strong> Từ ngày <strong>01/12/2024</strong> đến ngày
+                <strong>31/12/2024</strong></p>
+            <p><strong>Đối tượng khuyến mãi:</strong> Khách hàng là người tiêu dùng cuối</p>
+            <p><strong>Địa điểm áp dụng khuyến mãi:</strong> Áp dụng tại cửa hàng và các kênh mua hàng Online của
+                LapVerse (qua Website, Facebook, gọi điện trực tiếp...)</p>
+            <p><strong>Nội dung chương trình:</strong></p>
             <ul>
-                <li>✅ Tặng Windows 11 bản quyền theo máy</li>
-                <li>✅ Miễn phí cân màu màn hình công nghệ cao</li>
-                <li>✅ Balo thời trang LapVerse <em>(được gói kèm khi vận chuyển sản phẩm hoặc đến mua trực tiếp tại cửa hàng)</em></li>
-                <li>✅ Chuột không dây + Bàn di cao cấp <em>(được gói kèm khi
+                <li>Khách hàng mua laptop qua các kênh Online và Offline tại LapVerse sẽ được <strong>giảm ngay
+                        tới 5%</strong> khi mua Laptop tại LapVerse.</li>
+                <li>Cùng với đó khách hàng sẽ được nhận bộ quà tặng trị giá lên đến <strong>2.000.000 đồng</strong>,
+                    bao gồm:</li>
+                <ul>
+                    <li>✅ Tặng Windows 11 bản quyền theo máy</li>
+                    <li>✅ Miễn phí cân màu màn hình công nghệ cao</li>
+                    <li>✅ Balo thời trang LapVerse <em>(được gói kèm khi vận chuyển sản phẩm hoặc đến mua trực tiếp tại
+                            cửa hàng)</em></li>
+                    <li>✅ Chuột không dây + Bàn di cao cấp <em>(được gói kèm khi
 
-    <p style="text-align: justify;"><span style="color:#c0392b;"><strong>Lưu ý:</strong></span></p>
-    <p style="text-align: justify;"><span style="color:#000000;">- Không áp dụng đồng thời các khuyến mại trừ tiền khác</span></p>
-    <p style="text-align: justify;"><span style="color:#000000;"><strong>LapVerse cam kết</strong></span></p>
-    <p style="text-align: justify;"><span style="color:#000000;">- 100% sản phẩm chính hãng</span></p>
-    <p style="text-align: justify;"><span style="color:#000000;">- 100% giá cạnh tranh so với thị trường</span></p>
-    <p style="text-align: justify;"><span style="color:#000000;"><strong>Hình thức giao hàng, dịch vụ bảo hành và chăm sóc khách hàng tại LapVerse</strong></span></p>
-    <p style="text-align: justify;"><span style="color:#000000;">-&nbsp;Đổi mới sản phẩm đến 30 ngày</span></a></p>
-    <p style="text-align: justify;"><span style="color:#000000;">- Khách hàng đặt hàng sẽ được nhân viên LapVerse giao hàng hoặc nhận qua dịch vụ chuyển phát nhanh</span></p>
-    <p style="text-align: justify;"><span style="color:#000000;">- Giao hàng nhanh trong nội thành Hà Nội trong vòng 3H</span></a></p>
-    <p style="text-align: justify;"><span style="color:#000000;">-&nbsp;Bảo hành chính hãng 100%, bảo hành tại nơi sử dụng</span></a></p>
-    <p style="text-align: justify;"><span style="color:#000000;">- Đội ngũ chăm sóc khách hàng sẵn sàng giải đáp mọi thắc mắc</span></p>
-    <p style="text-align: justify;"><span style="color:#000000;">- Các sản phẩm sẽ có hướng dẫn lắp đặt, sử dụng từ đội ngũ kĩ thuật qua kênh tin tức, video</span></p>
-    <p style="text-align: justify;"><span style="color:#000000;">-&nbsp;Đa dạng hình thức thanh toán cho khách hàng</span></a></p>
-</main>
+                            <p style="text-align: justify;"><span style="color:#c0392b;"><strong>Lưu ý:</strong></span>
+                            </p>
+                            <p style="text-align: justify;"><span style="color:#000000;">- Không áp dụng đồng thời các
+                                    khuyến mại trừ tiền khác</span></p>
+                            <p style="text-align: justify;"><span style="color:#000000;"><strong>LapVerse cam
+                                        kết</strong></span></p>
+                            <p style="text-align: justify;"><span style="color:#000000;">- 100% sản phẩm chính
+                                    hãng</span></p>
+                            <p style="text-align: justify;"><span style="color:#000000;">- 100% giá cạnh tranh so với
+                                    thị trường</span></p>
+                            <p style="text-align: justify;"><span style="color:#000000;"><strong>Hình thức giao hàng,
+                                        dịch vụ bảo hành và chăm sóc khách hàng tại LapVerse</strong></span></p>
+                            <p style="text-align: justify;"><span style="color:#000000;">-&nbsp;Đổi mới sản phẩm đến 30
+                                    ngày</span></a></p>
+                            <p style="text-align: justify;"><span style="color:#000000;">- Khách hàng đặt hàng sẽ được
+                                    nhân viên LapVerse giao hàng hoặc nhận qua dịch vụ chuyển phát nhanh</span></p>
+                            <p style="text-align: justify;"><span style="color:#000000;">- Giao hàng nhanh trong nội
+                                    thành Hà Nội trong vòng 3H</span></a></p>
+                            <p style="text-align: justify;"><span style="color:#000000;">-&nbsp;Bảo hành chính hãng
+                                    100%, bảo hành tại nơi sử dụng</span></a></p>
+                            <p style="text-align: justify;"><span style="color:#000000;">- Đội ngũ chăm sóc khách hàng
+                                    sẵn sàng giải đáp mọi thắc mắc</span></p>
+                            <p style="text-align: justify;"><span style="color:#000000;">- Các sản phẩm sẽ có hướng dẫn
+                                    lắp đặt, sử dụng từ đội ngũ kĩ thuật qua kênh tin tức, video</span></p>
+                            <p style="text-align: justify;"><span style="color:#000000;">-&nbsp;Đa dạng hình thức thanh
+                                    toán cho khách hàng</span></a></p>
+    </main>
 </body>
