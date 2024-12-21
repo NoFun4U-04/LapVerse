@@ -120,40 +120,162 @@
         </nav>
     </header>
     <main>
-    <div class="container-cart">
-        <div class="cart-container">
-            <div class="cart-part">
-                <div class="cart-img">
-                    <img src="/images/product/Apple MacBook Air M1 256GB 2020.jpg">
-                </div>
-                <div class="cart-desc">
-                    <h3>MacBook</h3>
-                </div>
-                <div class="cart-quantity">
-                    <input type="number" id="quantity" min="0">
-                </div>
-                <div class="cart-price">
-                    <h4>20,000,000 &#8363</h4>
-                </div>
-                <div class="cart-total">
-                    <h4>20,000,000 &#8363</h4>
-                </div>
-                <div class="cart-remove">
-                    <button>Remove</button>
+        <div class="container-cart">
+            <div class="cart-container">
+                <div class="cart-part">
+                    <div class="cart-img">
+                        <img src="/images/product/Apple MacBook Air M1 256GB 2020.jpg">
+                    </div>
+                    <div class="cart-desc">
+                        <h3>Apple MacBook Air M1 256GB 2020</h3>
+                    </div>
+                    <div class="cart-quantity">
+                        <input type="number" id="quantity" min="0" value="1">
+                    </div>
+                    <div class="cart-price unit-price">
+                        <h4>20.000.000 &#8363</h4>
+                    </div>
+                    <div class="cart-total total-price">
+                        <h4>20 000 000 &#8363</h4>
+                    </div>
+                    <div class="cart-remove">
+                        <button>Remove</button>
+                    </div>
                 </div>
             </div>
+            
+            <div class="cart-summary">
+                <div class="product-total">
+                    <h2>TỔNG TIỀN: <span id="total"></span></h2>
+                </div>
+                <div class="product-checkout">
+                <button class="checkout">ĐẶT HÀNG</button>
+                </div>
+                <a href="/Page/sanpham.html">
+                <button class="shopping">TIẾP TỤC MUA SẮM</button></a>
+            </div>
         </div>
+        <!-- thanh toan -->
+        <div id="payment-popup" style="display:none;">
+            <div class="payment-popup-content">
+                <h3>THÔNG TIN ĐẶT HÀNG</h3>
+                
+                <!-- Form thanh toán -->
+                <form id="payment-form">
+                    <div class="form-group">
+                        <label for="name">Họ và Tên:</label>
+                        <input type="text" id="name" required placeholder="Nhập họ và tên">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại:</label>
+                        <input type="tel" id="phone" required placeholder="Nhập số điện thoại">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required placeholder="Nhập email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Địa chỉ:</label>
+                        <input type="text" id="address" required placeholder="Nhập địa chỉ">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="payment-method">Phương thức thanh toán:</label>
+                        <select id="payment-method" required>
+                            <option value="">Chọn phương thức thanh toán</option>
+                            <option value="bank-transfer">Chuyển khoản ngân hàng</option>
+                            <option value="cash">Tiền mặt</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="product-total">
+                            <h2>TỔNG TIỀN: <span id="total_2" style="color:#fff;"></span></h2>
+                        </div>
+                    </div>
+                    <button type="submit" id="confirm-payment">XÁC NHẬN ĐẶT HÀNG</button>
+                </form>
+                
+                <!-- Nút đóng popup -->
+                <button id="close-payment">ĐÓNG</button>
+            </div>
+        </div>
+        
+</div>
+        
+<script>
+
+const quantityInput = document.getElementById('quantity');
+const unitPriceElement = document.querySelector('.unit-price h4');
+const totalPriceElement = document.querySelector('.total-price h4');
+const totalSummaryElement = document.getElementById('total');
+const totalSummary = document.getElementById('total_2');
+
+const unitPrice = parseInt(unitPriceElement.innerText.replace(' &#8363', '').replace(/\./g, ''));
+
+function updateTotalPrice() {
+    const quantity = parseInt(quantityInput.value) || 0;
+    const totalPrice = unitPrice * quantity;
     
-        <div class="cart-summary">
-            <div class="product-total">
-                <h2>TỔNG TIỀN: <span id="total">50,000,000 &#8363</span></h2>
-            </div>
-            <div class="product-checkout">
-                <a href="#" class="checkout">THANH TOÁN</a>
-            </div>
-            <button class="remove">XÓA GIỎ HÀNG</button>
-        </div>
-    </div>    
+    totalPriceElement.innerHTML = totalPrice.toLocaleString('de-DE') + ' &#8363';
+    totalSummaryElement.innerHTML = totalPrice.toLocaleString('de-DE') + ' &#8363';
+    totalSummary.innerHTML = totalPrice.toLocaleString('de-DE') + ' &#8363';
+}
+
+quantityInput.addEventListener('input', updateTotalPrice);
+updateTotalPrice();
+    // Thay thế nội dung trong cart-container với thông báo "Không có sản phẩm nào trong giỏ hàng"
+const removeCartButton = document.querySelector('.cart-remove'); 
+const cartContainer = document.querySelector('.cart-part'); 
+removeCartButton.addEventListener('click', function() {
+    
+    cartContainer.innerHTML = '<h6 style="color: white;">Không có sản phẩm nào trong giỏ hàng!!!</h6>';
+    totalSummaryElement.innerHTML = '0'+'&#8363';
+    totalSummary.innerHTML =  '0'+'&#8363';
+});
+
+// Bảng thanh toán
+const checkoutButton = document.querySelector('.checkout');
+const paymentPopup = document.getElementById('payment-popup'); 
+const closePaymentButton = document.getElementById('close-payment'); 
+const paymentForm = document.getElementById('payment-form'); 
+const confirmPaymentButton = document.getElementById('confirm-payment'); 
+
+// Hiển thị popup khi nhấn vào nút "Thanh toán"
+checkoutButton.addEventListener('click', function() {
+    paymentPopup.style.display = 'flex'; // Hiển thị popup
+});
+
+// Đóng popup khi nhấn vào nút "Đóng"
+closePaymentButton.addEventListener('click', function() {
+    paymentPopup.style.display = 'none'; // Ẩn popup
+});
+
+// Kiểm tra và xử lý khi người dùng xác nhận thanh toán
+paymentForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Ngừng gửi form mặc định
+
+    // Lấy thông tin từ form
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const email = document.getElementById('email').value;
+    const address = document.getElementById('address').value;
+    const paymentMethod = document.getElementById('payment-method').value;
+    // Kiểm tra nếu tất cả thông tin đã được điền đầy đủ
+    if (name && phone && email && address && paymentMethod) {
+        alert('Thanh toán thành công! Cảm ơn bạn đã mua sắm!');
+        paymentPopup.style.display = 'none'; 
+        cartContainer.innerHTML = '<h6 style="color: white;">Không có sản phẩm nào trong giỏ hàng!!!</h6>';
+        totalSummaryElement.innerHTML = '0'+'&#8363';
+        totalSummary.innerHTML =  '0'+'&#8363';
+    } else {
+        alert('Vui lòng điền đầy đủ thông tin!');
+    }
+});
+</script>
  </main>
  <section style="background: #1d1d1d;">
     <div class="logo-container">
