@@ -14,3 +14,101 @@
     border: 2px solid #d80808;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.page-link {
+    color: #fff;
+    background-color: rgb(84, 20, 20);
+    border: none;
+}
+.page-link:hover {
+    color: rgb(150, 21, 21);
+    background-color: #fff;
+    border: 1px solid black;
+}
+.page-item.active .page-link {
+    background-color: rgb(169, 169, 182);
+    border: none;
+}
+.product-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+.product-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-info {
+    flex: 1;
+}
+.main-image img {
+    width: 300px;
+    max-width: 300px;
+    border-radius: 6px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border: 5px solid #d31c1c
+}
+.thumbnail {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.thumbnail img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid #cd1919;
+}
+.thumbnail img:hover {
+    border-color: #b11414;
+}
+.product-info {
+    text-align: left; 
+}
+/* chi tiết sản phẩm */
+.product-info h2,
+.product-info p,
+.product-info .description,
+.product-info ul,
+.product-info .d-flex {
+    text-align: left; 
+}
+
+.product-info h3 {
+    text-align: left; 
+    margin-bottom: 20px; 
+}
+
+.product-info .description strong {
+    font-weight: bold; /* Make the technical spec title bold */
+}
+
+.product-info .description ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-info .description li {
+    display: flex;
+    align-items: center; /* Align items in the list horizontally */
+    padding: 5px 0;
+}
+
+.product-info .description li strong {
+    width: 150px; 
+    margin-right: 10px; 
+}
+
+.d-flex {
+    justify-content: flex-start; /* Align buttons to the left */
+}
