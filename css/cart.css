@@ -1,0 +1,330 @@
+
+.container-cart {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    border: 2px solid red;
+}
+
+/* Cart container styles */
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    border-bottom: 2px solid red;
+   
+}
+
+.cart-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+    background: #9e2222;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.cart-part:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-img img {
+    width: 150px; /* Tăng kích thước hình ảnh */
+    height: auto;
+    border-radius: 8px;
+    margin: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-desc h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 15px;
+    flex-grow: 1;
+    font-weight: 500;
+}
+
+.cart-quantity input {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cart-price h4,
+.cart-total h4 {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.cart-remove button {
+    background-color: #f7f0f0;
+    color: #9e2222;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-remove button:hover {
+    background-color: #9e2222;
+    color: #fff;
+    border: 1px solid white;
+}
+
+/* Cart summary styles */
+.cart-summary {
+    text-align: right;
+    padding: 15px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.product-total h2 {
+    font-size: 22px;
+    color: #9e2222;
+    margin-bottom: 15px;
+}
+
+.product-total span {
+    color: #9e2222;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.product-checkout button {
+    display: inline-block;
+    background-color: #9e2222;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #9e2222;
+    transition: background-color 0.3s;
+}
+
+.product-checkout button:hover {
+    background-color: #ffffff;
+    color: #9e2222;
+}
+
+button.shopping {
+    background-color: #9e2222;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid #9e2222;
+}
+
+button.shopping:hover {
+    background-color: #ffffff;
+    color: #9e2222;
+    
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container-cart {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .cart-part {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cart-img img {
+        width: 120px; /* Điều chỉnh kích thước hình ảnh nhỏ hơn trên thiết bị di động */
+        margin-bottom: 10px;
+    }
+
+    .cart-desc h3,
+    .cart-price h4,
+    .cart-total h4 {
+        margin: 10px 0;
+    }
+
+    .cart-quantity input {
+        margin: 10px 0;
+    }
+
+    .product-checkout a,
+    button.remove {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* Thiết lập kiểu cho popup */
+.payment-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Nền mờ */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Cấu trúc chính của popup */
+/* Thiết lập kiểu cho popup */
+.payment-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Nền mờ */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Đảm bảo popup nổi bật trên các phần tử khác */
+}
+
+/* Cấu trúc chính của popup */
+.payment-popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Tiêu đề của popup */
+/* Thiết lập kiểu cho popup */
+#payment-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Nền mờ */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Cấu trúc chính của popup */
+.payment-popup-content {
+    background-color: #9e2222;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Tiêu đề của popup */
+.payment-popup-content h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+/* Các nhóm input trong form */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    
+}
+
+/* Nhãn của các input */
+.form-group label {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Các trường input */
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Nút xác nhận thanh toán */
+#confirm-payment {
+    background-color: #e2e91e;
+    color: #9e2222;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: solid #9e2222;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+#confirm-payment:hover {
+    background-color: #9e2222;
+    transform: scale(1.1);
+    border: solid #ffffff;
+    color: #fff;
+}
+
+/* Nút đóng popup */
+#close-payment {
+    background-color: #f9f6f6;
+    color: #9e2222;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#close-payment:hover {
+    background-color: #d32f2f;
+    color: #FFF;
+}
+
+/* Hiệu ứng mở popup */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.form-group h2{
+    color: #fff;
+}
+
+
+
