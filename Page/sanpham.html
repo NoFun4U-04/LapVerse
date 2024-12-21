@@ -13,7 +13,6 @@
     <!-- Thêm file CSs -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/lienhe/main.css">
     <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="/css/popup.css">
     <script href="/js/main.js"></script>
@@ -846,6 +845,8 @@ style="background-color:#9e2222; color: white; padding: 15px 0; font-family: 'Ro
     <script src="assets/framework/js/bootstrap.js.map"></script>
 </body>
 <script>
+  console.log('JavaScript file loaded successfully!');
+
   document.addEventListener("DOMContentLoaded", function () {
       const urlParams = new URLSearchParams(window.location.search);
       const currentPage = urlParams.get("page") || "1";
@@ -854,5 +855,75 @@ style="background-color:#9e2222; color: white; padding: 15px 0; font-family: 'Ro
           product.style.display = product.getAttribute("data-page") === currentPage ? "block" : "none";
       });
   });
+
+    // Lấy các phần tử nút "Thêm vào giỏ"
+document.querySelectorAll('.buy-now-btn[data-bs-target="#sanpham"]').forEach(button => {
+    button.addEventListener('click', function () {
+        // Lấy thông tin sản phẩm
+        const productCard = this.closest('.card');
+        const productName = productCard.querySelector('.fw-bold.mb-2').innerText;
+        const productSpecs = productCard.querySelector('.product-specs').innerText;
+        const productPrice = productCard.querySelector('.product-price.text-danger.fw-bold').innerText.trim().split(' ')[0];
+        const productImage = productCard.querySelector('.product-image').src;
+
+        // Tạo phần tử sản phẩm cho giỏ hàng
+        const cartContainer = document.querySelector('.cart-container');
+        const cartItemHTML = `
+            <div class="cart-part">
+                <div class="cart-img">
+                    <img src="${productImage}">
+                </div>
+                <div class="cart-desc">
+                    <h3>${productName}</h3>
+                    <p>${productSpecs}</p>
+                </div>
+                <div class="cart-quantity">
+                    <input type="number" id="quantity" min="0" value="1">
+                </div>
+                <div class="cart-price">
+                    <h4>${productPrice} &#8363</h4>
+                </div>
+                <div class="cart-total">
+                    <h4>${productPrice} &#8363</h4>
+                </div>
+                <div class="cart-remove">
+                    <button class="remove-item">Remove</button>
+                </div>
+            </div>
+        `;
+
+        // Thêm sản phẩm vào giỏ
+        cartContainer.insertAdjacentHTML('beforeend', cartItemHTML);
+
+        // Cập nhật tổng tiền
+        updateTotal();
+
+        // Thêm sự kiện "Xóa sản phẩm" cho nút Remove
+        document.querySelectorAll('.remove-item').forEach(removeButton => {
+            removeButton.addEventListener('click', function () {
+                this.closest('.cart-part').remove();
+                updateTotal();
+            });
+        });
+    });
+});
+
+// Cập nhật tổng tiền
+function updateTotal() {
+    let total = 0;
+    document.querySelectorAll('.cart-part').forEach(cartItem => {
+        const price = parseInt(cartItem.querySelector('.cart-price h4').innerText.replace(/[^0-9]/g, ''));
+        const quantity = parseInt(cartItem.querySelector('#quantity').value);
+        total += price * quantity;
+    });
+    document.getElementById('total').innerText = `${total.toLocaleString()} &#8363`;
+}
+
+// Xóa toàn bộ giỏ hàng
+document.querySelector('.remove').addEventListener('click', function () {
+    document.querySelector('.cart-container').innerHTML = '';
+    updateTotal();
+});
+
 </script>
 </html>
