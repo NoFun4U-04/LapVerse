@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LIÊN HỆ </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Nhapemail.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/assets/framework/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/framework/css/">
+    <link rel="stylesheet" href="/assets/framework/css/font-icon/bootstrap-icons.min.css">
+    <!-- Kết nối file CSS -->
+    <link rel="stylesheet" href="/css/lienhe.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script href="/js/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- Thanh thông báo chào mừng -->
+        <div class="navbar_1">
+            <nav>
+                <div class="container-md px-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Navbar chính -->
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
+            <div class="container">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="/images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
+                </a>
+                <!-- Thanh tìm kiếm -->
+                <form class="d-flex ms-3 search-form" action="#" method="get">
+                    <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..."
+                        aria-label="Search">
+                    <button
+                        class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn"
+                        type="submit">
+                        <i class="bi-search"></i>
+                    </button>
+                </form>
+
+                <!-- Các biểu tượng đăng nhập và giỏ hàng -->
+                <div class="d-flex justify-content-end align-items-center right-actions">
+                    <!-- Nút Đăng nhập -->
+                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                        <a href="/Page/dangnhap.html" class="d-flex align-items-center">
+                            <i class="bi bi-person-fill me-1"></i>
+                            <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
+                        </a>
+                    </button>
+                    <span class="text-white mx-2">hoặc</span>
+                    <!-- Nút Đăng ký -->
+                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                        <a href="/Page/dangky.html" class="d-flex align-items-center">
+                            <i class="bi bi-person-fill me-1"></i>
+                            <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
+                        </a>
+                    </button>
+                </div>
+        </nav>
+        <!-- MENU start here -->
+        <nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
+            <div class="container-md d-flex justify-content-between align-items-center">
+                <!-- Logo và Nút Toggle Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Danh sách menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav gap-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold active" href="/index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="/Page/Information.html">Giới thiệu</a>
+                        </li>
+                        <!-- Dropdown Sản phẩm -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fw-semibold dropdown-toggle" href="#" id="dropdownMenuButton"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Tất cả sản phẩm</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Gaming</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Văn phòng</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Sinh viên</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="/Page/tintuc.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="/Page/lienhe.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Nút Giỏ hàng -->
+                <div>
+                    <a href="/cart.html" class="btn btn-outline-dark d-flex align-items-center">
+                        <i class="bi bi-cart-fill me-1"></i>
+                        Giỏ hàng
+                        <span class="badge bg-dark text-white ms-2 rounded-pill">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!--Blog-->
+
+        <section id="myblog">
+            <div class="wrapper-blog">
+                <!--Trang chủ-Blog-->
+                <div class="container my-5">
+                    <nav aria-label="breadcrumb" style="font-size: 18px; font-weight: bolder;">
+                        <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
+                            <li class="breadcrumb-item"><a href="home.html" style="color: black;">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="blog.html" style="color: black;">Tin tức</a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+
+                            <div class="blogmain">
+                                <div class="d-flex align-items-center blogmain-background">
+                                    <div class="blogmain-text">
+                                        <h1 class="title" style="font-weight: 600;">LỢI ÍCH CỦA TRÀ THẢO MỘC <br> CHO
+                                            SỨC KHỎE</h1>
+                                        <h5 style="font-weight: 600;text-align: center">Khác với các trà thông thường
+                                            như trà xanh, trà ô long, trà đen,... đều có nguồn gốc từ cây chè thì trà
+                                            thảo mộc là một loại trà hoàn toàn khác. Vậy cụ thể trà thảo mộc là trà như
+                                            thế nào? Lợi ích của trà thảo mộc đối với sức khỏe như thế nào? Tất cả sẽ
+                                            được giải đáp ngay sau đây.</h5>
+
+                                        <div class="btl_blog">
+                                            <a class="btnl1" href="blogct2.html">Xem thêm</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!---->
+                            <div class="blogmenu">
+                                <div class="container">
+                                    <div class="row mt-5">
+                                        <!-- Bài 1 -->
+                                        <div class="col-sm-6 col-md-4" style="margin-bottom: 30px;">
+                                            <div class="card h-100">
+                                                <img src="https://file.hstatic.net/1000075078/file/1_1a250d25a8854d07867644995534a34e_grande.jpg"
+                                                    width="100%" height="154px">
+                                                <div class="card-body">
+                                                    <a href="blogct1.html" class="card-link">5 LOẠI TRÀ THẢO MỘC TỐT
+                                                        CHO<br> PHÁI ĐẸP</a><br>
+                                                    <p> Sản phẩm từ tự nhiên thường xuyên được nhắc đến và ưu tiên sử
+                                                        dụng</p>
+                                                    <div class="text-center">
+                                                        <button><a href="blogct1.html"
+                                                                style="color: rgb(12, 143, 31); text-decoration: none;">Xem
+                                                                thêm</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Bài 2 -->
+                                        <div class="col-sm-6 col-md-4" style="margin-bottom: 30px;">
+                                            <div class="card h-100">
+                                                <img src="assets/images/cuctrangkitu.jpg"
+                                                    style="width: 100%; height: 154px; object-fit: cover;">
+                                                <div class="card-body">
+                                                    <a href="blogct1.html" class="card-link">TRÀ THẢO MỘC CHỐNG LÃO
+                                                        HÓA</a><br>
+                                                    <p style="    margin-top: 25px;">Trà thảo mộc có thể mang lại nhiều
+                                                        ích lợi cho sức khỏe, trong đó một số [...]</p>
+                                                    <div class="text-center">
+                                                        <button><a href="blogct1.html"
+                                                                style="color: rgb(12, 143, 31); text-decoration: none;">Xem
+                                                                thêm</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Bài 3 -->
+                                        <div class="col-sm-6 col-md-4" style="margin-bottom: 30px;">
+                                            <div class="card h-100">
+                                                <img src="assets/images/gaolutdauden.png"
+                                                    style="width: 100%; height: 154px; object-fit: cover;">
+                                                <div class="card-body">
+                                                    <a href="blogct1.html" class="card-link">NÊN UỐNG TRÀ KHI NÀO THÌ
+                                                        TỐT?</a><br>
+                                                    <p style="margin-top: 25px;">Trà thảo mộc còn có nhiều các tác dụng
+                                                        tốt cho sức khỏe nếu như bạn [...]</p>
+                                                    <div class="text-center">
+                                                        <button><a href="blogct1.html"
+                                                                style="color: rgb(12, 143, 31); text-decoration: none;">Xem
+                                                                thêm</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Bài 4 -->
+                                        <div class="col-sm-6 col-md-4" style="margin-bottom: 30px;">
+                                            <div class="card h-100">
+                                                <img src="assets/images/sambidao2.png"
+                                                    style="width: 100%; height: 154px; object-fit: cover;">
+                                                <div class="card-body">
+                                                    <a href="blogct1.html" class="card-link">LỢI ÍCH CỦA TRÀ BÍ ĐAO CHO
+                                                        SỨC KHỎE</a><br>
+                                                    <p style="margin-bottom: 40px;">Trà bí đao nổi tiếng với công dụng
+                                                        giúp thanh nhiệt, giải độc, tốt cho sức khỏe.</p>
+                                                    <div class="text-center">
+                                                        <button><a href="blogct1.html"
+                                                                style="color: rgb(12, 143, 31); text-decoration: none;">Xem
+                                                                thêm</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Bài 5 -->
+                                        <div class="col-sm-6 col-md-4" style="margin-bottom: 30px;">
+                                            <div class="card h-100">
+                                                <img src="assets/images/mocsinhhuyet.png"
+                                                    style="width: 100%; height: 154px; object-fit: cover;">
+                                                <div class="card-body">
+                                                    <a href="blogct1.html" class="card-link">NHỮNG LOẠI TRÀ <br> CHO BÀ
+                                                        BẦU NÊN DÙNG</a><br>
+                                                    <p>Nắm được loại trà nên hoặc không nên uống để tránh gây ảnh hưởng
+                                                        đến thai nhi [...]</p>
+                                                    <div class="text-center">
+                                                        <button><a href="blogct1.html"
+                                                                style="color: rgb(12, 143, 31); text-decoration: none;">Xem
+                                                                thêm</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Bài 6 -->
+                                        <div class="col-sm-6 col-md-4" style="margin-bottom: 30px;">
+                                            <div class="card mb-5 h-100">
+                                                <img src="assets/images/tramoclien.png"
+                                                    style="width: 100%; height: 154px; object-fit: cover;">
+                                                <div class="card-body">
+                                                    <a href="blogct1.html" class="card-link">DÙNG TRÀ THẢO <br> MỘC, HÃY
+                                                        THẬN TRỌNG!</a><br>
+                                                    <p style="margin-bottom: 40px;">Mỗi loại "trà thảo mộc" lại có những
+                                                        công dụng khác nhau [...]</p>
+                                                    <div class="text-center">
+                                                        <button><a href="blogct1.html"
+                                                                style="color: rgb(12, 143, 31); text-decoration: none;">Xem
+                                                                thêm</a></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!---->
+                        <div class="col-md-4">
+                            <h3 style="color: #00642091;font-weight: 600;">Tin tức cho bạn</h3>
+                            <div class="small-news">
+                                <div class="left">
+                                    <img src="https://file.hstatic.net/1000075078/file/1_1a250d25a8854d07867644995534a34e_grande.jpg"
+                                        style="width: 125px; height: 80px; object-fit: cover;">
+                                </div>
+                                <div class="right">
+                                    <a href="blogct1.html">5 loại trà thảo mộc tốt cho phái đẹp</a>
+                                    <p> Vừa xong </p>
+                                </div>
+                            </div>
+                            <hr style="background-color: #00642091; height: 0.75px; width: 100%">
+                            <div class="small-news">
+                                <div class="left">
+                                    <img src="assets/images/cuctrangkitu.jpg"
+                                        style="width: 125px; height: 80px; object-fit: cover;">
+                                </div>
+                                <div class="right">
+                                    <a href="blogct1.html">Thảo mộc chống lão hóa</a>
+                                    <p> 5 ngày </p>
+                                </div>
+                            </div>
+
+                            <hr style="background-color: #00642091; height: 0.75px; width: 100%">
+                            <!---->
+                            <div class="small-news">
+                                <div class="left">
+                                    <img src="assets/images/gaolutdauden.png"
+                                        style="width: 125px; height: 80px; object-fit: cover;">
+                                </div>
+                                <div class="right">
+                                    <a href="blogct1.html">Nên uống trà khi nào thì tốt cho sức khỏe?</a>
+                                    <p> 8 ngày </p>
+                                </div>
+                            </div>
+                            <hr style="background-color: #00642091; height: 0.75px; width: 100%">
+                            <!---->
+                            <div class="small-news">
+                                <div class="left">
+                                    <img src="assets/images/sambidao2.png"
+                                        style="width: 125px; height: 80px; object-fit: cover;">
+                                </div>
+                                <div class="right">
+                                    <a href="blogct1.html">Lợi ích của trà sâm bí đao cho sức khỏe</a>
+                                    <p> 10 ngày </p>
+                                </div>
+                            </div>
+                            <hr style="background-color: #00642091; height: 0.75px; width: 100%">
+                            <!---->
+                            <div class="small-news">
+                                <div class="left">
+                                    <img src="assets/images/mocsinhhuyet.png"
+                                        style="width: 125px; height: 80px; object-fit: cover;">
+                                </div>
+                                <div class="right">
+                                    <a href="blogct1.html">Những loại trà cho bà bầu nên dùng</a>
+                                    <p> 12 ngày </p>
+                                </div>
+                            </div>
+                            <hr style="background-color: #4F6F7D;; height: 0.75px; width: 100%">
+
+                            <!---->
+                            <div class="small-news">
+                                <div class="left">
+                                    <img src="assets/images/tramoclien.png"
+                                        style="width: 125px; height: 80px; object-fit: cover;">
+                                </div>
+                                <div class="right">
+                                    <a href="blogct1.html">Dùng trà thảo mộc, hãy thận trọng!</a>
+                                    <p> 14 ngày </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Ưu đãi tháng mới-->
+                        <h2 style="color: #00642091; font-weight: 900; text-align: center;width:100%;"> THÔNG TIN QUÀ
+                            THÁNG 06</h2>
+
+                        <div class="slider-blog">
+                            <div class="slides">
+                                <div class="slide-blog">
+                                    <img src="assets/images/uudai1.png" alt="Slide 1">
+                                </div>
+                                <div class="slide-blog">
+                                    <img src="assets/images/uudai2.png" alt="Slide 2">
+                                </div>
+                                <div class="slide-blog">
+                                    <img src="assets/images/uudai3.png" alt="Slide 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Đoạn script này cần được thêm trước thẻ đóng để đảm bảo DOM đã tải hoàn toàn -->
+                    <script>
+                        // Chờ cho DOM tải hoàn toàn
+                        document.addEventListener("DOMContentLoaded", function () {
+                            // Đợi một giây trước khi bắt đầu chuyển slide
+                            setTimeout(function () {
+                                autoSlide();
+                            }, 1000);
+                        });
+
+                        function autoSlide() {
+                            let slides = document.querySelectorAll('.slide-blog');
+                            let currentSlide = 0;
+                            let slideInterval = setInterval(nextSlide, 8000); // Thay đổi slide mỗi 3 giây
+
+                            function nextSlide() {
+                                slides[currentSlide].style.display = 'none'; // Ẩn slide hiện tại
+                                currentSlide = (currentSlide + 1) % slides.length; // Đi đến slide tiếp theo
+                                slides[currentSlide].style.display = 'block'; // Hiển thị slide tiếp theo
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+</body>
+
+<hr>
+<footer class="bg text-dark pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>CỬA HÀNG LAPVERSE</h5>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-geo-alt-fill"></i> Số 167 Hoàng Văn Thái, Phường Khương Trung, Quận Thanh
+                        Xuân,
+                        Hà Nội
+                    </li>
+                    <li><i class="bi bi-telephone-fill"></i> 0859125686</li>
+                    <li><i class="bi bi-envelope-fill"></i> lapverse0611@gmail.com</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61568214846575" class="bi bi-facebook"></a>
+                    <a href="mailto:lapverse0611@gmail.com" class="bi bi-envelope"></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+                <ul class="list-unstyled">
+                    <li> <a href="/Page/huongdanmuahang.html">Hướng dẫn mua hàng trực tuyến</a></li>
+                    <li> <a href="/Page/huongdanthanhtoan.html">Hướng dẫn thanh toán</a> </li>
+                    <li> <a href="/Page/gopykhieunai.html">Góp ý, Khiếu Nại</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>CHÍNH SÁCH CỬA HÀNG</h5>
+                <ul class="list-unstyled">
+                    <li> <a href="/Page/chinhsachbaohanh.html">Chính sách bảo hành</a></li>
+                    <li> <a href="/Page/chinhsachbaomat.html">Chính sách bảo mật</a></li>
+                    <li> <a href="/Page/chinhsachchatluong.html">Chính sách chất lượng</a></li>
+                    <li> <a href="/Page/chinhsachdoitravahoantien.html">Chính sách đổi trả và hoàn tiền</a></li>
+                    <li> <a href="/Page/chinhsachvanchuyen.html">Chính sách vận chuyển</a></li>
+                    <li> <a href="/Page/chinhsachvesinhlaptop.html">Chính sách vệ sinh laptop</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="col-inner iframe-facebook">
+                    <div class="row row-small" id="row-298520120">
+                        <div id="col-884698408" class="col small-12 large-12">
+                            <div class="col-inner">
+
+                                <iframe
+                                    src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/profile.php?id=61568214846575&amp;tabs=cover&amp;width=340&amp;height=300&amp;small_header=false&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=false&amp;appId=1259082827813860"
+                                    frameborder="0" class="iframe-footer" scrolling="no"
+                                    allow="autoplay; encrypted-media; picture-in-picture; web-share">
+                                </iframe>
+
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.456324711869!2d105.82304731488365!3d20.99721725750485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac88b99e4dbd%3A0x689b9adf640c2ba0!2zMTY3IFAuIEjhu41uZyBWxINuIFRo4bqjLCBLxaluZyBUcnVuZywgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1svi!2s!4v1718559022737!5m2!1svi!2s"
+                                    width="340" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                    class="iframe-footer" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </p>
+    </div>
+    <hr>
+    <div class="footer-finnal">
+        <div class="copyright-footer">
+            Copyright 2024 © <strong>Allrights reserved CuahangLapVerse</strong>
+        </div>
+    </div>
+</footer>
+
+</html>
