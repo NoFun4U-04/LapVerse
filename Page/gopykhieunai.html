@@ -3,23 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHÍNH SÁCH VẬN CHUYỂN</title>
-    <!-- Bootstrap  -->
+    <title> GÓP Ý, KHIẾU NẠI </title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/assets/framework/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/framework/css/">
     <link rel="stylesheet" href="/assets/framework/css/font-icon/bootstrap-icons.min.css">
-
-    <!-- Thêm file CSs -->
-    <link rel="stylesheet" href="/css/main.css">
+    <!-- Kết nối file CSS -->
+    <link rel="stylesheet" href="/css/lienhe.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/lienhe/main.css">
-    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/chinhsach.css">
-    <script href="/js/main.js"></script>
 </head>
 
 <body>
+
     <header>
         <!-- Thanh thông báo chào mừng -->
         <div class="navbar_1">
@@ -51,7 +53,7 @@
                 </form>
 
                 <!-- Các biểu tượng đăng nhập và giỏ hàng -->
-                <div class="d-flex justify-content-end align-items-cnter right-actions">
+                <div class="d-flex justify-content-end align-items-center right-actions">
                     <!-- Nút Đăng nhập -->
                     <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
                         <a href="/Page/dangnhap.html" class="d-flex align-items-center">
@@ -84,7 +86,7 @@
                             <a class="nav-link fw-semibold active" href="/index.html">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-semibold" href="./Page/Information.html">Giới thiệu</a>
+                            <a class="nav-link fw-semibold" href="/introduction.html">Giới thiệu</a>
                         </li>
                         <!-- Dropdown Sản phẩm -->
                         <li class="nav-item dropdown">
@@ -100,7 +102,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-semibold" href="./authors.html">Tin tức</a>
+                            <a class="nav-link fw-semibold" href="/Page/tintuc.html">Tin tức</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-semibold" href="/Page/lienhe.html">Liên hệ</a>
@@ -110,7 +112,7 @@
 
                 <!-- Nút Giỏ hàng -->
                 <div>
-                    <a href="./cart.html" class="btn btn-outline-dark d-flex align-items-center">
+                    <a href="/cart.html" class="btn btn-outline-dark d-flex align-items-center">
                         <i class="bi bi-cart-fill me-1"></i>
                         Giỏ hàng
                         <span class="badge bg-dark text-white ms-2 rounded-pill">0</span>
@@ -121,43 +123,52 @@
     </header>
     <main>
         <div class="content-container">
-            <h1 class="title">CHÍNH SÁCH VẬN CHUYỂN </h1>
-            <h4 class="title">Miễn phí vận chuyển</h4>
-            <li>Những đơn hàng có khoảng cách nằm trong nội thành Hà Nội (cách cửa hàng với bán kính khoảng 40 km).</li>
-            <li>Những đơn hàng có tổng giá trị từ 100 triệu Việt Nam đồng, LapVerse sẽ miễn phí vận chuyển mọi miền tổ
-                quốc.</li>
-            <h4 class="title">Tính phí vận chuyển</h4>
-            <li>Những đơn hàng không nằm trong diện miễn phí vận chuyển,
-                sau khi khách đặt hàng LapVerse sẽ thông báo tới khách hàng phí vận chuyển chi tiết tới tay khách hàng
-            </li>
-            <li>LapVerse sẽ luôn chọn những đơn vị vận chuyển uy tín, tốc
-                độ nhanh nhất với mức giá dễ chịu để khách hàng dễ dàng trải nhiệm sản phẩm của LapVerse.</li>
-            <li>Nếu dịch vụ vận chuyển do LapVerse chỉ định, chúng tôi sẽ
-                chịu trách nhiệm với hàng hóa và các rủi ro như mất mát hoặc hư hại của hàng hóa trong suốt quá trình
-                vận chuyển hàng từ LapVerse đến Quý khách.</li>
-            <li>Quý khách có trách nhiệm kiểm tra hàng hóa khi nhận hàng.
-            </li>
-            <li>Khi phát hiện hàng hóa bị hư hại, trầy xước, bể vỡ, móp
-                méo, hoặc sai hàng hóa thì ký xác nhận tình trạng hàng hóa với nhân viên giao nhận và thông báo ngay cho
-                bộ phận chăm sóc khách hàng: 0859 125 686.</li>
-            <li>Sau khi Quý khách đã ký nhận hàng mà không ghi chú hoặc
-                có ý kiến về hàng hóa. LapVerse không có trách nhiệm với những yêu cầu đổi trả vì hư hỏng, trầy xước, bể
-                vỡ, móp méo, sai hàng hóa,… từ Quý khách sau này.</li>
-            <li>Nếu dịch vụ vận chuyển do Quý khách chỉ định và lựa chọn
-                thì Quý khách sẽ chịu trách nhiệm với hàng hóa và các rủi ro như mất mát hoặc hư hại của hàng hóa trong
-                suốt quá trình vận chuyển hàng từ LapVerse đến Quý khách. Khách hàng sẽ chịu trách nhiệm cước phí và tổn
-                thất liên quan.</li>
-            <li>Để bảo vệ quyền lợi khi mua sắm trực tuyến, tránh các thủ
-                đoạn lừa đảo không mong muốn LapVerse khuyến cáo khách hàng chỉ thanh toán mua hàng trên Website, các
-                kênh
-                online và cửa hàng chính thống của LapVerse</li>
+            <h1 class="title"> TRUNG TÂM GÓP Ý - KHIẾU NẠI </h1>
+
+            <p>
+                Tại cửa hàng LapVerse, chúng tôi luôn đặt khách hàng làm trung tâm của mọi hoạt động kinh doanh. Chúng
+                tôi
+                đánh giá cao mọi ý kiến đóng góp từ quý khách hàng, bởi vì đó không chỉ là cơ hội để chúng tôi cải thiện
+                mỗi ngày mà còn là cơ hội để chúng tôi tạo ra trải nghiệm mua sắm tốt nhất cho bạn.
+            </p>
+
+            <p>
+                Nếu bạn có bất kỳ hài lòng nào, chúng tôi khuyến khích bạn chia sẻ niềm vui đó với cộng đồng xung quanh.
+                Tuy nhiên, nếu có bất kỳ điều gì không đạt yêu cầu của bạn, hãy vui lòng chia sẻ với chúng tôi. Chúng
+                tôi cam kết lắng nghe và đáp ứng mọi ý kiến đóng góp và khiếu nại của quý khách một cách nhanh chóng và
+                hiệu quả nhất.
+            </p>
+
+            <p>
+                Quý khách hàng có thể gửi ý kiến, góp ý, hoặc khiếu nại theo các cách sau:
+            </p>
+
+            <ol>
+                <li>
+                    <strong>Gọi điện thoại đến hotline: </strong><a href="tel:0859125686">0859125686</a> - Chúng tôi
+                    luôn sẵn lòng lắng nghe và giải
+                    đáp mọi thắc mắc của bạn.
+                </li>
+                <li>
+                    <strong>Gửi Email về địa chỉ:</strong> <a
+                        href="mailto:lapverse0611@gmail.com">lapverse0611@gmail.com</a>
+                    - Hộp thư này sẽ được kiểm tra thường xuyên để đảm bảo không bỏ sót bất kỳ yêu cầu nào.
+                </li>
+                <li>
+                    <strong>Gửi tin nhắn tới Fanpage:</strong> <a
+                        href="https://www.facebook.com/profile.php?id=61568214846575" target="_blank"> LapVerse </a> -
+                    Chúng tôi sẽ liên hệ và xử lý thông tin của bạn một cách nhanh chóng.
+                </li>
+            </ol>
+
+            <p>
+                Chúng tôi chân thành cảm ơn sự tin tưởng và ủng hộ từ quý khách hàng. Hãy cùng LapVerse xây dựng một
+                không
+                gian mua sắm và phục vụ ngày một hoàn hảo hơn!
             </p>
         </div>
     </main>
 
-    <!-- Link đến Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/lienhe.js"></script>
 </body>
 
 <hr>
