@@ -396,7 +396,6 @@ input:-webkit-autofill {
     border-color: #ffffff;
 }
 
-/* Section styling */
 /* Thiết kế grid cho sản phẩm */
 #sanphamnoibat .container {
     max-width: 1200px; 
@@ -406,8 +405,7 @@ input:-webkit-autofill {
     border-radius: 8px;
 }
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
     gap: 20px;
     
 }
