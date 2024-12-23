@@ -116,6 +116,14 @@
 .indam{
     font-weight: bold;
 }
+/*HEAD */
+.product .card:hover {
+    transform: scale(1.1); 
+  }
+.product .card {
+    transition: transform 0.3s ease; 
+  }
+
 /* Style for the Modal */
 .modal {
     display: none;
@@ -160,3 +168,4 @@
 .close-btn:hover {
     background-color: #c82333;
 }
+ /*bade20d559e3988d43417c7a3929433be6a8b949 */
