@@ -5,7 +5,7 @@
 }
 #sanphambanchay .product-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 3 columns for a row */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 1em;
     padding-bottom: 1em;
 }
@@ -122,8 +122,8 @@
   }
 .product .card {
     transition: transform 0.3s ease; 
-  }
-
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /
+}
 /* Style for the Modal */
 .modal {
     display: none;

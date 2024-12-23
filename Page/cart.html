@@ -18,291 +18,291 @@
     <link rel="stylesheet" href="../css/popup.css">
     <link rel="stylesheet" href="../css/cart.css">
     <script src="../js/main.js"></script>
+    <script src="/js/cart.js"></script>
 
 </head>
 
 <body>
-    <header>
-
-        <!-- Thanh thông báo chào mừng -->
-        <div class="navbar_1">
-            <nav>
-                <div class="container-md px-4">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a>
-                    </div>
-                </div>
-            </nav>
+<header>
+<!-- Thanh thông báo chào mừng -->
+<div class="navbar_1">
+<nav>
+    <div class="container-md px-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a>
         </div>
+    </div>
+</nav>
+</div>
 
-        <!-- Navbar chính -->
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
-            <div class="container">
-                <!-- Logo -->
-                <a href="index.html" class="navbar-brand">
-                    <img src="/images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
+<!-- Navbar chính -->
+<nav class="navbar navbar-expand-md navbar-light shadow-sm">
+<div class="container">
+    <!-- Logo -->
+    <a href="/index.html" class="navbar-brand">
+        <img src="/images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
+    </a>
+    <!-- Thanh tìm kiếm -->
+    <form class="d-flex ms-3 search-form" action="#" method="get">
+        <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..."
+            aria-label="Search">
+        <button
+            class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn"
+            type="submit">
+            <i class="bi-search"></i>
+        </button>
+    </form>
+
+    <!-- Các biểu tượng đăng nhập và giỏ hàng -->
+    <div class="d-flex justify-content-end align-items-center right-actions">
+        <!-- Nút Đăng nhập -->
+        <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+            <a href="/Page/dangnhap.html" class="d-flex align-items-center">
+                <i class="bi bi-person-fill me-1"></i>
+                <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
+            </a>
+        </button>
+        <span class="text-white mx-2">hoặc</span>
+        <!-- Nút Đăng ký -->
+        <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+            <a href="/Page/dangky.html" class="d-flex align-items-center">
+                <i class="bi bi-person-fill me-1"></i>
+                <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
+            </a>
+        </button>
+    </div>
+</nav>
+<!-- MENU start here -->
+<nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
+<div class="container-md d-flex justify-content-between align-items-center">
+    <!-- Logo và Nút Toggle Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Danh sách menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav gap-lg-4">
+            <li class="nav-item">
+                <a class="nav-link fw-semibold active" href="/index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fw-semibold" href="/Page/Information.html">Giới thiệu</a>
+            </li>
+            <!-- Dropdown Sản phẩm -->
+            <li class="nav-item dropdown">
+                <a class="nav-link fw-semibold dropdown-toggle" href="/Page/sanpham.html" id="dropdownMenuButton"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sản phẩm
                 </a>
-                <!-- Thanh tìm kiếm -->
-                <form class="d-flex ms-3 search-form" action="#" method="get">
-                    <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..."
-                        aria-label="Search">
-                    <button
-                        class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn"
-                        type="submit">
-                        <i class="bi-search"></i>
-                    </button>
-                </form>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="/Page/sanpham.html">Tất cả sản phẩm</a></li>
+                    <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Gaming</a></li>
+                    <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Văn phòng</a></li>
+                    <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Sinh viên</a></li>
+                    <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Doanh nhân</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fw-semibold" href="/Page/tintuc.html">Tin tức</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fw-semibold" href="/Page/lienhe.html">Liên hệ</a>
+            </li>
+        </ul>
+    </div>
 
-                <!-- Các biểu tượng đăng nhập và giỏ hàng -->
-                <div class="d-flex justify-content-end align-items-center right-actions">
-                    <!-- Nút Đăng nhập -->
-                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
-                        <a href="/Page/dangnhap.html" class="d-flex align-items-center">
-                            <i class="bi bi-person-fill me-1"></i>
-                            <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
-                        </a>
-                    </button>
-                    <span class="text-white mx-2">hoặc</span>
-                    <!-- Nút Đăng ký -->
-                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
-                        <a href="/Page/dangky.html" class="d-flex align-items-center">
-                            <i class="bi bi-person-fill me-1"></i>
-                            <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
-                        </a>
-                    </button>
-                </div>
-        </nav>
-        <!-- MENU start here -->
-        <nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
-            <div class="container-md d-flex justify-content-between align-items-center">
-                <!-- Logo và Nút Toggle Mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Danh sách menu -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav gap-lg-4">
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold active" href="/index.html">Trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold" href="/Page/Information.html">Giới thiệu</a>
-                        </li>
-                        <!-- Dropdown Sản phẩm -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link fw-semibold dropdown-toggle" href="#" id="dropdownMenuButton"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Sản phẩm
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="#">Tất cả sản phẩm</a></li>
-                                <li><a class="dropdown-item" href="#">Laptop Gaming</a></li>
-                                <li><a class="dropdown-item" href="#">Laptop Văn phòng</a></li>
-                                <li><a class="dropdown-item" href="#">Laptop Sinh viên</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold" href="/Page/tintuc.html">Tin tức</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold" href="/Page/lienhe.html">Liên hệ</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Nút Giỏ hàng -->
-                <div>
-                    <a href="./cart.html" class="btn btn-outline-dark d-flex align-items-center">
-                        <i class="bi bi-cart-fill me-1"></i>
-                        Giỏ hàng
-                        <span class="badge bg-dark text-white ms-2 rounded-pill">0</span>
-                    </a>
-                </div>
+    <!-- Nút Giỏ hàng -->
+    <div>
+        <a href="/Page/cart.html" class="btn btn-outline-dark d-flex align-items-center">
+            <i class="bi bi-cart-fill me-1"></i>
+            Giỏ hàng
+        </a>
+    </div>
+</div>
+</nav>
+</header>
+<main>
+<div class="container-cart">
+    <div class="cart-container">
+        <div class="cart-part">
+            <div class="cart-img">
+                <img src="/images/product/sanpham/Apple MacBook Air M1 256GB 2020.jpg">
             </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container-cart">
-            <div class="cart-container">
-                <div class="cart-part">
-                    <div class="cart-img">
-                        <img src="/images/product/sanpham/Apple MacBook Air M1 256GB 2020.jpg">
-                    </div>
-                    <div class="cart-desc">
-                        <h3>Apple MacBook Air M1 256GB 2020</h3>
-                    </div>
-                    <div class="cart-quantity">
-                        <input type="number" id="quantity" min="0" value="1">
-                    </div>
-                    <div class="cart-price unit-price">
-                        <h4>20.000.000 &#8363</h4>
-                    </div>
-                    <div class="cart-total total-price">
-                        <h4>20 000 000 &#8363</h4>
-                    </div>
-                    <div class="cart-remove">
-                        <button>Remove</button>
-                    </div>
-                </div>
+            <div class="cart-desc">
+                <h3>Apple MacBook Air M1 256GB 2020</h3>
+            </div>
+            <div class="cart-quantity">
+                <input type="number" id="quantity" min="0" value="1">
+            </div>
+            <div class="cart-price unit-price">
+                <h4>20.000.000 &#8363</h4>
+            </div>
+            <div class="cart-total total-price">
+                <h4>20 000 000 &#8363</h4>
+            </div>
+            <div class="cart-remove">
+                <button>Remove</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-summary">
+        <div class="product-total">
+            <h2>TỔNG TIỀN: <span id="total"></span></h2>
+        </div>
+        <div class="product-checkout">
+            <button class="checkout">ĐẶT HÀNG</button>
+        </div>
+        <a href="/Page/sanpham.html">
+            <button class="shopping">TIẾP TỤC MUA SẮM</button></a>
+    </div>
+</div>
+<!-- thanh toan -->
+<div id="payment-popup" style="display:none;">
+    <div class="payment-popup-content">
+        <h3>THÔNG TIN ĐẶT HÀNG</h3>
+
+        <!-- Form thanh toán -->
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="name">Họ và Tên:</label>
+                <input type="text" id="name" required placeholder="Nhập họ và tên">
             </div>
 
-            <div class="cart-summary">
+            <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" required placeholder="Nhập số điện thoại">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="Nhập email">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Địa chỉ:</label>
+                <input type="text" id="address" required placeholder="Nhập địa chỉ">
+            </div>
+
+            <div class="form-group">
+                <label for="payment-method">Phương thức thanh toán:</label>
+                <select id="payment-method" required>
+                    <option value="">Chọn phương thức thanh toán</option>
+                    <option value="bank-transfer">Chuyển khoản ngân hàng</option>
+                    <option value="cash">Tiền mặt</option>
+                </select>
+            </div>
+
+            <div class="form-group">
                 <div class="product-total">
-                    <h2>TỔNG TIỀN: <span id="total"></span></h2>
-                </div>
-                <div class="product-checkout">
-                    <button class="checkout">ĐẶT HÀNG</button>
-                </div>
-                <a href="/Page/sanpham.html">
-                    <button class="shopping">TIẾP TỤC MUA SẮM</button></a>
-            </div>
-        </div>
-        <!-- thanh toan -->
-        <div id="payment-popup" style="display:none;">
-            <div class="payment-popup-content">
-                <h3>THÔNG TIN ĐẶT HÀNG</h3>
-
-                <!-- Form thanh toán -->
-                <form id="payment-form">
-                    <div class="form-group">
-                        <label for="name">Họ và Tên:</label>
-                        <input type="text" id="name" required placeholder="Nhập họ và tên">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Số điện thoại:</label>
-                        <input type="tel" id="phone" required placeholder="Nhập số điện thoại">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" required placeholder="Nhập email">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="address">Địa chỉ:</label>
-                        <input type="text" id="address" required placeholder="Nhập địa chỉ">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="payment-method">Phương thức thanh toán:</label>
-                        <select id="payment-method" required>
-                            <option value="">Chọn phương thức thanh toán</option>
-                            <option value="bank-transfer">Chuyển khoản ngân hàng</option>
-                            <option value="cash">Tiền mặt</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="product-total">
-                            <h2>TỔNG TIỀN: <span id="total_2" style="color:#fff;"></span></h2>
-                        </div>
-                    </div>
-                    <button type="submit" id="confirm-payment">XÁC NHẬN ĐẶT HÀNG</button>
-                </form>
-
-                <!-- Nút đóng popup -->
-                <button id="close-payment">ĐÓNG</button>
-            </div>
-        </div>
-
-        </div>
-
-
-    </main>
-    <section style="background: #1d1d1d;">
-        <div class="logo-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Lenovo_logo_2015.svg" alt="Lenovo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Acer_Logo.svg" alt="Acer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/MSI_gaming_logo_2019.svg" alt="MSI">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HP_logo_2012.svg" alt="HP">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Dell_Logo.svg" alt="Dell">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Apple_logo_black.svg" alt="Apple">
-        </div>
-        <div class="form-container">
-            <h3>Đăng ký nhận tin</h3>
-            <form id="subscribeForm">
-                <input type="email" id="email" placeholder="Email nhận tin" required>
-                <button type="submit"><i>✉️</i> Đăng Ký</button>
-            </form>
-            <div id="successMessage" style="display:none; color: #ff4c4c; margin-top: 10px;">
-                Đăng ký thành công!
-            </div>
-        </div>
-
-        <script>
-            document.getElementById('subscribeForm').addEventListener('submit', function (event) {
-                event.preventDefault();
-                var email = document.getElementById('email').value;
-                if (email) {
-                    document.getElementById('successMessage').style.display = 'block';
-                    setTimeout(function () {
-                        document.getElementById('successMessage').style.display = 'none';
-                    }, 5000);
-                    document.getElementById('email').value = '';
-                }
-            });
-        </script>
-    </section>
-    <!-- TIN TỨC CÔNG NGHỆ MỚI -->
-    <section id="tintuccongnghe" class="mb-2">
-        <div class="container_news">
-            <h2 class="text-center mb-4" style="color: #9e2222; padding-top: 1em; animation: blinkingText 1s infinite;">
-                <i class="bi bi-broadcast"> </i>TIN TỨC CÔNG NGHỆ MỚI
-            </h2>
-            <div class="row news-grid">
-                <!-- Bài báo 1 -->
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card news-card h-100">
-                        <a href="#">
-                            <img src="/images/news/bao1a.jpg" class="card-img-top" alt="AMD Ryzen 7 9800X3D">
-                            <div class="card-body">
-                                <h5 class="card-title">AMD Ryzen 7 9800X3D cháy hàng tại nhiều nơi trên thế giới</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- Bài báo 2 -->
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card news-card h-100">
-                        <a href="#">
-                            <img src="/images/news/bao2a.jpg" class="card-img-top" alt="Dell Inspiron 7445">
-                            <div class="card-body">
-                                <h5 class="card-title">Dell Inspiron 7445 2-in-1 - Sự lựa chọn toàn diện</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- Bài báo 3 -->
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card news-card h-100">
-                        <a href="#">
-                            <img src="/images/news/bao3a.jpg" class="card-img-top" alt="Intel Core Ultra Series">
-                            <div class="card-body">
-                                <h5 class="card-title">Intel ra mắt Core Ultra Series 2 tại Việt Nam</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- Bài báo 4 -->
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card news-card h-100">
-                        <a href="#">
-                            <img src="/images/news/bao4a.jpg" class="card-img-top" alt="Laptop Gaming Lenovo">
-                            <div class="card-body">
-                                <h5 class="card-title">TOP 3 Laptop Gaming Lenovo được chọn nhiều nhất 2024</h5>
-                            </div>
-                        </a>
-                    </div>
+                    <h2>TỔNG TIỀN: <span id="total_2" style="color:#fff;"></span></h2>
                 </div>
             </div>
-    </section>
-    <!-- Bootstrap JS và Popper.js -->
-    <script src="assets/framework/popper.min.js"></script>
-    <script src="assets/framework/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/framework/js/bootstrap.js.map"></script>
-    <hr>
+            <button type="submit" id="confirm-payment">XÁC NHẬN ĐẶT HÀNG</button>
+        </form>
+
+        <!-- Nút đóng popup -->
+        <button id="close-payment">ĐÓNG</button>
+    </div>
+</div>
+
+</div>
+
+
+</main>
+<section style="background: #1d1d1d;">
+<div class="logo-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Lenovo_logo_2015.svg" alt="Lenovo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Acer_Logo.svg" alt="Acer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/MSI_gaming_logo_2019.svg" alt="MSI">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HP_logo_2012.svg" alt="HP">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Dell_Logo.svg" alt="Dell">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Apple_logo_black.svg" alt="Apple">
+</div>
+<div class="form-container">
+    <h3>Đăng ký nhận tin</h3>
+    <form id="subscribeForm">
+        <input type="email" id="email" placeholder="Email nhận tin" required>
+        <button type="submit"><i>✉️</i> Đăng Ký</button>
+    </form>
+    <div id="successMessage" style="display:none; color: #ff4c4c; margin-top: 10px;">
+        Đăng ký thành công!
+    </div>
+</div>
+
+<script>
+    document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        var email = document.getElementById('email').value;
+        if (email) {
+            document.getElementById('successMessage').style.display = 'block';
+            setTimeout(function () {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 5000);
+            document.getElementById('email').value = '';
+        }
+    });
+</script>
+</section>
+<!-- TIN TỨC CÔNG NGHỆ MỚI -->
+<section id="tintuccongnghe" class="mb-2">
+<div class="container_news">
+    <h2 class="text-center mb-4" style="color: #9e2222; padding-top: 1em; animation: blinkingText 1s infinite;">
+        <i class="bi bi-broadcast"> </i>TIN TỨC CÔNG NGHỆ MỚI
+    </h2>
+    <div class="row news-grid">
+        <!-- Bài báo 1 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card news-card h-100">
+                <a href="#">
+                    <img src="/images/news/bao1a.jpg" class="card-img-top" alt="AMD Ryzen 7 9800X3D">
+                    <div class="card-body">
+                        <h5 class="card-title">AMD Ryzen 7 9800X3D cháy hàng tại nhiều nơi trên thế giới</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Bài báo 2 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card news-card h-100">
+                <a href="#">
+                    <img src="/images/news/bao2a.jpg" class="card-img-top" alt="Dell Inspiron 7445">
+                    <div class="card-body">
+                        <h5 class="card-title">Dell Inspiron 7445 2-in-1 - Sự lựa chọn toàn diện</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Bài báo 3 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card news-card h-100">
+                <a href="#">
+                    <img src="/images/news/bao3a.jpg" class="card-img-top" alt="Intel Core Ultra Series">
+                    <div class="card-body">
+                        <h5 class="card-title">Intel ra mắt Core Ultra Series 2 tại Việt Nam</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Bài báo 4 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card news-card h-100">
+                <a href="#">
+                    <img src="/images/news/bao4a.jpg" class="card-img-top" alt="Laptop Gaming Lenovo">
+                    <div class="card-body">
+                        <h5 class="card-title">TOP 3 Laptop Gaming Lenovo được chọn nhiều nhất 2024</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Bootstrap JS và Popper.js -->
+<script src="/assets/framework/popper.min.js"></script>
+<script src="/assets/framework/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/framework/js/bootstrap.js.map"></script>
+<hr>
 <footer class="bg text-dark pt-4">
     <div class="container">
         <div class="row">
@@ -376,8 +376,4 @@
     </div>
 </footer>
 </body>
-
-<script src="/js/cart.js">
-</script>
-
 </html>
