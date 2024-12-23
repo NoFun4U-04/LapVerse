@@ -639,3 +639,35 @@ input:-webkit-autofill {
 .form-container button i {
     margin-right: 5px;
 }
+/* thu nhỏ theo màn của đăng kí nhận tintin */
+@media (max-width: 768px) {
+    .logo-container img {
+        height: 30px;
+    }
+
+    .form-container h3 {
+        font-size: 18px;
+    }
+
+    .form-container form input,
+    .form-container form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container img {
+        height: 25px;
+    }
+
+    .form-container h3 {
+        font-size: 16px;
+    }
+
+    .form-container form input,
+    .form-container form button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
