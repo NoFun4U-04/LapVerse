@@ -818,6 +818,13 @@ padding: 10px 0 10px 0;">
       </div>
     </div>
   </footer>
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <h2>Thành công!</h2>
+        <p>Đã thêm vào giỏ hàng.</p>
+        <button class="close-btn" id="closeModalBtn">Đóng</button>
+    </div>
+</div>
   <!-- Bootstrap JS và Popper.js -->
   <script src="assets/framework/popper.min.js"></script>
   <script src="assets/framework/js/bootstrap.bundle.min.js"></script>
@@ -835,74 +842,37 @@ padding: 10px 0 10px 0;">
     });
   });
 
-  // Lấy các phần tử nút "Thêm vào giỏ"
-  document.querySelectorAll('.buy-now-btn[data-bs-target="#sanpham"]').forEach(button => {
-    button.addEventListener('click', function () {
-      // Lấy thông tin sản phẩm
-      const productCard = this.closest('.card');
-      const productName = productCard.querySelector('.fw-bold.mb-2').innerText;
-      const productSpecs = productCard.querySelector('.product-specs').innerText;
-      const productPrice = productCard.querySelector('.product-price.text-danger.fw-bold').innerText.trim().split(' ')[0];
-      const productImage = productCard.querySelector('.product-image').src;
 
-      // Tạo phần tử sản phẩm cho giỏ hàng
-      const cartContainer = document.querySelector('.cart-container');
-      const cartItemHTML = `
-            <div class="cart-part">
-                <div class="cart-img">
-                    <img src="${productImage}">
-                </div>
-                <div class="cart-desc">
-                    <h3>${productName}</h3>
-                    <p>${productSpecs}</p>
-                </div>
-                <div class="cart-quantity">
-                    <input type="number" id="quantity" min="0" value="1">
-                </div>
-                <div class="cart-price">
-                    <h4>${productPrice} &#8363</h4>
-                </div>
-                <div class="cart-total">
-                    <h4>${productPrice} &#8363</h4>
-                </div>
-                <div class="cart-remove">
-                    <button class="remove-item">Remove</button>
-                </div>
-            </div>
-        `;
+</script>
+<script>
+  // Lấy các phần tử từ DOM
+const addToCartBtns = document.querySelectorAll('.me-3 .buy-now-btn');
+const successModal = document.getElementById('successModal');
+const closeModalBtn = document.getElementById('closeModalBtn');
 
-      // Thêm sản phẩm vào giỏ
-      cartContainer.insertAdjacentHTML('beforeend', cartItemHTML);
-
-      // Cập nhật tổng tiền
-      updateTotal();
-
-      // Thêm sự kiện "Xóa sản phẩm" cho nút Remove
-      document.querySelectorAll('.remove-item').forEach(removeButton => {
-        removeButton.addEventListener('click', function () {
-          this.closest('.cart-part').remove();
-          updateTotal();
-        });
-      });
+// Duyệt qua tất cả các nút "Thêm vào giỏ" và gán sự kiện cho từng nút
+addToCartBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        successModal.style.display = 'flex'; 
     });
-  });
+});
 
-  // Cập nhật tổng tiền
-  function updateTotal() {
-    let total = 0;
-    document.querySelectorAll('.cart-part').forEach(cartItem => {
-      const price = parseInt(cartItem.querySelector('.cart-price h4').innerText.replace(/[^0-9]/g, ''));
-      const quantity = parseInt(cartItem.querySelector('#quantity').value);
-      total += price * quantity;
-    });
-    document.getElementById('total').innerText = `${total.toLocaleString()} &#8363`;
-  }
+// Khi người dùng click vào nút "Đóng"
+closeModalBtn.addEventListener('click', () => {
+    successModal.style.display = 'none';
+});
 
-  // Xóa toàn bộ giỏ hàng
-  document.querySelector('.remove').addEventListener('click', function () {
-    document.querySelector('.cart-container').innerHTML = '';
-    updateTotal();
-  });
+// Đóng modal khi nhấn vào phần nền ngoài modal
+window.addEventListener('click', (event) => {
+    if (event.target === successModal) {
+        successModal.style.display = 'none';
+    }
+});
+
+const buyNowBtn = document.querySelector('.text-start .buy-now-btn');
+buyNowBtn.addEventListener('click', () => {
+    window.location.href = "cart.html"; 
+});
 
 </script>
 

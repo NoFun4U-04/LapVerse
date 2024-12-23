@@ -116,3 +116,47 @@
 .indam{
     font-weight: bold;
 }
+/* Style for the Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal .modal-content h2 {
+    margin: 0;
+    color: #9e2222;
+}
+
+.modal .modal-content p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.close-btn {
+    padding: 5px 15px;
+    background-color: #9e2222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #c82333;
+}
