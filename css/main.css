@@ -396,7 +396,6 @@ input:-webkit-autofill {
     border-color: #ffffff;
 }
 
-/* Section styling */
 /* Thiết kế grid cho sản phẩm */
 #sanphamnoibat .container {
     max-width: 1200px; 
@@ -406,8 +405,7 @@ input:-webkit-autofill {
     border-radius: 8px;
 }
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
     gap: 20px;
     
 }
@@ -639,4 +637,35 @@ input:-webkit-autofill {
 .form-container button i {
     margin-right: 5px;
 }
+/* thu nhỏ theo màn của đăng kí nhận tintin */
+@media (max-width: 768px) {
+    .logo-container img {
+        height: 30px;
+    }
 
+    .form-container h3 {
+        font-size: 18px;
+    }
+
+    .form-container form input,
+    .form-container form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container img {
+        height: 25px;
+    }
+
+    .form-container h3 {
+        font-size: 16px;
+    }
+
+    .form-container form input,
+    .form-container form button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
