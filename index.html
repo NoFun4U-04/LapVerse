@@ -723,6 +723,25 @@
             });
         </script>
     </section>
+    <button id="backToTop">↑</button>
+    <script>
+      const backToTopButton = document.getElementById('backToTop');
+      // Hiển thị nút khi cuộn xuống
+      window.onscroll = function () {
+          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+              backToTopButton.style.display = "block";
+          } else {
+              backToTopButton.style.display = "none";
+          }
+      };
+      backToTopButton.onclick = function () {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth' 
+          });
+      };
+  </script>
+  
     <!-- TIN TỨC CÔNG NGHỆ MỚI -->
     <section id="tintuccongnghe" class="mb-2">
         <div class="container_news">
