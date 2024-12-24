@@ -57,7 +57,7 @@ paymentForm.addEventListener('submit', function (event) {
     const paymentMethod = document.getElementById('payment-method').value;
     // Kiểm tra nếu tất cả thông tin đã được điền đầy đủ
     if (name && phone && email && address && paymentMethod) {
-        alert('Thanh toán thành công! Cảm ơn bạn đã mua sắm!');
+        alert('Đặt hàng thành công! Cảm ơn bạn đã mua sắm!');
         paymentPopup.style.display = 'none';
         cartContainer.innerHTML = '<h6 style="color: white;">Không có sản phẩm nào trong giỏ hàng!!!</h6>';
         totalSummaryElement.innerHTML = '0' + '&#8363';
