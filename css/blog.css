@@ -1,0 +1,264 @@
+.infor_article i {
+    margin-right: 5px;
+    margin-left: 10px;
+
+}
+
+.infor_article p {
+    margin-left: 0px;
+
+}
+
+.blogmain {
+    width: 100%;
+    height: 400px;
+    background-image: url("/images/news/bao1a.jpg");
+    /* Đảm bảo đường dẫn đúng */
+    background-size: cover;
+    /* Đảm bảo hình nền bao phủ toàn bộ phần tử */
+    background-position: center;
+    /* Căn giữa hình nền */
+    background-repeat: no-repeat;
+    /* Không lặp lại hình nền */
+    position: relative;
+    /* Đảm bảo phần tử có vị trí tương đối để lớp phủ không che hình nền */
+    margin: 30px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    /* Đảm bảo không có nội dung tràn ra ngoài */
+    z-index: 1;
+    /* Đảm bảo không bị che khuất bởi các phần tử khác */
+}
+
+.blogmain-background {
+    background: #3735358f;
+    height: 100%;
+}
+
+.blogmain::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Đảm bảo lớp phủ bao phủ toàn bộ phần tử */
+    background: rgba(0, 0, 0, 0.15);
+    /* Giảm độ mờ để hình nền rõ hơn */
+    z-index: -1;
+    /* Đảm bảo lớp phủ nằm dưới nội dung */
+}
+
+.blogmain-text {
+    position: relative;
+    /* Đảm bảo phần tử không bị ảnh hưởng bởi các phần tử khác */
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    /* Đảm bảo văn bản hiển thị trên lớp phủ */
+}
+
+.btl_blog a {
+    background-color: #b00;
+    border-radius: 16px;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    line-height: 40px;
+    width: 100px;
+    padding: 5px;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.btl_blog a:hover {
+    font-size: 17px;
+}
+
+.blogmain-text h1 {
+    margin: 50px 50px 40px 50px;
+    color: #fff;
+    filter: brightness(1.2);
+}
+
+.blogmain-text h1,
+.blogmain-text h5 {
+    margin: 20px;
+    color: #fff;
+    filter: brightness(1.2);
+    /* Điều chỉnh độ sáng để rõ hơn */
+}
+
+.blogmain-text h5 {
+    padding: 0px 20px;
+    color: #fff;
+    filter: brightness(1.2);
+    font-size: 18px;
+}
+
+.card {
+    transition: all 0.3s;
+    border-radius: 20px;
+    height: auto;
+}
+
+.card img {
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body button {
+    border-radius: 10px;
+    border: 0.75px solid #00000091;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.small-news .left,
+.small-news .right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-body button:hover {
+    border-radius: 10px;
+    border: 0.75px solid #b00;
+    font-size: 16px;
+}
+
+.card-body a {
+    display: block;
+    color: rgb(64, 63, 63);
+    font-size: 18px;
+    transition: transform 0.9s ease;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-body.card-link a:hover {
+    color: rgb(0, 0, 0);
+    transform: translate(1px, 1px);
+}
+
+.card-link:hover {
+    color: #b00;
+    transform: translate(1px, 1px);
+}
+
+.card-body p {
+    font-size: 16px;
+    color: rgb(94, 92, 92);
+    font-weight: bold;
+
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1500px));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1500px));
+    }
+
+}
+
+.slider-blog .slide-block-track {
+    -webkit-animation: scroll 100s linear infinite;
+    animation: scroll 100s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.breadcrumb {
+    display: none !important;
+}
+
+/* CSS để dàn trang các mục */
+
+#myblogct1 h3 {
+
+    font-style: normal;
+    font-weight: 400;
+}
+
+#myblogct1 p {
+
+    text-align: justify;
+}
+
+#myblogct1 .col-md-4 {
+    padding-left: 20px;
+}
+
+#myblogct1 .col-md-8 {
+    padding-right: 30px;
+}
+
+.main-content h3 {
+
+    font-weight: bold;
+}
+
+.main-content p {
+
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(31, 30, 30);
+}
+
+.small-news {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5cm;
+}
+
+.small-news .left {
+    margin-right: 0.5cm;
+}
+
+.small-news .right {
+    flex: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.left img {
+    width: 100%;
+    border: 0.75px solid grey;
+    border-radius: 10px;
+    float: left;
+}
+
+.right a,
+.right span {
+    display: block;
+    color: rgb(99, 89, 89);
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.right a:hover {
+    color: #b00;
+    transform: translate(3px, -3px);
+    text-decoration: underline;
+    text-decoration: none;
+}
