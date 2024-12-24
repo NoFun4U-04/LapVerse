@@ -9,4 +9,3 @@
         mobileCategoryDropdown.classList.toggle("d-none");
     });
 
-    

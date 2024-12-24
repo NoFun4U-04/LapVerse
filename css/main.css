@@ -637,7 +637,7 @@ input:-webkit-autofill {
 .form-container button i {
     margin-right: 5px;
 }
-/* thu nhỏ theo màn của đăng kí nhận tintin */
+/* thu nhỏ theo màn của đăng kí nhận tin */
 @media (max-width: 768px) {
     .logo-container img {
         height: 30px;
@@ -667,5 +667,16 @@ input:-webkit-autofill {
     .form-container form button {
         font-size: 12px;
         padding: 6px;
+    }
+}
+@media (max-width: 768px) {
+    .popup-container {
+        width: 300px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-image {
+        max-width: 90%; 
     }
 }

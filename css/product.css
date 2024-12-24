@@ -124,6 +124,9 @@
     transition: transform 0.3s ease; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /
 }
+.product :hover{
+    transform: scaleX(1,1);
+}
 /* Style for the Modal */
 .modal {
     display: none;
