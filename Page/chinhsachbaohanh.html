@@ -191,36 +191,36 @@
 <hr>
 <section style="background: #1d1d1d;">
     <div class="logo-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Lenovo_logo_2015.svg" alt="Lenovo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Acer_Logo.svg" alt="Acer">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/MSI_gaming_logo_2019.svg" alt="MSI">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HP_logo_2012.svg" alt="HP">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Dell_Logo.svg" alt="Dell">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Apple_logo_black.svg" alt="Apple">
+      <img src="../images/logo/logo1.png" alt="DELL">
+      <img src="../images/logo/logo3.png" alt="HP">
+      <img src="../images/logo/logo2.png" alt="APPLE">
+      <img src="../images/logo/logo4.png" alt="MSI">
+      <img src="../images/logo/logo5.png" alt="LENOVO">
+      <img src="../images/logo/logo6.png" alt="ACER">
     </div>
     <div class="form-container">
-        <h3>Đăng ký nhận tin</h3>
-        <form id="subscribeForm">
-            <input type="email" id="email" placeholder="Email nhận tin" required>
-            <button type="submit"><i>✉️</i> Đăng Ký</button>
-        </form>
-        <div id="successMessage" style="display:none; color: #ff4c4c; margin-top: 10px;">
-            Đăng ký thành công!
-        </div>
+      <h3>Đăng ký nhận tin</h3>
+      <form id="subscribeForm">
+        <input type="email" id="email" placeholder="Email nhận tin" required>
+        <button type="submit"><i>✉️</i> Đăng Ký</button>
+      </form>
+      <div id="successMessage" style="display:none; color: #ff4c4c; margin-top: 10px;">
+        Đăng ký thành công!
+      </div>
     </div>
 
     <script>
-        document.getElementById('subscribeForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            var email = document.getElementById('email').value;
-            if (email) {
-                document.getElementById('successMessage').style.display = 'block';
-                setTimeout(function () {
-                    document.getElementById('successMessage').style.display = 'none';
-                }, 5000);
-                document.getElementById('email').value = '';
-            }
-        });
+      document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        var email = document.getElementById('email').value;
+        if (email) {
+          document.getElementById('successMessage').style.display = 'block';
+          setTimeout(function () {
+            document.getElementById('successMessage').style.display = 'none';
+          }, 5000);
+          document.getElementById('email').value = '';
+        }
+      });
     </script>
 </section>
 <!-- TIN TỨC CÔNG NGHỆ MỚI -->
