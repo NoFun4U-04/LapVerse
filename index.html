@@ -6,128 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAPVERSE - Vũ trụ Laptop</title>
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="/assets/framework/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/framework/css/">
-    <link rel="stylesheet" href="/assets/framework/css/font-icon/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/framework/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/framework/css/">
+    <link rel="stylesheet" href="assets/framework/css/font-icon/bootstrap-icons.min.css">
     <!--Favicon-->
-    <link rel="icon" href="/images/banner/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/banner/favicon.png" type="image/x-icon">
     <!-- Thêm file CSs -->
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/lienhe/main.css">
-    <link rel="stylesheet" href="/css/product.css">
-    <link rel="stylesheet" href="/css/popup.css">
-    <script href="/js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="lienhe/main.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="js/main.js"></script>
+ 
 </head>
-
+ <!-- -->
 <body>
     <header>
-
         <!-- Thanh thông báo chào mừng -->
         <div class="navbar_1">
-            <nav>
-                <div class="container-md px-4">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <!-- Navbar chính -->
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
-            <div class="container">
-                <!-- Logo -->
-                <a href="index.html" class="navbar-brand">
-                    <img src="/images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
-                </a>
-                <!-- Thanh tìm kiếm -->
-                <form class="d-flex ms-3 search-form" action="#" method="get">
-                    <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..."
-                        aria-label="Search">
-                    <button
-                        class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn"
-                        type="submit">
-                        <i class="bi-search"></i>
-                    </button>
-                </form>
-
-                <!-- Các biểu tượng đăng nhập và giỏ hàng -->
-                <div class="d-flex justify-content-end align-items-center right-actions">
-                    <!-- Nút Đăng nhập -->
-                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
-                        <a href="/Page/dangnhap.html" class="d-flex align-items-center">
-                            <i class="bi bi-person-fill me-1"></i>
-                            <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
-                        </a>
-                    </button>
-                    <span class="text-white mx-2">hoặc</span>
-                    <!-- Nút Đăng ký -->
-                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
-                        <a href="/Page/dangky.html" class="d-flex align-items-center">
-                            <i class="bi bi-person-fill me-1"></i>
-                            <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
-                        </a>
-                    </button>
-                </div>
-        </nav>
-        <!-- MENU start here -->
-        <nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
-            <div class="container-md d-flex justify-content-between align-items-center">
-                <!-- Logo và Nút Toggle Mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Danh sách menu -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav gap-lg-4">
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold active" href="/index.html">Trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold" href="/Page/Information.html">Giới thiệu</a>
-                        </li>
-                        <!-- Dropdown Sản phẩm -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link fw-semibold dropdown-toggle" href="#" id="dropdownMenuButton"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Sản phẩm
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="/Page/sanpham.html">Tất cả sản phẩm</a></li>
-                                <li><a class="dropdown-item" href="#">Laptop Gaming</a></li>
-                                <li><a class="dropdown-item" href="#">Laptop Văn phòng</a></li>
-                                <li><a class="dropdown-item" href="#">Laptop Sinh viên</a></li>
-                                <li><a class="dropdown-item" href="#">Laptop Doanh nhân</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold" href="./tintuchtml">Tin tức</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-semibold" href="/Page/lienhe.html">Liên hệ</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Nút Giỏ hàng -->
-                <div>
-                    <a href="./Page/cart.html" class="btn btn-outline-dark d-flex align-items-center">
-                        <i class="bi bi-cart-fill me-1"></i>
-                        Giỏ hàng
-                    </a>
+        <nav>
+            <div class="container-md px-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a>
                 </div>
             </div>
         </nav>
+<<<<<<< HEAD
     </header>
+<<<<<<< HEAD
 <main>
+=======
+    <main>
+=======
+        </div>
+        
+        <!-- Navbar chính -->
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a href="/index.html" class="navbar-brand">
+                <img src="/images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
+            </a>
+            <!-- Thanh tìm kiếm -->
+            <form class="d-flex ms-3 search-form" action="#" method="get">
+                <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..."
+                    aria-label="Search">
+                <button
+                    class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn"
+                    type="submit">
+                    <i class="bi-search"></i>
+                </button>
+            </form>
+        
+            <!-- Các biểu tượng đăng nhập và giỏ hàng -->
+            <div class="d-flex justify-content-end align-items-center right-actions">
+                <!-- Nút Đăng nhập -->
+                <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                    <a href="/Page/dangnhap.html" class="d-flex align-items-center">
+                        <i class="bi bi-person-fill me-1"></i>
+                        <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
+                    </a>
+                </button>
+                <span class="text-white mx-2">hoặc</span>
+                <!-- Nút Đăng ký -->
+                <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                    <a href="/Page/dangky.html" class="d-flex align-items-center">
+                        <i class="bi bi-person-fill me-1"></i>
+                        <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
+                    </a>
+                </button>
+            </div>
+        </nav>
+        <!-- MENU start here -->
+        <nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
+        <div class="container-md d-flex justify-content-between align-items-center">
+            <!-- Logo và Nút Toggle Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Danh sách menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav gap-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" href="/index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="/Page/Information.html">Giới thiệu</a>
+                    </li>
+                    <!-- Dropdown Sản phẩm -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-semibold dropdown-toggle" href="/Page/sanpham.html" id="dropdownMenuButton"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sản phẩm
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="/Page/sanpham.html">Tất cả sản phẩm</a></li>
+                            <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Gaming</a></li>
+                            <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Văn phòng</a></li>
+                            <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Sinh viên</a></li>
+                            <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Doanh nhân</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="/Page/tintuc.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="/Page/lienhe.html">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- Nút Giỏ hàng -->
+            <div>
+                <a href="/Page/cart.html" class="btn btn-outline-dark d-flex align-items-center">
+                    <i class="bi bi-cart-fill me-1"></i>
+                    Giỏ hàng
+                </a>
+            </div>
+        </div>
+        </nav>
+        </header>
+<main>
+>>>>>>> 17101ed72f278fca876f520f58587512fc9d3f21
+>>>>>>> 05932503e8c8867d5eeb4e09ed917ebde5312e20
         <!-- Popup start -->
         <!-- Popup Overlay -->
         <div class="popup-overlay" id="popupOverlay">
             <div class="popup-container" id="popupContainer">
-                <a href="/Page/khuyen_mai.html" id="popupLink">
-                    <img src="/images/banner/popup.png" alt="Popup" class="popup-image" id="popupImage">
+                <a href="Page/khuyen_mai.html" id="popupLink">
+                    <img src="images/banner/popup.png" alt="Popup" class="popup-image" id="popupImage">
                 </a>
                 <button class="popup-close" id="closePopup" type="button">&times;</button>
             </div>
@@ -151,7 +160,7 @@
                 <!-- Phần hình ảnh của carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="/Page/khuyen_mai.html">
+                        <a href="Page/khuyen_mai.html">
                             <img src="images/banner/1.jpg" class="d-block w-100" alt="banner-1">
                         </a>
                     </div>
@@ -178,14 +187,14 @@
             <!-- GIẢM GIÁ _ SP MỚi -->
             <section class="special-offers">
                 <div class="offer">
-                    <img src="/images/giamgia/1.jpg" alt="Laptop 1" class="offer-image">
+                    <img src="images/giamgia/1.jpg" alt="Laptop 1" class="offer-image">
                     <h3>Ưu Đãi Dịp Lễ</h3>
                     <h1>Giảm Giá Lên Đến 30%</h1>
                     <p>Các thương hiệu máy tính xách tay được chọn</p>
                     <button>Mua Ngay</button>
                 </div>
                 <div class="offer">
-                    <img src="/images/giamgia/2.jpg" alt="Laptop 2" class="offer-image">
+                    <img src="images/giamgia/2.jpg" alt="Laptop 2" class="offer-image">
                     <h3>Sản Phẩm Mới</h3>
                     <h1>Hiệu Suất Mọi Nơi</h1>
                     <p>Các thương hiệu máy tính hàng đầu</p>
@@ -204,7 +213,7 @@
                         <div class="product-item">
                             <a href="#">
                                 <div class="product-image">
-                                    <img src="images/product/Apple MacBook Air M1 256GB 2020.jpg"
+                                    <img src="images/product/sanpham/Apple MacBook Air M1 256GB 2020.jpg"
                                         alt="Apple MacBook Air M1">
                                 </div>
                                 <div class="product-info">
@@ -250,7 +259,7 @@
 
                         <!-- Sản phẩm 4 -->
                         <div class="product-item">
-                            <a href="tainguyen/web-lenovo-thinkpad.html">
+                            <a href="#">
                                 <div class="product-image">
                                     <img src="images/product/lenovo/Lenovo ThinkPad E14 Gen 5 21JK006BVN.jpg"
                                         alt="Lenovo ThinkPad X1">
@@ -521,21 +530,21 @@
                 <div class="col-md-3">
                     <h5>HỖ TRỢ KHÁCH HÀNG</h5>
                     <ul class="list-unstyled">
-                        <li> <a href="/Page/huongdanmuahang.html">Hướng dẫn mua hàng trực tuyến</a>
+                        <li> <a href="Page/huongdanmuahang.html">Hướng dẫn mua hàng trực tuyến</a>
                         </li>
-                        <li> <a href="/Page/huongdanthanhtoan.html">Hướng dẫn thanh toán</a> </li>
-                        <li> <a href="/Page/gopykhieunai.html">Góp ý, Khiếu Nại</a></li>
+                        <li> <a href="Page/huongdanthanhtoan.html">Hướng dẫn thanh toán</a> </li>
+                        <li> <a href="Page/gopykhieunai.html">Góp ý, Khiếu Nại</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h5>CHÍNH SÁCH CỬA HÀNG</h5>
                     <ul class="list-unstyled">
-                        <li> <a href="/Page/chinhsachbaohanh.html">Chính sách bảo hành</a></li>
-                        <li> <a href="/Page/chinhsachbaomat.html">Chính sách bảo mật</a></li>
-                        <li> <a href="/Page/chinhsachchatluong.html">Chính sách chất lượng</a></li>
-                        <li> <a href="/Page/chinhsachdoitravahoantien.html">Chính sách đổi trả và hoàn tiền</a></li>
-                        <li> <a href="/Page/chinhsachvanchuyen.html">Chính sách vận chuyển</a></li>
-                        <li> <a href="/Page/chinhsachvesinhlaptop.html">Chính sách vệ sinh laptop</a></li>
+                        <li> <a href="Page/chinhsachbaohanh.html">Chính sách bảo hành</a></li>
+                        <li> <a href="Page/chinhsachbaomat.html">Chính sách bảo mật</a></li>
+                        <li> <a href="Page/chinhsachchatluong.html">Chính sách chất lượng</a></li>
+                        <li> <a href="Page/chinhsachdoitravahoantien.html">Chính sách đổi trả và hoàn tiền</a></li>
+                        <li> <a href="Page/chinhsachvanchuyen.html">Chính sách vận chuyển</a></li>
+                        <li> <a href="Page/chinhsachvesinhlaptop.html">Chính sách vệ sinh laptop</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-12">
