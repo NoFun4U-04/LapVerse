@@ -156,7 +156,7 @@ button.shopping:hover {
     }
 
     .cart-img img {
-        width: 120px; /* Điều chỉnh kích thước hình ảnh nhỏ hơn trên thiết bị di động */
+        width: 120px; 
         margin-bottom: 10px;
     }
 

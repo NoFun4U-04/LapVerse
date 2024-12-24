@@ -128,3 +128,10 @@
     width: 100px;
     /* Cụ thể nhỏ lại */
 }
+
+@media (max-width: 480px) {
+    
+    .logo-contact img {
+        max-width: 90%; 
+    }  
+}
