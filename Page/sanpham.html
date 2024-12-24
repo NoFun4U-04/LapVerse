@@ -11,123 +11,113 @@
   <link rel="stylesheet" href="/assets/framework/css/font-icon/bootstrap-icons.min.css">
 
   <!-- Thêm file CSs -->
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../lienhe/main.css">
-  <link rel="stylesheet" href="../css/product.css">
-  <link rel="stylesheet" href="../css/popup.css">
-  <link rel="stylesheet" href="../css/cart.css">
-  <script src="../js/main.js"></script>
-  <script src="/js/cart.js"></script>
-
-  
-  <style>
-  .product :hover{
-    transform: scaleX(1,1);
-}
-  </style>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/lienhe/main.css">
+  <link rel="stylesheet" href="/css/product.css">
+  <link rel="stylesheet" href="/css/popup.css">
+  <script href="/js/main.js"></script>
 </head>
 
 <body>
   <header>
+
     <!-- Thanh thông báo chào mừng -->
     <div class="navbar_1">
-    <nav>
+      <nav>
         <div class="container-md px-4">
-            <div class="d-flex justify-content-between align-items-center">
-                <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a>
-            </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a>
+          </div>
         </div>
-    </nav>
+      </nav>
     </div>
-    
+
     <!-- Navbar chính -->
     <nav class="navbar navbar-expand-md navbar-light shadow-sm">
-    <div class="container">
+      <div class="container">
         <!-- Logo -->
-        <a href="/index.html" class="navbar-brand">
-            <img src="/images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img src="/images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
         </a>
         <!-- Thanh tìm kiếm -->
         <form class="d-flex ms-3 search-form" action="#" method="get">
-            <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..."
-                aria-label="Search">
-            <button
-                class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn"
-                type="submit">
-                <i class="bi-search"></i>
-            </button>
+          <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+          <button class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn"
+            type="submit">
+            <i class="bi-search"></i>
+          </button>
         </form>
-    
+
         <!-- Các biểu tượng đăng nhập và giỏ hàng -->
         <div class="d-flex justify-content-end align-items-center right-actions">
-            <!-- Nút Đăng nhập -->
-            <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
-                <a href="/Page/dangnhap.html" class="d-flex align-items-center">
-                    <i class="bi bi-person-fill me-1"></i>
-                    <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
-                </a>
-            </button>
-            <span class="text-white mx-2">hoặc</span>
-            <!-- Nút Đăng ký -->
-            <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
-                <a href="/Page/dangky.html" class="d-flex align-items-center">
-                    <i class="bi bi-person-fill me-1"></i>
-                    <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
-                </a>
-            </button>
+          <!-- Nút Đăng nhập -->
+          <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+            <a href="/Page/dangnhap.html" class="d-flex align-items-center">
+              <i class="bi bi-person-fill me-1"></i>
+              <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
+            </a>
+          </button>
+          <span class="text-white mx-2">hoặc</span>
+          <!-- Nút Đăng ký -->
+          <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+            <a href="/Page/dangky.html" class="d-flex align-items-center">
+              <i class="bi bi-person-fill me-1"></i>
+              <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
+            </a>
+          </button>
         </div>
     </nav>
     <!-- MENU start here -->
     <nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
-    <div class="container-md d-flex justify-content-between align-items-center">
+      <div class="container-md d-flex justify-content-between align-items-center">
         <!-- Logo và Nút Toggle Mobile -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <!-- Danh sách menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav gap-lg-4">
-                <li class="nav-item">
-                    <a class="nav-link fw-semibold active" href="/index.html">Trang chủ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-semibold" href="/Page/Information.html">Giới thiệu</a>
-                </li>
-                <!-- Dropdown Sản phẩm -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link fw-semibold dropdown-toggle" href="/Page/sanpham.html" id="dropdownMenuButton"
-                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Sản phẩm
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="/Page/sanpham.html">Tất cả sản phẩm</a></li>
-                        <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Gaming</a></li>
-                        <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Văn phòng</a></li>
-                        <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Sinh viên</a></li>
-                        <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Doanh nhân</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-semibold" href="/Page/tintuc.html">Tin tức</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-semibold" href="/Page/lienhe.html">Liên hệ</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold active" href="/index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="/Page/Information.html">Giới thiệu</a>
+            </li>
+            <!-- Dropdown Sản phẩm -->
+            <li class="nav-item dropdown">
+              <a class="nav-link fw-semibold dropdown-toggle" href="#" id="dropdownMenuButton" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Sản phẩm
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Tất cả sản phẩm</a></li>
+                <li><a class="dropdown-item" href="#">Laptop Gaming</a></li>
+                <li><a class="dropdown-item" href="#">Laptop Văn phòng</a></li>
+                <li><a class="dropdown-item" href="#">Laptop Sinh viên</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="/Page/tintuc.html">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="/Page/lienhe.html">Liên hệ</a>
+            </li>
+          </ul>
         </div>
-    
+
         <!-- Nút Giỏ hàng -->
         <div>
-            <a href="/Page/cart.html" class="btn btn-outline-dark d-flex align-items-center">
-                <i class="bi bi-cart-fill me-1"></i>
-                Giỏ hàng
-            </a>
+          <a href="./cart.html" class="btn btn-outline-dark d-flex align-items-center">
+            <i class="bi bi-cart-fill me-1"></i>
+            Giỏ hàng
+            <span class="badge bg-dark text-white ms-2 rounded-pill">0</span>
+          </a>
         </div>
-    </div>
+      </div>
     </nav>
-    </header>
+  </header>
 
   <h2 class="text-center mb-4" style="color:aliceblue;text-align: center; 
 animation: blinkingText 1s infinite; background-color: #9e2222;
@@ -828,13 +818,6 @@ padding: 10px 0 10px 0;">
       </div>
     </div>
   </footer>
-<div id="successModal" class="modal">
-    <div class="modal-content">
-        <h2>Thành công!</h2>
-        <p>Đã thêm vào giỏ hàng.</p>
-        <button class="close-btn" id="closeModalBtn">Đóng</button>
-    </div>
-</div>
   <!-- Bootstrap JS và Popper.js -->
   <script src="assets/framework/popper.min.js"></script>
   <script src="assets/framework/js/bootstrap.bundle.min.js"></script>
@@ -852,37 +835,74 @@ padding: 10px 0 10px 0;">
     });
   });
 
+  // Lấy các phần tử nút "Thêm vào giỏ"
+  document.querySelectorAll('.buy-now-btn[data-bs-target="#sanpham"]').forEach(button => {
+    button.addEventListener('click', function () {
+      // Lấy thông tin sản phẩm
+      const productCard = this.closest('.card');
+      const productName = productCard.querySelector('.fw-bold.mb-2').innerText;
+      const productSpecs = productCard.querySelector('.product-specs').innerText;
+      const productPrice = productCard.querySelector('.product-price.text-danger.fw-bold').innerText.trim().split(' ')[0];
+      const productImage = productCard.querySelector('.product-image').src;
 
-</script>
-<script>
-  // Lấy các phần tử từ DOM
-const addToCartBtns = document.querySelectorAll('.me-3 .buy-now-btn');
-const successModal = document.getElementById('successModal');
-const closeModalBtn = document.getElementById('closeModalBtn');
+      // Tạo phần tử sản phẩm cho giỏ hàng
+      const cartContainer = document.querySelector('.cart-container');
+      const cartItemHTML = `
+            <div class="cart-part">
+                <div class="cart-img">
+                    <img src="${productImage}">
+                </div>
+                <div class="cart-desc">
+                    <h3>${productName}</h3>
+                    <p>${productSpecs}</p>
+                </div>
+                <div class="cart-quantity">
+                    <input type="number" id="quantity" min="0" value="1">
+                </div>
+                <div class="cart-price">
+                    <h4>${productPrice} &#8363</h4>
+                </div>
+                <div class="cart-total">
+                    <h4>${productPrice} &#8363</h4>
+                </div>
+                <div class="cart-remove">
+                    <button class="remove-item">Remove</button>
+                </div>
+            </div>
+        `;
 
-// Duyệt qua tất cả các nút "Thêm vào giỏ" và gán sự kiện cho từng nút
-addToCartBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-        successModal.style.display = 'flex'; 
+      // Thêm sản phẩm vào giỏ
+      cartContainer.insertAdjacentHTML('beforeend', cartItemHTML);
+
+      // Cập nhật tổng tiền
+      updateTotal();
+
+      // Thêm sự kiện "Xóa sản phẩm" cho nút Remove
+      document.querySelectorAll('.remove-item').forEach(removeButton => {
+        removeButton.addEventListener('click', function () {
+          this.closest('.cart-part').remove();
+          updateTotal();
+        });
+      });
     });
-});
+  });
 
-// Khi người dùng click vào nút "Đóng"
-closeModalBtn.addEventListener('click', () => {
-    successModal.style.display = 'none';
-});
+  // Cập nhật tổng tiền
+  function updateTotal() {
+    let total = 0;
+    document.querySelectorAll('.cart-part').forEach(cartItem => {
+      const price = parseInt(cartItem.querySelector('.cart-price h4').innerText.replace(/[^0-9]/g, ''));
+      const quantity = parseInt(cartItem.querySelector('#quantity').value);
+      total += price * quantity;
+    });
+    document.getElementById('total').innerText = `${total.toLocaleString()} &#8363`;
+  }
 
-// Đóng modal khi nhấn vào phần nền ngoài modal
-window.addEventListener('click', (event) => {
-    if (event.target === successModal) {
-        successModal.style.display = 'none';
-    }
-});
-
-const buyNowBtn = document.querySelector('.text-start .buy-now-btn');
-buyNowBtn.addEventListener('click', () => {
-    window.location.href = "cart.html"; 
-});
+  // Xóa toàn bộ giỏ hàng
+  document.querySelector('.remove').addEventListener('click', function () {
+    document.querySelector('.cart-container').innerHTML = '';
+    updateTotal();
+  });
 
 </script>
 
