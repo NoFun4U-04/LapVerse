@@ -2,870 +2,872 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAPVERSE - Vũ trụ Laptop</title>
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="assets/framework/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/framework/css/">
-    <link rel="stylesheet" href="assets/framework/css/font-icon/bootstrap-icons.min.css">
-    <!--Favicon-->
-    <link rel="icon" href="images/banner/favicon.png" type="image/x-icon">
-    <!-- Thêm file CSs -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="lienhe/main.css">
-    <link rel="stylesheet" href="css/product.css">
-    <link rel="stylesheet" href="css/popup.css">
-    <script href="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAPVERSE - Vũ trụ Laptop</title>
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="assets/framework/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/framework/css/">
+  <link rel="stylesheet" href="assets/framework/css/font-icon/bootstrap-icons.min.css">
+  <!--Favicon-->
+  <link rel="icon" href="images/banner/favicon.png" type="image/x-icon">
+  <!-- Thêm file CSs -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="lienhe/main.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <script href="js/main.js"></script>
 </head>
 
 <body>
-    <header>
-        <!-- Thanh thông báo chào mừng -->
-        <div class="navbar_1">
-        <nav>
-            <div class="container-md px-4">
-                <div class="d-flex justify-content-between align-items-center">
-                    <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a>
-                </div>
-            </div>
-        </nav>
+  <header>
+    <!-- Thanh thông báo chào mừng -->
+    <div class="navbar_1">
+      <nav>
+        <div class="container-md px-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a>
+          </div>
         </div>
-        
-        <!-- Navbar chính -->
-        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
-        <div class="container">
-            <!-- Logo -->
-            <a href="index.html" class="navbar-brand">
-                <img src="images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
+      </nav>
+    </div>
+
+    <!-- Navbar chính -->
+    <nav class="navbar navbar-expand-md navbar-light shadow-sm">
+      <div class="container">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand">
+          <img src="images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
+        </a>
+        <!-- Thanh tìm kiếm -->
+        <form class="d-flex ms-3 search-form" action="#" method="get">
+          <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+          <button class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn"
+            type="submit">
+            <i class="bi-search"></i>
+          </button>
+        </form>
+
+        <!-- Các biểu tượng đăng nhập và giỏ hàng -->
+        <div class="d-flex justify-content-end align-items-center right-actions">
+          <!-- Nút Đăng nhập -->
+          <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+            <a href="Page/dangnhap.html" class="d-flex align-items-center">
+              <i class="bi bi-person-fill me-1"></i>
+              <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
             </a>
-            <!-- Thanh tìm kiếm -->
-            <form class="d-flex ms-3 search-form" action="#" method="get">
-                <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..."
-                    aria-label="Search">
-                <button
-                    class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn"
-                    type="submit">
-                    <i class="bi-search"></i>
-                </button>
-            </form>
-        
-            <!-- Các biểu tượng đăng nhập và giỏ hàng -->
-            <div class="d-flex justify-content-end align-items-center right-actions">
-                <!-- Nút Đăng nhập -->
-                <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
-                    <a href="Page/dangnhap.html" class="d-flex align-items-center">
-                        <i class="bi bi-person-fill me-1"></i>
-                        <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
-                    </a>
-                </button>
-                <span class="text-white mx-2">hoặc</span>
-                <!-- Nút Đăng ký -->
-                <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
-                    <a href="Page/dangky.html" class="d-flex align-items-center">
-                        <i class="bi bi-person-fill me-1"></i>
-                        <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
-                    </a>
-                </button>
-            </div>
-        </nav>
-        <!-- MENU start here -->
-        <nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
-        <div class="container-md d-flex justify-content-between align-items-center">
-            <!-- Logo và Nút Toggle Mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <!-- Danh sách menu -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav gap-lg-4">
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold active" href="index.html">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="Page/Information.html">Giới thiệu</a>
-                    </li>
-                    <!-- Dropdown Sản phẩm -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link fw-semibold dropdown-toggle" href="Page/sanpham.html" id="dropdownMenuButton"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Sản phẩm
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="Page/sanpham.html">Tất cả sản phẩm</a></li>
-                            <li><a class="dropdown-item" href="Page/sanpham.html">Laptop Gaming</a></li>
-                            <li><a class="dropdown-item" href="Page/sanpham.html">Laptop Văn phòng</a></li>
-                            <li><a class="dropdown-item" href="Page/sanpham.html">Laptop Sinh viên</a></li>
-                            <li><a class="dropdown-item" href="Page/sanpham.html">Laptop Doanh nhân</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="Page/tintuc.html">Tin tức</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="Page/lienhe.html">Liên hệ</a>
-                    </li>
-                </ul>
-            </div>
-        
-            <!-- Nút Giỏ hàng -->
-            <div>
-                <a href="Page/cart.html" class="btn btn-outline-dark d-flex align-items-center">
-                    <i class="bi bi-cart-fill me-1"></i>
-                    Giỏ hàng
-                </a>
-            </div>
+          </button>
+          <span class="text-white mx-2">hoặc</span>
+          <!-- Nút Đăng ký -->
+          <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+            <a href="Page/dangky.html" class="d-flex align-items-center">
+              <i class="bi bi-person-fill me-1"></i>
+              <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
+            </a>
+          </button>
         </div>
-        </nav>
-        </header>
-<main>
+    </nav>
+    <!-- MENU start here -->
+    <nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
+      <div class="container-md d-flex justify-content-between align-items-center">
+        <!-- Logo và Nút Toggle Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Danh sách menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold active" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="Page/Information.html">Giới thiệu</a>
+            </li>
+            <!-- Dropdown Sản phẩm -->
+            <li class="nav-item dropdown">
+              <a class="nav-link fw-semibold dropdown-toggle" href="Page/sanpham.html" id="dropdownMenuButton"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sản phẩm
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="Page/sanpham.html">Tất cả sản phẩm</a></li>
+                <li><a class="dropdown-item" href="/Page/sanpham.html">Laptop Gaming</a></li>
+                <li><a class="dropdown-item" href="Page/sanpham.html">Laptop Văn phòng</a></li>
+                <li><a class="dropdown-item" href="Page/sanpham.html">Laptop Sinh viên</a></li>
+                <li><a class="dropdown-item" href="Page/sanpham.html">Laptop Doanh nhân</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="Page/tintuc.html">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="Page/lienhe.html">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Nút Giỏ hàng -->
+        <div>
+          <a href="Page/cart.html" class="btn btn-outline-dark d-flex align-items-center">
+            <i class="bi bi-cart-fill me-1"></i>
+            Giỏ hàng
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
     <!-- Popup start -->
     <div class="popup-overlay" id="popupOverlay">
-        <div class="popup-container" id="popupContainer">
-            <a href="Page/khuyen_mai.html" id="popupLink">
-                <img src="images/banner/popup.png" alt="Popup" class="popup-image" id="popupImage">
-            </a>
-            <button class="popup-close" id="closePopup" type="button">&times;</button>
-        </div>
+      <div class="popup-container" id="popupContainer">
+        <a href="/Page/khuyen_mai.html" id="popupLink">
+          <img src="/images/banner/popup.png" alt="Popup" class="popup-image" id="popupImage">
+        </a>
+        <button class="popup-close" id="closePopup" type="button">&times;</button>
+      </div>
     </div>
     <!-- Slide-banner -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <!-- Các nút chỉ báo slide -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
+      <!-- Các nút chỉ báo slide -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
 
-        <!-- Phần hình ảnh của carousel -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href="Page/khuyen_mai.html">
-                    <img src="images/banner/1.jpg" class="d-block w-100" alt="banner-1">
-                </a>
-            </div>
-            <div class="carousel-item">
-                <img src="images/banner/2.png" class="d-block w-100" alt="banner-2">
-            </div>
-            <div class="carousel-item">
-                <img src="images/banner/3.png" class="d-block w-100" alt="banner-3">
-            </div>
+      <!-- Phần hình ảnh của carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="/Page/khuyen_mai.html">
+            <img src="images/banner/1.jpg" class="d-block w-100" alt="banner-1">
+          </a>
         </div>
+        <div class="carousel-item">
+          <img src="images/banner/2.png" class="d-block w-100" alt="banner-2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/banner/3.png" class="d-block w-100" alt="banner-3">
+        </div>
+      </div>
 
-        <!-- Nút chuyển slide -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+      <!-- Nút chuyển slide -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <!-- GIẢM GIÁ _ SP MỚi -->
     <section class="special-offers">
-        <div class="offer">
-            <img src="images/giamgia/1.jpg" alt="Laptop 1" class="offer-image">
-            <h3>Ưu Đãi Dịp Lễ</h3>
-            <h1>Giảm Giá Lên Đến 30%</h1>
-            <p>Các thương hiệu máy tính xách tay được chọn</p>
-            <button>Mua Ngay</button>
-        </div>
-        <div class="offer">
-            <img src="images/giamgia/2.jpg" alt="Laptop 2" class="offer-image">
-            <h3>Sản Phẩm Mới</h3>
-            <h1>Hiệu Suất Mọi Nơi</h1>
-            <p>Các thương hiệu máy tính hàng đầu</p>
-            <button>Mua Ngay</button>
-        </div>
+      <div class="offer">
+        <img src="/images/giamgia/1.jpg" alt="Laptop 1" class="offer-image">
+        <h3>Ưu Đãi Dịp Lễ</h3>
+        <h1>Giảm Giá Lên Đến 30%</h1>
+        <p>Các thương hiệu máy tính xách tay được chọn</p>
+        <button>Mua Ngay</button>
+      </div>
+      <div class="offer">
+        <img src="/images/giamgia/2.jpg" alt="Laptop 2" class="offer-image">
+        <h3>Sản Phẩm Mới</h3>
+        <h1>Hiệu Suất Mọi Nơi</h1>
+        <p>Các thương hiệu máy tính hàng đầu</p>
+        <button>Mua Ngay</button>
+      </div>
     </section>
     <!-- SẢN PHẨM NỔI BẬT-->
     <div id="sanphamnoibat">
-        <div class="container my-5">
-            <h2 class="text-center mb-4 bi bi-fire"
-                style="color:aliceblue;padding-top: 1em; animation: blinkingText 1s infinite;"> SẢN PHẨM NỔI BẬT
-            </h2>
-            <div class="product-grid " style="padding-bottom:1em">
-                <!-- Sản phẩm 1 -->
-                <div class="mb-5 col product">
-                        <div class="card d-block hvr-glow">
-                            <!-- Lap image -->
-                            <a href="Page/Chitietsanpham.html">
-                                <img src="images/product/lenovo/Laptop HP 15-FD0237TU 9Q972PA.png" class="card-img-top product-image"
-                                alt="Laptop Dell XPS 14">
-                            </a>
-                            <div class="card-body ms-1">
-                                <div class="text-start">
-                                <!-- Lap name-->
-                                <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop HP 15-FD0237TU</p>
-                                <div class="product-specs">I5-1334U, RAM 8GB, SSD 515GB</div>
-                                <!-- Lap reviews-->
-                                <div class="d-flex justify-content-start small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Lap price-->
-                                <div class="product-price">13.000.000đ
-                                    <span class="text-muted text-decoration-line-through">15.099.000đ</span>
-                                </div>
-                                </div>
-                            </div>
-                            </a>
-                            <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
-                            <div class="me-3">
-                                <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
-                                <input class="d-none" value="0">
-                            </div>
-                            <div class="text-start">
-                                <button class="buy-now-btn">Mua ngay</button>
-                            </div>
-                            </div>
-                        </div>
+      <div class="container my-5">
+        <h2 class="text-center mb-4 bi bi-fire"
+          style="color:aliceblue;padding-top: 1em; animation: blinkingText 1s infinite;"> SẢN PHẨM NỔI BẬT
+        </h2>
+        <div class="product-grid " style="padding-bottom:1em">
+          <!-- Sản phẩm 1 -->
+          <div class="mb-5 col product">
+            <div class="card d-block hvr-glow">
+              <a href="">
+                <!-- Lap image -->
+                <a href="#">
+                  <img src="../images/product/lenovo/Laptop HP 15-FD0237TU 9Q972PA.png"
+                    class="card-img-top product-image" alt="Laptop Dell XPS 14">
+                </a>
+                <div class="card-body ms-1">
+                  <div class="text-start">
+                    <!-- Lap name-->
+                    <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop HP 15-FD0237TU</p>
+                    <div class="product-specs">I5-1334U, RAM 8GB, SSD 515GB</div>
+                    <!-- Lap reviews-->
+                    <div class="d-flex justify-content-start small text-warning mb-2">
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
                     </div>
-                <!-- Sản phẩm 2 -->
-                <div class="mb-5 col product">
-                    <div class="card d-block hvr-glow">
-                        <a href="">
-                        <!-- Lap image -->
-                        <a href="Page/Chitietsanpham.html">
-                            <img src="images/product/lenovo/Laptop HP Pavilion 15-EG2088TU 7C0R0PA.png"
-                            class="card-img-top product-image" alt="Laptop Dell XPS 14">
-                        </a>
-                        <div class="card-body ms-1">
-                            <div class="text-start">
-                            <!-- Lap name-->
-                            <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop HP Pavilion 15-EG2088TU</p>
-                            <div class="product-specs">I7-1260p, RAM 16GB, SSD 512GB</div>
-                            <!-- Lap reviews-->
-                            <div class="d-flex justify-content-start small text-warning mb-2">
-                                <div class="bi-star-fill"></div>
-                                <div class="bi-star-fill"></div>
-                                <div class="bi-star-fill"></div>
-                                <div class="bi-star-fill"></div>
-                                <div class="bi-star-fill"></div>
-                            </div>
-                            <!-- Book price-->
-                            <div class="product-price">14.504.000đ
-                                <span class="text-muted text-decoration-line-through">16.309.000đ</span>
-                            </div>
-                            </div>
-                        </div>
-                        </a>
-                        <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
-                        <div class="me-3">
-                            <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
-                            <input class="d-none" value="0">
-                        </div>
-                        <div class="text-start">
-                            <button class="buy-now-btn">Mua ngay</button>
-                        </div>
-                        </div>
+                    <!-- Lap price-->
+                    <div class="product-price">13.000.000đ
+                      <span class="text-muted text-decoration-line-through">15.099.000đ</span>
                     </div>
-                    </div>
-                <!-- Sản phẩm 3 -->
-                <div class="mb-5 col product" >
-                    <div class="card d-block hvr-glow">
-                        <a href="">
-                        <!-- LAP image -->
-                        <a href="#">
-                            <img src="images/product/lenovo/43.jpg" class="card-img-top product-image"
-                            alt="Laptop MSI Modern 14">
-                        </a>
-                        <div class="card-body ms-1">
-                            <div class="text-start">
-                            <!-- LAP name-->
-                            <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop MSI Modern 14</p>
-                            <div class="product-specs">I7-1355U, RAM 16GB, SSD 512GB</div>
-                            <!-- LAP reviews-->
-                            <div class="d-flex justify-content-start small text-warning mb-2">
-                                <div class="bi-star-fill"></div>
-                                <div class="bi-star-fill"></div>
-                                <div class="bi-star-fill"></div>
-                                <div class="bi-star-fill"></div>
-                                <div class="bi-star"></div>
-                            </div>
-                            <!-- LAP price-->
-                            <div class="product-price text-danger fw-bold">13.490.000đ
-                                <span class="text-muted text-decoration-line-through">18.490.000đ</span>
-                            </div>
-            
-                            </div>
-                        </div>
-                        </a>
-                        <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
-                        <div class="me-3">
-                            <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
-                            <input class="d-none" value="0">
-                        </div>
-                        <div class="text-start">
-                            <button class="buy-now-btn">Mua ngay</button>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                <!-- Sản phẩm 4 -->
-                <div class="mb-5 col product">
-                    <div class="card d-block hvr-glow">
-                        <a href="">
-                        <!-- LAP image -->
-                        <a href="#">
-                            <img src="images/product/lenovo/42.jpg" class="card-img-top product-image"
-                            alt="Laptop MSI Gaming GF63">
-                        </a>
-                        <div class="card-body ms-1">
-                            <div class="text-start">
-                            <!-- LAP name-->
-                            <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop MSI Gaming GF63</p>
-                            <div class="product-specs">I5-1245H, RAM 8GB, SSD 512GB</div>
-                            <!-- LAP reviews-->
-                            <div class="d-flex justify-content-start small text-warning mb-2">
-                                <div class="bi-star-fill"></div>
-                                <div class="bi-star-fill"></div>
-                                <div class="bi-star-fill"></div>
-                                <div class="bi-star-fill"></div>
-                                <div class="bi-star-fill"></div>
-                            </div>
-                            <!-- LAP price-->
-                            <div class="product-price text-danger fw-bold">18.490.000đ
-                                <span class="text-muted text-decoration-line-through">22.990.000đ</span>
-                            </div>
-                            </div>
-                        </div>
-                        </a>
-                        <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
-                        <div class="me-3">
-                            <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
-                            <input class="d-none" value="0">
-                        </div>
-                        <div class="text-start">
-                            <button class="buy-now-btn">Mua ngay</button>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                <div class="me-3">
+                  <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
+                  <input class="d-none" value="0">
+                </div>
+                <div class="text-start">
+                  <button class="buy-now-btn">Mua ngay</button>
+                </div>
+              </div>
             </div>
+          </div>
+          <!-- Sản phẩm 2 -->
+          <div class="mb-5 col product">
+            <div class="card d-block hvr-glow">
+              <a href="">
+                <!-- Lap image -->
+                <a href="#">
+                  <img src="../images/product/lenovo/Laptop HP Pavilion 15-EG2088TU 7C0R0PA.png"
+                    class="card-img-top product-image" alt="Laptop Dell XPS 14">
+                </a>
+                <div class="card-body ms-1">
+                  <div class="text-start">
+                    <!-- Lap name-->
+                    <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop HP Pavilion 15-EG2088TU
+                    </p>
+                    <div class="product-specs">I7-1260p, RAM 16GB, SSD 512GB</div>
+                    <!-- Lap reviews-->
+                    <div class="d-flex justify-content-start small text-warning mb-2">
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                    </div>
+                    <!-- Book price-->
+                    <div class="product-price">14.504.000đ
+                      <span class="text-muted text-decoration-line-through">16.309.000đ</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                <div class="me-3">
+                  <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
+                  <input class="d-none" value="0">
+                </div>
+                <div class="text-start">
+                  <button class="buy-now-btn">Mua ngay</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sản phẩm 3 -->
+          <div class="mb-5 col product">
+            <div class="card d-block hvr-glow">
+              <a href="">
+                <!-- LAP image -->
+                <a href="#">
+                  <img src="../images/product/lenovo/43.jpg" class="card-img-top product-image"
+                    alt="Laptop MSI Modern 14">
+                </a>
+                <div class="card-body ms-1">
+                  <div class="text-start">
+                    <!-- LAP name-->
+                    <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop MSI Modern 14</p>
+                    <div class="product-specs">I7-1355U, RAM 16GB, SSD 512GB</div>
+                    <!-- LAP reviews-->
+                    <div class="d-flex justify-content-start small text-warning mb-2">
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star"></div>
+                    </div>
+                    <!-- LAP price-->
+                    <div class="product-price text-danger fw-bold">13.490.000đ
+                      <span class="text-muted text-decoration-line-through">18.490.000đ</span>
+                    </div>
+
+                  </div>
+                </div>
+              </a>
+              <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                <div class="me-3">
+                  <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
+                  <input class="d-none" value="0">
+                </div>
+                <div class="text-start">
+                  <button class="buy-now-btn">Mua ngay</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sản phẩm 4 -->
+          <div class="mb-5 col product">
+            <div class="card d-block hvr-glow">
+              <a href="">
+                <!-- LAP image -->
+                <a href="#">
+                  <img src="../images/product/lenovo/42.jpg" class="card-img-top product-image"
+                    alt="Laptop MSI Gaming GF63">
+                </a>
+                <div class="card-body ms-1">
+                  <div class="text-start">
+                    <!-- LAP name-->
+                    <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop MSI Gaming GF63</p>
+                    <div class="product-specs">I5-1245H, RAM 8GB, SSD 512GB</div>
+                    <!-- LAP reviews-->
+                    <div class="d-flex justify-content-start small text-warning mb-2">
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                      <div class="bi-star-fill"></div>
+                    </div>
+                    <!-- LAP price-->
+                    <div class="product-price text-danger fw-bold">18.490.000đ
+                      <span class="text-muted text-decoration-line-through">22.990.000đ</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                <div class="me-3">
+                  <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
+                  <input class="d-none" value="0">
+                </div>
+                <div class="text-start">
+                  <button class="buy-now-btn">Mua ngay</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Các sản phẩm bán chạy-->
     <section id='sanphambanchay' style="margin:0 5em 0 5em;">
-        <div>
-            <h2 class="text-center mb-4 bi bi-fire"
-                style="background-color:#9e2222;padding: 0.55em; animation: blinkingText 1s infinite;"> SẢN PHẨM
-                BÁN CHẠY</h2>
-        </div>
-        <div class="container-md">
-            <div class="my-5 mx-4">
-              <div id="LAPVERSE" class="row gx-5 row-cols-xxl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1">
-                <div class="mb-5 col product" >
-                  <div class="card d-block hvr-glow">
-                    <a href="">
-                      <!-- Lap image -->
-                      <a href="#">
-                        <a href="#">
-                          <img src="images/product/lenovo/MacBook Air 15 inch M2 2023 8GB 256GB sạc 70W.png"
-                            class="card-img-top product-image" alt="Laptop Dell XPS 14">
-                        </a>
-                        <div class="card-body ms-1">
-                          <div class="text-start">
-                            <!-- Lap name-->
-                            <p class="text-decoration-none text-truncate d-block fw-bold mb-2"> MacBook Air 15 inch M2 2023</p>
-                            <div class="product-specs">Apple M2, RAM 8GB, SSD 256GB</div>
-                            <!-- lap reviews-->
-                            <div class="d-flex justify-content-start small text-warning mb-2">
-                              <div class="bi-star-fill"></div>
-                              <div class="bi-star-fill"></div>
-                              <div class="bi-star-fill"></div>
-                              <div class="bi-star-fill"></div>
-                              <div class="bi-star-fill"></div>
-                            </div>
-                            <!-- lap price-->
-                            <div class="product-price text-danger fw-bold">19.153.000đ
-                              <span class="text-muted text-decoration-line-through">22.903.000đ</span>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                      <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
-                        <div class="me-3">
-                          <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
-                          <input class="d-none" value="0">
-                        </div>
-                        <div class="text-start">
-                          <button class="buy-now-btn">Mua ngay</button>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="mb-5 col product" >
-                  <div class="card d-block hvr-glow">
-                    <a href="">
-                      <!-- Lap image -->
-                      <a href="#">
-                        <img src="images/product/lenovo/Laptop HP 15-FD0237TU 9Q972PA.png" class="card-img-top product-image"
-                          alt="Laptop Dell XPS 14">
-                      </a>
-                      <div class="card-body ms-1">
-                        <div class="text-start">
-                          <!-- Lap name-->
-                          <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop HP 15-FD0237TU</p>
-                          <div class="product-specs">I5-1334U, RAM 8GB, SSD 515GB</div>
-                          <!-- Lap reviews-->
-                          <div class="d-flex justify-content-start small text-warning mb-2">
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                          </div>
-                          <!-- Lap price-->
-                          <div class="product-price">13.000.000đ
-                            <span class="text-muted text-decoration-line-through">15.099.000đ</span>
-                          </div>
-                        </div>
-                      </div>
+      <div>
+        <h2 class="text-center mb-4 bi bi-fire"
+          style="background-color:#9e2222;padding: 0.55em; animation: blinkingText 1s infinite;"> SẢN PHẨM
+          BÁN CHẠY</h2>
+      </div>
+      <div class="container-md">
+        <div class="my-5 mx-4">
+          <div id="LAPVERSE" class="row gx-5 row-cols-xxl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1">
+            <div class="mb-5 col product">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- Lap image -->
+                  <a href="#">
+                    <a href="#">
+                      <img src="../images/product/lenovo/MacBook Air 15 inch M2 2023 8GB 256GB sạc 70W.png"
+                        class="card-img-top product-image" alt="Laptop Dell XPS 14">
                     </a>
-                    <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
-                      <div class="me-3">
-                        <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
-                        <input class="d-none" value="0">
-                      </div>
+                    <div class="card-body ms-1">
                       <div class="text-start">
-                        <button class="buy-now-btn">Mua ngay</button>
+                        <!-- Lap name-->
+                        <p class="text-decoration-none text-truncate d-block fw-bold mb-2"> MacBook Air 15 inch M2 2023
+                        </p>
+                        <div class="product-specs">Apple M2, RAM 8GB, SSD 256GB</div>
+                        <!-- lap reviews-->
+                        <div class="d-flex justify-content-start small text-warning mb-2">
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                          <div class="bi-star-fill"></div>
+                        </div>
+                        <!-- lap price-->
+                        <div class="product-price text-danger fw-bold">19.153.000đ
+                          <span class="text-muted text-decoration-line-through">22.903.000đ</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                    <div class="me-3">
+                      <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
+                      <input class="d-none" value="0">
+                    </div>
+                    <div class="text-start">
+                      <button class="buy-now-btn">Mua ngay</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="mb-5 col product">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- Lap image -->
+                  <a href="#">
+                    <img src="../images/product/lenovo/Laptop HP 15-FD0237TU 9Q972PA.png"
+                      class="card-img-top product-image" alt="Laptop Dell XPS 14">
+                  </a>
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- Lap name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop HP 15-FD0237TU</p>
+                      <div class="product-specs">I5-1334U, RAM 8GB, SSD 515GB</div>
+                      <!-- Lap reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                      </div>
+                      <!-- Lap price-->
+                      <div class="product-price">13.000.000đ
+                        <span class="text-muted text-decoration-line-through">15.099.000đ</span>
                       </div>
                     </div>
                   </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
+                    <input class="d-none" value="0">
+                  </div>
+                  <div class="text-start">
+                    <button class="buy-now-btn">Mua ngay</button>
+                  </div>
                 </div>
-                <div class="mb-5 col product" >
-                  <div class="card d-block hvr-glow">
-                    <a href="">
-                      <!-- lap image -->
-                      <a href="#">
-                        <img src="images/product/lenovo/Laptop HP Pavilion 15-EG3111TU 8U6L8PA.png"
-                          class="card-img-top product-image" alt="Laptop Dell XPS 14">
-                      </a>
-                      <div class="card-body ms-1">
-                        <div class="text-start">
-                          <!-- lap name-->
-                          <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop HP Pavilion 15-EG3111TU</p>
-                          <div class="product-specs">I5-1335U, RAM 16GB, SSD 512GB</div>
-                          <!-- Book reviews-->
-                          <div class="d-flex justify-content-start small text-warning mb-2">
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                          </div>
-                          <!-- lap price-->
-                          <div class="product-price">20.216.000đ
-                            <span class="text-muted text-decoration-line-through">22.980.000đ</span>
-                          </div>
-                        </div>
+              </div>
+            </div>
+            <div class="mb-5 col product">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- lap image -->
+                  <a href="#">
+                    <img src="../images/product/lenovo/Laptop HP Pavilion 15-EG3111TU 8U6L8PA.png"
+                      class="card-img-top product-image" alt="Laptop Dell XPS 14">
+                  </a>
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- lap name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop HP Pavilion 15-EG3111TU
+                      </p>
+                      <div class="product-specs">I5-1335U, RAM 16GB, SSD 512GB</div>
+                      <!-- Book reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
                       </div>
-                    </a>
-                    <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
-                      <div class="me-3">
-                        <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
-                        <input class="d-none" value="0">
-                      </div>
-                      <div class="text-start">
-                        <button class="buy-now-btn">Mua ngay</button>
+                      <!-- lap price-->
+                      <div class="product-price">20.216.000đ
+                        <span class="text-muted text-decoration-line-through">22.980.000đ</span>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="mb-5 col product" >
-                  <div class="card d-block hvr-glow">
-                    <a href="">
-                      <!-- LAP image -->
-                      <a href="#">
-                        <img src="images/product/lenovo/MacBook Air 15 inch M2 2023 8CPU 10GPU 8GB 512GB.png"
-                          class="card-img-top product-image" alt="Laptop Dell XPS 14">
-                      </a>
-                      <div class="card-body ms-1">
-                        <div class="text-start">
-                          <!-- LAP name-->
-                          <p class="text-decoration-none text-truncate d-block fw-bold mb-2">MacBook Air 15 inch M2 2023</p>
-                          <div class="product-specs">Apple M2, RAM 8GB, SSD 512GB</div>
-                          <!-- LAP reviews-->
-                          <div class="d-flex justify-content-start small text-warning mb-2">
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star"></div>
-                          </div>
-                          <!-- LAP price-->
-                          <div class="product-price text-danger fw-bold">23.100.000đ</div>
-                        </div>
-                      </div>
-                    </a>
-                    <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
-                      <div class="me-3">
-                        <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
-                        <input class="d-none" value="0">
-                      </div>
-                      <div class="text-start">
-                        <button class="buy-now-btn">Mua ngay</button>
-                      </div>
-                    </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
+                    <input class="d-none" value="0">
+                  </div>
+                  <div class="text-start">
+                    <button class="buy-now-btn">Mua ngay</button>
                   </div>
                 </div>
-                <div class="mb-5 col product" >
-                  <div class="card d-block hvr-glow">
-                    <a href="">
-                      <!-- LAP image -->
-                      <a href="#">
-                        <img src="images/product/lenovo/Apple MacBook Air M2 2024 8CPU 8GPU 16GB 256GB.png"
-                          class="card-img-top product-image" alt="Laptop Dell XPS 14">
-                      </a>
-                      <div class="card-body ms-1">
-                        <div class="text-start">
-                          <!-- LAP name-->
-                          <p class="text-decoration-none text-truncate d-block fw-bold mb-2">MacBook Air M1 256GB 2020</p>
-                          <div class="product-specs">Apple M2, RAM 16GB, SSD 256GB</div>
-                          <!-- LAP reviews-->
-                          <div class="d-flex justify-content-start small text-warning mb-2">
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                          </div>
-                          <!-- LAP price-->
-                          <div class="product-price text-danger fw-bold">23.135.000đ</div>
-                        </div>
+              </div>
+            </div>
+            <div class="mb-5 col product">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- LAP image -->
+                  <a href="#">
+                    <img src="../images/product/lenovo/MacBook Air 15 inch M2 2023 8CPU 10GPU 8GB 512GB.png"
+                      class="card-img-top product-image" alt="Laptop Dell XPS 14">
+                  </a>
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- LAP name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">MacBook Air 15 inch M2 2023</p>
+                      <div class="product-specs">Apple M2, RAM 8GB, SSD 512GB</div>
+                      <!-- LAP reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star"></div>
                       </div>
-                    </a>
-                    <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
-                      <div class="me-3">
-                        <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
-                        <input class="d-none" value="0">
-                      </div>
-                      <div class="text-start">
-                        <button class="buy-now-btn">Mua ngay</button>
-                      </div>
+                      <!-- LAP price-->
+                      <div class="product-price text-danger fw-bold">23.100.000đ</div>
                     </div>
                   </div>
-                </div>
-                <div class="mb-5 col product" >
-                  <div class="card d-block hvr-glow">
-                    <a href="">
-                      <!-- LAP image -->
-                      <a href="#">
-                        <img src="images/product/lenovo/Apple MacBook Air M2 2024 8CPU 8GPU 8GB 256GB.png"
-                          class="card-img-top product-image" alt="Laptop Dell XPS 14">
-                      </a>
-                      <div class="card-body ms-1">
-                        <div class="text-start">
-                          <!-- LAP name-->
-                          <p class="text-decoration-none text-truncate d-block fw-bold mb-2">MacBook Air M2 2024</p>
-                          <div class="product-specs">Apple M2, RAM 8GB, SSD 256GB</div>
-                          <!-- LAP reviews-->
-                          <div class="d-flex justify-content-start small text-warning mb-2">
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                          </div>
-                          <!-- LAP price-->
-                          <div class="product-price text-danger fw-bold">21.180.000đ</div>
-                        </div>
-                      </div>
-                    </a>
-                    <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
-                      <div class="me-3">
-                        <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
-                        <input class="d-none" value="0">
-                      </div>
-                      <div class="text-start">
-                        <button class="buy-now-btn">Mua ngay</button>
-                      </div>
-                    </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
+                    <input class="d-none" value="0">
+                  </div>
+                  <div class="text-start">
+                    <button class="buy-now-btn">Mua ngay</button>
                   </div>
                 </div>
-                <div class="mb-5 col product" >
-                  <div class="card d-block hvr-glow">
-                    <a href="">
-                      <!-- LAP image -->
-                      <a href="#">
-                        <img src="images/product/lenovo/Laptop HP Gaming Victus 15-FB1023AX 94F20PA.png"
-                          class="card-img-top product-image" alt="Laptop HP Gaming Victus">
-                      </a>
-                      <div class="card-body ms-1">
-                        <div class="text-start">
-                          <!-- LAP name-->
-                          <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop HP Gaming Victus </p>
-                          <div class="product-specs">R5-7535HS, RAM 8GB, SSD 512GB</div>
-                          <!-- LAP reviews-->
-                          <div class="d-flex justify-content-start small text-warning mb-2">
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star"></div>
-                          </div>
-                          <!-- LAP price-->
-                          <div class="product-price text-danger fw-bold">19.109.000đ
-                            <span class="text-muted text-decoration-line-through">21.149.000đ</span>
-                          </div>
-        
-                        </div>
+              </div>
+            </div>
+            <div class="mb-5 col product">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- LAP image -->
+                  <a href="#">
+                    <img src="../images/product/lenovo/Apple MacBook Air M2 2024 8CPU 8GPU 16GB 256GB.png"
+                      class="card-img-top product-image" alt="Laptop Dell XPS 14">
+                  </a>
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- LAP name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">MacBook Air M1 256GB 2020</p>
+                      <div class="product-specs">Apple M2, RAM 16GB, SSD 256GB</div>
+                      <!-- LAP reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
                       </div>
-                    </a>
-                    <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
-                      <div class="me-3">
-                        <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
-                        <input class="d-none" value="0">
-                      </div>
-                      <div class="text-start">
-                        <button class="buy-now-btn">Mua ngay</button>
-                      </div>
+                      <!-- LAP price-->
+                      <div class="product-price text-danger fw-bold">23.135.000đ</div>
                     </div>
                   </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
+                    <input class="d-none" value="0">
+                  </div>
+                  <div class="text-start">
+                    <button class="buy-now-btn">Mua ngay</button>
+                  </div>
                 </div>
-                <div class="mb-5 col product" >
-                  <div class="card d-block hvr-glow">
-                    <a href="">
-                      <!-- LAP image -->
-                      <a href="#">
-                        <img src="images/product/lenovo/43.jpg" class="card-img-top product-image"
-                          alt="Laptop MSI Modern 14">
-                      </a>
-                      <div class="card-body ms-1">
-                        <div class="text-start">
-                          <!-- LAP name-->
-                          <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop MSI Modern 14</p>
-                          <div class="product-specs">I7-1355U, RAM 16GB, SSD 512GB</div>
-                          <!-- LAP reviews-->
-                          <div class="d-flex justify-content-start small text-warning mb-2">
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star-fill"></div>
-                            <div class="bi-star"></div>
-                          </div>
-                          <!-- LAP price-->
-                          <div class="product-price text-danger fw-bold">13.490.000đ
-                            <span class="text-muted text-decoration-line-through">18.490.000đ</span>
-                          </div>
-        
-                        </div>
+              </div>
+            </div>
+            <div class="mb-5 col product">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- LAP image -->
+                  <a href="#">
+                    <img src="../images/product/lenovo/Apple MacBook Air M2 2024 8CPU 8GPU 8GB 256GB.png"
+                      class="card-img-top product-image" alt="Laptop Dell XPS 14">
+                  </a>
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- LAP name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">MacBook Air M2 2024</p>
+                      <div class="product-specs">Apple M2, RAM 8GB, SSD 256GB</div>
+                      <!-- LAP reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
                       </div>
-                    </a>
-                    <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
-                      <div class="me-3">
-                        <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
-                        <input class="d-none" value="0">
-                      </div>
-                      <div class="text-start">
-                        <button class="buy-now-btn">Mua ngay</button>
-                      </div>
+                      <!-- LAP price-->
+                      <div class="product-price text-danger fw-bold">21.180.000đ</div>
                     </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
+                    <input class="d-none" value="0">
+                  </div>
+                  <div class="text-start">
+                    <button class="buy-now-btn">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 col product">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- LAP image -->
+                  <a href="#">
+                    <img src="../images/product/lenovo/Laptop HP Gaming Victus 15-FB1023AX 94F20PA.png"
+                      class="card-img-top product-image" alt="Laptop HP Gaming Victus">
+                  </a>
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- LAP name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop HP Gaming Victus </p>
+                      <div class="product-specs">R5-7535HS, RAM 8GB, SSD 512GB</div>
+                      <!-- LAP reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star"></div>
+                      </div>
+                      <!-- LAP price-->
+                      <div class="product-price text-danger fw-bold">19.109.000đ
+                        <span class="text-muted text-decoration-line-through">21.149.000đ</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
+                    <input class="d-none" value="0">
+                  </div>
+                  <div class="text-start">
+                    <button class="buy-now-btn">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-5 col product">
+              <div class="card d-block hvr-glow">
+                <a href="">
+                  <!-- LAP image -->
+                  <a href="#">
+                    <img src="../images/product/lenovo/43.jpg" class="card-img-top product-image"
+                      alt="Laptop MSI Modern 14">
+                  </a>
+                  <div class="card-body ms-1">
+                    <div class="text-start">
+                      <!-- LAP name-->
+                      <p class="text-decoration-none text-truncate d-block fw-bold mb-2">Laptop MSI Modern 14</p>
+                      <div class="product-specs">I7-1355U, RAM 16GB, SSD 512GB</div>
+                      <!-- LAP reviews-->
+                      <div class="d-flex justify-content-start small text-warning mb-2">
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star-fill"></div>
+                        <div class="bi-star"></div>
+                      </div>
+                      <!-- LAP price-->
+                      <div class="product-price text-danger fw-bold">13.490.000đ
+                        <span class="text-muted text-decoration-line-through">18.490.000đ</span>
+                      </div>
+
+                    </div>
+                  </div>
+                </a>
+                <div class="card-footer py-4 pt-0 border-top-0 bg-transparent d-flex">
+                  <div class="me-3">
+                    <button class="buy-now-btn" data-bs-toggle="modal" data-bs-target="#sanpham">Thêm vào giỏ</button>
+                    <input class="d-none" value="0">
+                  </div>
+                  <div class="text-start">
+                    <button class="buy-now-btn">Mua ngay</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
     </section>
-</main>
-    <section style="background: #1d1d1d;">
-        <div class="logo-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Lenovo_logo_2015.svg" alt="Lenovo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Acer_Logo.svg" alt="Acer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/MSI_gaming_logo_2019.svg" alt="MSI">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HP_logo_2012.svg" alt="HP">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Dell_Logo.svg" alt="Dell">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Apple_logo_black.svg" alt="Apple">
-        </div>
-        <div class="form-container">
-            <h3>Đăng ký nhận tin</h3>
-            <form id="subscribeForm">
-                <input type="email" id="email" placeholder="Email nhận tin" required>
-                <button type="submit"><i>✉️</i> Đăng Ký</button>
-            </form>
-            <div id="successMessage" style="display:none; color: #ff4c4c; margin-top: 10px;">
-                Đăng ký thành công!
-            </div>
-        </div>
+  </main>
+  <section style="background: #1d1d1d;">
+    <div class="logo-container">
+      <img src="/images/logo/logo1.png" alt="DELL">
+      <img src="/images/logo/logo3.png" alt="HP">
+      <img src="/images/logo/logo2.png" alt="APPLE">
+      <img src="/images/logo/logo4.png" alt="MSI">
+      <img src="/images/logo/logo5.png" alt="LENOVO">
+      <img src="/images/logo/logo6.png" alt="ACER">
+    </div>
+    <div class="form-container">
+      <h3>Đăng ký nhận tin</h3>
+      <form id="subscribeForm">
+        <input type="email" id="email" placeholder="Email nhận tin" required>
+        <button type="submit"><i>✉️</i> Đăng Ký</button>
+      </form>
+      <div id="successMessage" style="display:none; color: #ff4c4c; margin-top: 10px;">
+        Đăng ký thành công!
+      </div>
+    </div>
 
-        <script>
-            document.getElementById('subscribeForm').addEventListener('submit', function (event) {
-                event.preventDefault();
-                var email = document.getElementById('email').value;
-                if (email) {
-                    document.getElementById('successMessage').style.display = 'block';
-                    setTimeout(function () {
-                        document.getElementById('successMessage').style.display = 'none';
-                    }, 5000);
-                    document.getElementById('email').value = '';
-                }
-            });
-        </script>
-    </section>
-    <!-- TIN TỨC CÔNG NGHỆ MỚI -->
-    <section id="tintuccongnghe" class="mb-2">
-        <div class="container_news">
-            <h2 class="text-center mb-4" style="color: #9e2222; padding-top: 1em; animation: blinkingText 1s infinite;">
-                <i class="bi bi-broadcast"> </i>TIN TỨC CÔNG NGHỆ MỚI
-            </h2>
-            <div class="row news-grid">
-                <!-- Bài báo 1 -->
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card news-card h-100">
-                        <a href="#">
-                            <img src="images/news/bao1a.jpg" class="card-img-top" alt="AMD Ryzen 7 9800X3D">
-                            <div class="card-body">
-                                <h5 class="card-title">AMD Ryzen 7 9800X3D cháy hàng tại nhiều nơi trên thế giới</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- Bài báo 2 -->
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card news-card h-100">
-                        <a href="#">
-                            <img src="images/news/bao2a.jpg" class="card-img-top" alt="Dell Inspiron 7445">
-                            <div class="card-body">
-                                <h5 class="card-title">Dell Inspiron 7445 2-in-1 - Sự lựa chọn toàn diện</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- Bài báo 3 -->
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card news-card h-100">
-                        <a href="#">
-                            <img src="images/news/bao3a.jpg" class="card-img-top" alt="Intel Core Ultra Series">
-                            <div class="card-body">
-                                <h5 class="card-title">Intel ra mắt Core Ultra Series 2 tại Việt Nam</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- Bài báo 4 -->
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card news-card h-100">
-                        <a href="#">
-                            <img src="images/news/bao4a.jpg" class="card-img-top" alt="Laptop Gaming Lenovo">
-                            <div class="card-body">
-                                <h5 class="card-title">TOP 3 Laptop Gaming Lenovo được chọn nhiều nhất 2024</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- Footer -->
-    <footer class="bg text-dark pt-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h5>CỬA HÀNG LAPVERSE</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="bi bi-geo-alt-fill"></i> Số 167 Hoàng Văn Thái, Phường Khương Trung,
-                            Quận Thanh
-                            Xuân,
-                            Hà Nội
-                        </li>
-                        <li><i class="bi bi-telephone-fill"></i> 0859125686</li>
-                        <li><i class="bi bi-envelope-fill"></i> lapverse0611@gmail.com</li>
-                    </ul>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/profile.php?id=61568214846575" class="bi bi-facebook"></a>
-                        <a href="mailto:lapverse0611@gmail.com" class="bi bi-envelope"></a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <h5>HỖ TRỢ KHÁCH HÀNG</h5>
-                    <ul class="list-unstyled">
-                        <li> <a href="Page/huongdanmuahang.html">Hướng dẫn mua hàng trực tuyến</a>
-                        </li>
-                        <li> <a href="Page/huongdanthanhtoan.html">Hướng dẫn thanh toán</a> </li>
-                        <li> <a href="Page/gopykhieunai.html">Góp ý, Khiếu Nại</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>CHÍNH SÁCH CỬA HÀNG</h5>
-                    <ul class="list-unstyled">
-                        <li> <a href="Page/chinhsachbaohanh.html">Chính sách bảo hành</a></li>
-                        <li> <a href="Page/chinhsachbaomat.html">Chính sách bảo mật</a></li>
-                        <li> <a href="Page/chinhsachchatluong.html">Chính sách chất lượng</a></li>
-                        <li> <a href="Page/chinhsachdoitravahoantien.html">Chính sách đổi trả và hoàn tiền</a></li>
-                        <li> <a href="Page/chinhsachvanchuyen.html">Chính sách vận chuyển</a></li>
-                        <li> <a href="Page/chinhsachvesinhlaptop.html">Chính sách vệ sinh laptop</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-12">
-                    <div class="col-inner iframe-facebook">
-                        <div class="row row-small" id="row-298520120">
-                            <div id="col-884698408" class="col small-12 large-12">
-                                <div class="col-inner">
-
-                                    <iframe
-                                        src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/profile.php?id=61568214846575&amp;tabs=cover&amp;width=340&amp;height=300&amp;small_header=false&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=false&amp;appId=1259082827813860"
-                                        frameborder="0" class="iframe-footer" scrolling="no"
-                                        allow="autoplay; encrypted-media; picture-in-picture; web-share">
-                                    </iframe>
-
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.456324711869!2d105.82304731488365!3d20.99721725750485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac88b99e4dbd%3A0x689b9adf640c2ba0!2zMTY3IFAuIEjhu41uZyBWxINuIFRo4bqjLCBLxaluZyBUcnVuZywgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1svi!2s!4v1718559022737!5m2!1svi!2s"
-                                        width="340" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                                        class="iframe-footer" referrerpolicy="no-referrer-when-downgrade">
-                                    </iframe>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </p>
-        </div>
-        <hr>
-        <div class="footer-finnal">
-            <div class="copyright-footer">
-                Copyright 2024 © <strong>Alrights reserved CuahangLapVerse</strong>
-            </div>
-        </div>
-    </footer>
-    <!-- Bootstrap JS và Popper.js -->
-    <script src="assets/framework/popper.min.js"></script>
-    <script src="assets/framework/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/framework/js/bootstrap.js.map"></script>
-    <!-- js pop up start-->
     <script>
-        // Lấy các phần tử cần sử dụng
-        const popupOverlay = document.getElementById('popupOverlay');
-        const popupContainer = document.getElementById('popupContainer');
-        const closePopup = document.getElementById('closePopup');
-
-        // Gán sự kiện click cho nút đóng
-        closePopup.addEventListener('click', function () {
-            console.log("hello");
-            popupOverlay.style.display = 'none';
-        });
-
-        // Gán sự kiện click cho overlay
-        popupOverlay.addEventListener('click', function (event) {
-            // Kiểm tra nếu click không nằm trong popupContainer
-            if (!popupContainer.contains(event.target)) {
-                popupOverlay.style.display = 'none';
-            }
-        }); 
+      document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        var email = document.getElementById('email').value;
+        if (email) {
+          document.getElementById('successMessage').style.display = 'block';
+          setTimeout(function () {
+            document.getElementById('successMessage').style.display = 'none';
+          }, 5000);
+          document.getElementById('email').value = '';
+        }
+      });
     </script>
-    <!-- js pop up end-->
+  </section>
+  <!-- TIN TỨC CÔNG NGHỆ MỚI -->
+  <section id="tintuccongnghe" class="mb-2">
+    <div class="container_news">
+      <h2 class="text-center mb-4" style="color: #9e2222; padding-top: 1em; animation: blinkingText 1s infinite;">
+        <i class="bi bi-broadcast"> </i>TIN TỨC CÔNG NGHỆ MỚI
+      </h2>
+      <div class="row news-grid">
+        <!-- Bài báo 1 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card news-card h-100">
+            <a href="/Page/blog.html">
+              <img src="images/news/bao1a.jpg" class="card-img-top" alt="AMD Ryzen 7 9800X3D">
+              <div class="card-body">
+                <h5 class="card-title">AMD Ryzen 7 9800X3D cháy hàng tại nhiều nơi trên thế giới</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Bài báo 2 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card news-card h-100">
+            <a href="/Page/blog.html">
+              <img src="images/news/bao2a.jpg" class="card-img-top" alt="Dell Inspiron 7445">
+              <div class="card-body">
+                <h5 class="card-title">Dell Inspiron 7445 2-in-1 - Sự lựa chọn toàn diện</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Bài báo 3 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card news-card h-100">
+            <a href="/Page/blog.html">
+              <img src="images/news/bao3a.jpg" class="card-img-top" alt="Intel Core Ultra Series">
+              <div class="card-body">
+                <h5 class="card-title">Intel ra mắt Core Ultra Series 2 tại Việt Nam</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Bài báo 4 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card news-card h-100">
+            <a href="/Page/blog.html">
+              <img src="images/news/bao4a.jpg" class="card-img-top" alt="Laptop Gaming Lenovo">
+              <div class="card-body">
+                <h5 class="card-title">TOP 3 Laptop Gaming Lenovo được chọn nhiều nhất 2024</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg text-dark pt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>CỬA HÀNG LAPVERSE</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt-fill"></i> Số 167 Hoàng Văn Thái, Phường Khương Trung,
+              Quận Thanh
+              Xuân,
+              Hà Nội
+            </li>
+            <li><i class="bi bi-telephone-fill"></i> 0859125686</li>
+            <li><i class="bi bi-envelope-fill"></i> lapverse0611@gmail.com</li>
+          </ul>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61568214846575" class="bi bi-facebook"></a>
+            <a href="mailto:lapverse0611@gmail.com" class="bi bi-envelope"></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+          <ul class="list-unstyled">
+            <li> <a href="/Page/huongdanmuahang.html">Hướng dẫn mua hàng trực tuyến</a>
+            </li>
+            <li> <a href="/Page/huongdanthanhtoan.html">Hướng dẫn thanh toán</a> </li>
+            <li> <a href="/Page/gopykhieunai.html">Góp ý, Khiếu Nại</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>CHÍNH SÁCH CỬA HÀNG</h5>
+          <ul class="list-unstyled">
+            <li> <a href="/Page/chinhsachbaohanh.html">Chính sách bảo hành</a></li>
+            <li> <a href="/Page/chinhsachbaomat.html">Chính sách bảo mật</a></li>
+            <li> <a href="/Page/chinhsachchatluong.html">Chính sách chất lượng</a></li>
+            <li> <a href="/Page/chinhsachdoitravahoantien.html">Chính sách đổi trả và hoàn tiền</a></li>
+            <li> <a href="/Page/chinhsachvanchuyen.html">Chính sách vận chuyển</a></li>
+            <li> <a href="/Page/chinhsachvesinhlaptop.html">Chính sách vệ sinh laptop</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-12">
+          <div class="col-inner iframe-facebook">
+            <div class="row row-small" id="row-298520120">
+              <div id="col-884698408" class="col small-12 large-12">
+                <div class="col-inner">
+
+                  <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/profile.php?id=61568214846575&amp;tabs=cover&amp;width=340&amp;height=300&amp;small_header=false&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=false&amp;appId=1259082827813860"
+                    frameborder="0" class="iframe-footer" scrolling="no"
+                    allow="autoplay; encrypted-media; picture-in-picture; web-share">
+                  </iframe>
+
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.456324711869!2d105.82304731488365!3d20.99721725750485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac88b99e4dbd%3A0x689b9adf640c2ba0!2zMTY3IFAuIEjhu41uZyBWxINuIFRo4bqjLCBLxaluZyBUcnVuZywgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1svi!2s!4v1718559022737!5m2!1svi!2s"
+                    width="340" height="150" style="border:0;" allowfullscreen="" loading="lazy" class="iframe-footer"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </p>
+    </div>
+    <hr>
+    <div class="footer-finnal">
+      <div class="copyright-footer">
+        Copyright 2024 © <strong>Alrights reserved CuahangLapVerse</strong>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JS và Popper.js -->
+  <script src="assets/framework/popper.min.js"></script>
+  <script src="assets/framework/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/framework/js/bootstrap.js.map"></script>
+  <!-- js pop up start-->
+  <script>
+    // Lấy các phần tử cần sử dụng
+    const popupOverlay = document.getElementById('popupOverlay');
+    const popupContainer = document.getElementById('popupContainer');
+    const closePopup = document.getElementById('closePopup');
+
+    // Gán sự kiện click cho nút đóng
+    closePopup.addEventListener('click', function () {
+      console.log("hello");
+      popupOverlay.style.display = 'none';
+    });
+
+    // Gán sự kiện click cho overlay
+    popupOverlay.addEventListener('click', function (event) {
+      // Kiểm tra nếu click không nằm trong popupContainer
+      if (!popupContainer.contains(event.target)) {
+        popupOverlay.style.display = 'none';
+      }
+    }); 
+  </script>
+  <!-- js pop up end-->
 </body>
 
 </html>
