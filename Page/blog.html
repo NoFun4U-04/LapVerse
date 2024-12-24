@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BLOG </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/framework/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/framework/css/">
+    <link rel="stylesheet" href="/assets/framework/css/font-icon/bootstrap-icons.min.css">
+    <!-- Kết nối file CSS -->
+    <link rel="stylesheet" href="/css/lienhe.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="/css/chinhsach.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script href="/js/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Thanh thông báo chào mừng -->
+        <div class="navbar_1">
+            <nav>
+                <div class="container-md px-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a class="text-blinking" href="#">Chào mừng bạn đến với Vũ trụ Laptop - LAPVERSE !!!</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Navbar chính -->
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
+            <div class="container">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="/images/banner/logo.png" alt="LAPVERSE Logo" class="img-fluid">
+                </a>
+                <!-- Thanh tìm kiếm -->
+                <form class="d-flex ms-3 search-form" action="#" method="get">
+                    <input class="form-control me-3" type="search" placeholder="Tìm kiếm sản phẩm..."
+                        aria-label="Search">
+                    <button
+                        class="btn btn-outline-light d-flex align-items-center justify-content-center p-1 px-3 login-btn"
+                        type="submit">
+                        <i class="bi-search"></i>
+                    </button>
+                </form>
+
+                <!-- Các biểu tượng đăng nhập và giỏ hàng -->
+                <div class="d-flex justify-content-end align-items-center right-actions">
+                    <!-- Nút Đăng nhập -->
+                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                        <a href="/Page/dangnhap.html" class="d-flex align-items-center">
+                            <i class="bi bi-person-fill me-1"></i>
+                            <span class="d-none d-md-inline fw-normal">ĐĂNG NHẬP</span>
+                        </a>
+                    </button>
+                    <span class="text-white mx-2">hoặc</span>
+                    <!-- Nút Đăng ký -->
+                    <button class="btn btn-outline-light d-flex align-items-center p-1 px-2 login-btn">
+                        <a href="/Page/dangky.html" class="d-flex align-items-center">
+                            <i class="bi bi-person-fill me-1"></i>
+                            <span class="d-none d-md-inline fw-normal">ĐĂNG KÝ</span>
+                        </a>
+                    </button>
+                </div>
+        </nav>
+        <!-- MENU start here -->
+        <nav class="menu navbar navbar-expand-md bg-light border-bottom py-2">
+            <div class="container-md d-flex justify-content-between align-items-center">
+                <!-- Logo và Nút Toggle Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Danh sách menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav gap-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold active" href="/index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="/Page/Information.html">Giới thiệu</a>
+                        </li>
+                        <!-- Dropdown Sản phẩm -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fw-semibold dropdown-toggle" href="#" id="dropdownMenuButton"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="/Page/sanpham.html">Tất cả sản phẩm</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Gaming</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Văn phòng</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Sinh viên</a></li>
+                                <li><a class="dropdown-item" href="#">Laptop Doanh nhân</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="/Page/tintuc.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="/Page/lienhe.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Nút Giỏ hàng -->
+                <div>
+                    <a href="./Page/cart.html" class="btn btn-outline-dark d-flex align-items-center">
+                        <i class="bi bi-cart-fill me-1"></i>
+                        Giỏ hàng
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Blog-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="main-content">
+                    <h3 style="font-weight: 600; margin-top: 25px; color: #b00;">VÉN MÀN THAM VỌNG CỦA ARM: Gần một
+                        nửa laptop sẽ dùng chip điện thoại chỉ sau vài năm nữa?</h3>
+                    <div class="infor_article post-date">
+                        <p style="color: 4F6F7D;">
+                            <i class="fa fa-user"></i> Đinh Thị Thu Hoài
+                            <i class="fa fa-clock"> </i> 20/12/2024
+                        </p>
+                    </div><br>
+
+                    <div class="text-center">
+                        <img src="/images/news/bao1a.jpg" alt="" width="100%">
+                    </div><br>
+                    <p style="text-align:justify;">Hồi giữa năm nay, tổng giám đốc ARM Holdings là ông Rene Haas đã
+                        tuyên bố rằng trong vòng 5 năm tới, những con chip ARM sẽ xuất hiện trong một nửa số thiết
+                        bị
+                        Windows. Đây là một thông điệp đầy tham vọng, nhưng ARM là gì và tại sao "trùm cuối" của nó
+                        lại tự tin đến vậy?</p>
+                </div>
+
+                <p style="text-align:justify;">Chip ARM đang dần trở thành đối thủ đáng gờm trong thị trường laptop.
+                    Với tuyên bố đầy tham
+                    vọng từ tổng giám đốc ARM Holdings, Rene Haas, rằng chip ARM sẽ chiếm 50% thị phần laptop
+                    trong 5 năm tới, tương lai của chúng có thực sự sáng lạn như vậy? Hãy cùng khám phá lý do
+                    ARM tự tin đến thế.</p>
+
+                <h4>Sự ủng hộ của số liệu</h4>
+                <p style="text-align:justify;">Theo báo cáo từ TechInsights, thị phần chip ARM trong thị trường
+                    laptop sẽ tăng mạnh và có thể chiếm
+                    khoảng 40% vào năm 2030, gần bằng các chip x86 của Intel và AMD. Dự đoán này khẳng định sự phát
+                    triển nhanh chóng của kiến trúc ARM, ủng hộ tuyên bố trước đó của Rene Haas, CEO của ARM
+                    Holdings,
+                    về một tương lai tươi sáng cho chip ARM trong thị trường máy tính xách tay.</p>
+
+                <p style="text-align:justify;">Theo dữ liệu từ TechInsights, chip x86 hiện chiếm 82% thị phần máy
+                    tính xách tay toàn cầu, nhưng dự
+                    đoán sẽ giảm xuống 80% vào năm 2025 và còn 60% vào năm 2030, trong khi ARM sẽ chiếm 40%. Dù vậy,
+                    ARM
+                    dự kiến chiếm đến 52% doanh thu thị trường, nhờ các dòng laptop cao cấp của Apple, đặc biệt sau
+                    khi
+                    Apple chuyển sang chip ARM với M1. Qualcomm cũng đang hợp tác với Microsoft và các OEM để tung
+                    ra
+                    nhiều thiết bị Windows chạy ARM, thúc đẩy sự tăng trưởng của kiến trúc này.</p>
+
+                <p style="text-align:justify;">Hiện tại, Microsoft đã thực hiện nhiều động tác nhằm đảm bảo rằng ARM
+                    sẽ tìm được thành công trên
+                    thị trường PC, trong đó có việc tạo ra những bộ công cụ phát triển phần mềm giúp các nhà phát
+                    triển
+                    có thể tạo ra các ứng dụng chạy được trên Windows và chip ARM, thay vì chỉ ưu tiên cho x86 như
+                    trước. Ông Haas đã bình luận về điều này và nói rằng "Microsoft đã rất nỗ lực trong vài năm trở
+                    lại
+                    đây. Họ rất tâm huyết (với chip ARM) khi nhìn từ góc độ phần mềm."</p>
+                <h4>Chip ARM là gì, và x86 là gì?</h4>
+
+                Nếu bạn chưa biết thì kiến trúc ARM hiện đang là lựa chọn của hai công ty lớn trong làng công nghệ -
+                Apple với các con chip M1 - M4, và Qualcomm với dòng Snapdragon của mình. ARM đã thống trị thị
+                trường điện thoại và thiết bị cầm tay từ lâu với ưu điểm mạnh mẽ về thời lượng pin, điều mà những
+                con chip kiến trúc x86 của Intel và AMD chưa thể làm được.<br>
+
+                <p style="text-align:justify;">Giờ đây Qualcomm đang bắt đầu lấn sân sang mảng PC, và dù nỗ lực tiến
+                    quân vào thị trường desktop
+                    của họ đã thất bại, chip ARM vẫn sẽ được sử dụng trên desktop bởi những nhà sản xuất khác, và
+                    mảng
+                    laptop vẫn là mục tiêu chính của Qualcomm.<br>
+
+                    Vậy thì ARM thực sự là gì? Nó ra đời chậm hơn so với kiến trúc x86 mà Intel và AMD sử dụng - con
+                    chip x86 đầu tiên ra mắt vào năm 1978, vào thời đại của những cỗ máy tính khổng lồ to như cả một
+                    căn
+                    phòng, còn ARM ra mắt sau đó vài năm. Đây là một kiến trúc được sử dụng để sản xuất những con
+                    chip
+                    xử lý trung tâm (CPU - central processing unit) và là viết tắt của cụm từ Advanced RISC
+                    Machine.<br>
+
+                    Trong đó, RISC hay Reduced Instruction Set Computer là một phương thức "chỉ dẫn" cách thiết kế
+                    phần
+                    cứng trong một cỗ máy. Nói một cách đơn giản, các phần mềm và hệ điều hành đều hoạt động dựa
+                    trên
+                    những tập lệnh được định sẵn nằm trong chip, gọi chung là instruction set.<br>
+
+                    Vào năm 1981, trường Đại học California xem xét việc sử dụng tài nguyên của các chip xử lý trong
+                    máy
+                    tính và nhận ra rằng phần lớn các phần mềm chỉ sử dụng một nhóm nhỏ các tập lệnh. Khi giảm bớt
+                    số
+                    tập lệnh bằng cách cắt bỏ những thứ ít khi được sử dụng, những tập lệnh đơn giản còn lại sẽ chạy
+                    nhanh hơn, tiêu hao ít năng lượng và không gian hơn.<br>
+
+                    Các nhà nghiên cứu của trường Đại học California đặt tên cho những gì còn lại sau khi cắt giảm
+                    là
+                    RISC - Reduced Instruction Set Computer (tạm dịch là "máy tính với tập lệnh cắt giảm") trong khi
+                    chip x86 cũ là CISC (complex instruction set computer - máy tính với tập lệnh phức tạp").<br>
+
+                    Những con chip được thiết kế để chạy trên nền tảng RISC được gọi chung là chip sử dụng kiến trúc
+                    ARM. Tính đến thời điểm hiện tại, bản quyền kiến trúc ARM được quản lý bởi ARM Holdings và họ
+                    trao
+                    quyền sử dụng các thiết kế chip ARM khác nhau - với những ưu hóa khác nhau tùy vào mục đích sử
+                    dụng
+                    - cho những công ty như Apple hay Qualcomm.</p>
+
+                <h4>ARM vs x86, ưu điểm và nhược điểm.</h4>
+                Cả CPU x86 và ARM đều rất phổ biến trên thị trường hiện nay, mỗi loại đều có những ưu và nhược điểm
+                riêng, phù hợp với những ứng dụng khác nhau. Chúng ta sẽ cùng phân tích rõ hơn về những ưu và nhược
+                điểm của hai loại CPU này.
+
+                <h4>CPU x86.</h4>
+                <p style="text-align:justify;">Những ưu điểm nổi bật của CPU x86 là hiệu năng cao, khi nó thường
+                    được thiết kế để xử lý các tác vụ
+                    nặng, phức tạp như chơi game, chỉnh sửa video, render đồ họa... Nhờ đó, chúng cung cấp hiệu năng
+                    tính toán rất mạnh mẽ. Chúng cũng có tính tương thích cao hơn với các phần mềm nhờ lịch sử lâu
+                    dài
+                    trên desktop và laptop của mình, cũng như một kho phần mềm khổng lồ và tương thích với hầu hết
+                    các
+                    hệ điều hành phổ biến (Windows, Linux). Khi sử dụng CPU x86, người dùng cũng có nhiều lựa chọn
+                    nâng
+                    cấp hơn bởi chip ARM chỉ mới chập chững bước chân vào thị trường PC.</p>
+
+                <p style="text-align:justify;">Những nhược điểm rõ rệt của chip x86 là việc tiêu thụ điện năng cao
+                    hơn rõ rệt so với CPU ARM, dẫn
+                    đến một hậu quả khác là tỏa nhiều nhiệt hơn và cần được đầu tư một hệ thống làm mát tốt. Cấu
+                    trúc
+                    phức tạp của chúng cũng khiến những CPU này có kích thước lớn hơn và khó có thể xuất hiện trong
+                    các
+                    thiết bị di động nhỏ gọn mà chúng ta thường dùng.</p>
+
+                <h4>CPU ARM là gì?</h4>
+                <p style="text-align:justify;">Hoàn toàn trái ngược với CPU x86, các CPU ARM sở hữu hiệu suất năng
+                    lượng ấn tượng, tiêu hao rất ít
+                    điện năng và vì thế được các nhà sản xuất thiết bị nhỏ gọn (điện thoại, tablet, smartwatch,...)
+                    ưu
+                    ái lựa chọn. Điều này giúp kéo dài thời gian sử dụng pin đồng thời giảm thiểu nhiệt lượng phát
+                    ra từ
+                    thiết bị.</p>
+
+                <p style="text-align:justify;">Chúng cũng có kích thước nhỏ hơn hẳn so với x86, giúp việc thu nhỏ
+                    kích cỡ của thiết bị dễ dàng hơn
+                    - một ưu điểm cực kỳ quan trọng khi mà các hãng điện thoại đều đang cố gắng tung ra những sản
+                    phẩm
+                    mỏng nhẹ hơn, thời lượng pin lâu hơn. Và không thể không kể đến việc kết cấu đơn giản của CPU
+                    ARM
+                    giúp giảm bớt chi phí sản xuất và từ đó hạ giá thành sản phẩm.</p>
+
+                <p style="text-align:justify;">CPU ARM gặp ba vấn đề chính trong thị trường PC: hiệu năng, tương
+                    thích phần mềm, và khả năng nâng
+                    cấp. Hiệu năng của CPU ARM vẫn thấp hơn so với CPU x86 trong các tác vụ nặng. Số lượng phần mềm
+                    hỗ
+                    trợ CPU ARM cũng hạn chế hơn, đặc biệt là phần mềm chuyên dụng. Cuối cùng, việc nâng cấp CPU ARM
+                    gặp
+                    nhiều khó khăn vì thiếu các tùy chọn bán lẻ và khả năng thay thế dễ dàng như CPU x86, với một số
+                    trường hợp chip bị "hàn chết" trên bo mạch chủ.</p>
+
+                <h4>Tương lai của chip ARM như thế nào?</h4>
+                <p style="text-align:justify;">Ngoài Apple và Qualcomm, NVIDIA cũng tham gia sản xuất chip ARM, dự
+                    kiến ra mắt CPU ARM mới vào năm
+                    2025, được sản xuất bởi Intel. AMD cũng được cho là sẽ tham gia thị trường chip PC kiến trúc
+                    ARM. Sự
+                    góp mặt của các "ông lớn" này hứa hẹn thúc đẩy cải tiến cho chip ARM, đe dọa vị thế của x86. Tuy
+                    nhiên, chip x86 vẫn có lợi thế về tính tương thích phần mềm và thời lượng pin đã dần theo kịp
+                    ARM.
+                    Cạnh tranh này sẽ mang đến các chip mạnh mẽ hơn, giá tốt hơn.</p>
+            </div>
+            <!---->
+            <div class="col-md-4">
+                <h3 style="color: #b00; font-size: 20px ;font-weight: 600; margin-top: 30px; margin-bottom: 20px;">
+                    Tin tức cho bạn
+                </h3>
+                <div class="small-news">
+                    <div class="left">
+                        <img src="/images/news/bao1a.jpg" style="width: 125px; height: 80px; object-fit: cover;">
+                    </div>
+                    <div class="right">
+                        <a href="/Page/blog.html">Vén màn tham vọng của
+                            ARM</a>
+                        <p> Vừa xong </p>
+                    </div>
+                </div>
+                <hr style="background-color: #b00; height: 0.75px; width: 100%">
+                <div class="small-news">
+                    <div class="left">
+                        <img src="/images/news/bao3a.jpg" style="width: 125px; height: 80px; object-fit: cover;">
+                    </div>
+                    <div class="right">
+                        <a href="/Page/blog.html">Intel chính thức ra mắt dòng vi
+                            xử lý Core Ultra Series 2 tại Việt Nam</a>
+                        <p> 7 ngày </p>
+                    </div>
+                </div>
+
+                <hr style="background-color: #b00; height: 0.75px; width: 100%">
+                <!---->
+                <div class="small-news">
+                    <div class="left">
+                        <img src="/images/news/Chưa có tên (400 x 174 px).png"
+                            style="width: 125px; height: 80px; object-fit: cover;">
+                    </div>
+                    <div class="right">
+                        <a href="/Page/blog.html">Apple ra mắt MacBook Pro mới với
+                            3
+                            tùy chọn chip</a>
+                        <p> 15 ngày </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <footer class="bg text-dark pt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>CỬA HÀNG LAPVERSE</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-geo-alt-fill"></i> Số 167 Hoàng Văn Thái, Phường Khương Trung, Quận
+                                Thanh
+                                Xuân,
+                                Hà Nội
+                            </li>
+                            <li><i class="bi bi-telephone-fill"></i> 0859125686</li>
+                            <li><i class="bi bi-envelope-fill"></i> lapverse0611@gmail.com</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=61568214846575" class="bi bi-facebook"></a>
+                            <a href="mailto:lapverse0611@gmail.com" class="bi bi-envelope"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+                        <ul class="list-unstyled">
+                            <li> <a href="/Page/huongdanmuahang.html">Hướng dẫn mua hàng trực tuyến</a></li>
+                            <li> <a href="/Page/huongdanthanhtoan.html">Hướng dẫn thanh toán</a> </li>
+                            <li> <a href="/Page/gopykhieunai.html">Góp ý, Khiếu Nại</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>CHÍNH SÁCH CỬA HÀNG</h5>
+                        <ul class="list-unstyled">
+                            <li> <a href="/Page/chinhsachbaohanh.html">Chính sách bảo hành</a></li>
+                            <li> <a href="/Page/chinhsachbaomat.html">Chính sách bảo mật</a></li>
+                            <li> <a href="/Page/chinhsachchatluong.html">Chính sách chất lượng</a></li>
+                            <li> <a href="/Page/chinhsachdoitravahoantien.html">Chính sách đổi trả và hoàn tiền</a></li>
+                            <li> <a href="/Page/chinhsachvanchuyen.html">Chính sách vận chuyển</a></li>
+                            <li> <a href="/Page/chinhsachvesinhlaptop.html">Chính sách vệ sinh laptop</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="col-inner iframe-facebook">
+                            <div class="row row-small" id="row-298520120">
+                                <div id="col-884698408" class="col small-12 large-12">
+                                    <div class="col-inner">
+
+                                        <iframe
+                                            src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/profile.php?id=61568214846575&amp;tabs=cover&amp;width=340&amp;height=300&amp;small_header=false&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=false&amp;appId=1259082827813860"
+                                            frameborder="0" class="iframe-footer" scrolling="no"
+                                            allow="autoplay; encrypted-media; picture-in-picture; web-share">
+                                        </iframe>
+
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.456324711869!2d105.82304731488365!3d20.99721725750485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac88b99e4dbd%3A0x689b9adf640c2ba0!2zMTY3IFAuIEjhu41uZyBWxINuIFRo4bqjLCBLxaluZyBUcnVuZywgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1svi!2s!4v1718559022737!5m2!1svi!2s"
+                                            width="340" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                                            class="iframe-footer" referrerpolicy="no-referrer-when-downgrade">
+                                        </iframe>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </p>
+            </div>
+            <hr>
+            <div class="footer-finnal">
+                <div class="copyright-footer">
+                    Copyright 2024 © <strong>Allrights reserved CuahangLapVerse</strong>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
