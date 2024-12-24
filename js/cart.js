@@ -1,5 +1,4 @@
 
-
 const quantityInput = document.getElementById('quantity');
 const unitPriceElement = document.querySelector('.unit-price h4');
 const totalPriceElement = document.querySelector('.total-price h4');
