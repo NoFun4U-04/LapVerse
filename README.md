@@ -1,7 +1,7 @@
 # LapVerse - Vũ trụ Laptop cho mọi người- Nhóm 5
 
 
-## Đề tài: Xây dựng trang web bán latop 
+## Đề tài: Xây dựng trang web bán laptop 
 
 Lớp học phần: Thiết kế web - Thứ 7 ca 2
 
