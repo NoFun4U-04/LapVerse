@@ -86,7 +86,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav gap-lg-4">
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold active" href="../index.html">Trang chủ</a>
+                        <a class="nav-link fw-semibold " href="../index.html">Trang chủ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="../Page/Information.html">Giới thiệu</a>
@@ -106,7 +106,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" href="../Page/tintuc.html">Tin tức</a>
+                        <a class="nav-link fw-semibold active" href="../Page/tintuc.html">Tin tức</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="../Page/lienhe.html">Liên hệ</a>
@@ -139,7 +139,7 @@
                                 chip ARM
                                 sẽ xuất hiện trong một nửa số thiết bị Windows. Đây là một thông...</h5>
                             <div class="btl_blog">
-                                <a href="/Page/blog.html">Xem thêm</a>
+                                <a href="../Page/blog.html">Xem thêm</a>
                             </div>
                         </div>
                     </div>
@@ -153,10 +153,10 @@
                 </h3>
                 <div class="small-news">
                     <div class="left">
-                        <img src="/images/news/bao1a.jpg" style="width: 125px; height: 80px; object-fit: cover;">
+                        <img src="../images/news/bao1a.jpg" style="width: 125px; height: 80px; object-fit: cover;">
                     </div>
                     <div class="right">
-                        <a href="/Page/blog.html">Vén màn tham vọng của
+                        <a href="../Page/blog.html">Vén màn tham vọng của
                             ARM</a>
                         <p> Vừa xong </p>
                     </div>
@@ -164,10 +164,10 @@
                 <hr style="background-color: #b00; height: 0.75px; width: 100%">
                 <div class="small-news">
                     <div class="left">
-                        <img src="/images/news/bao3a.jpg" style="width: 125px; height: 80px; object-fit: cover;">
+                        <img src="../images/news/bao3a.jpg" style="width: 125px; height: 80px; object-fit: cover;">
                     </div>
                     <div class="right">
-                        <a href="/Page/blog.html">Intel chính thức ra mắt dòng vi
+                        <a href="../Page/blog.html">Intel chính thức ra mắt dòng vi
                             xử lý Core Ultra Series 2 tại Việt Nam</a>
                         <p> 7 ngày </p>
                     </div>
@@ -177,11 +177,11 @@
                 <!---->
                 <div class="small-news">
                     <div class="left">
-                        <img src="/images/news/Chưa có tên (400 x 174 px).png"
+                        <img src="../images/news/Chưa có tên (400 x 174 px).png"
                             style="width: 125px; height: 80px; object-fit: cover;">
                     </div>
                     <div class="right">
-                        <a href="/Page/blog.html">Apple ra mắt MacBook Pro mới với
+                        <a href="../Page/blog.html">Apple ra mắt MacBook Pro mới với
                             3
                             tùy chọn chip</a>
                         <p> 15 ngày </p>
@@ -193,37 +193,90 @@
     <hr>
     <section style="background: #1d1d1d;">
         <div class="logo-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Lenovo_logo_2015.svg" alt="Lenovo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Acer_Logo.svg" alt="Acer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/MSI_gaming_logo_2019.svg" alt="MSI">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HP_logo_2012.svg" alt="HP">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Dell_Logo.svg" alt="Dell">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Apple_logo_black.svg" alt="Apple">
+          <img src="../images/logo/logo1.png" alt="DELL">
+          <img src="../images/logo/logo3.png" alt="HP">
+          <img src="../images/logo/logo2.png" alt="APPLE">
+          <img src="../images/logo/logo4.png" alt="MSI">
+          <img src="../images/logo/logo5.png" alt="LENOVO">
+          <img src="../images/logo/logo6.png" alt="ACER">
         </div>
         <div class="form-container">
-            <h3>Đăng ký nhận tin</h3>
-            <form id="subscribeForm">
-                <input type="email" id="email" placeholder="Email nhận tin" required>
-                <button type="submit"><i>✉️</i> Đăng Ký</button>
-            </form>
-            <div id="successMessage" style="display:none; color: #ff4c4c; margin-top: 10px;">
-                Đăng ký thành công!
-            </div>
+          <h3>Đăng ký nhận tin</h3>
+          <form id="subscribeForm">
+            <input type="email" id="email" placeholder="Email nhận tin" required>
+            <button type="submit"><i>✉️</i> Đăng Ký</button>
+          </form>
+          <div id="successMessage" style="display:none; color: #ff4c4c; margin-top: 10px;">
+            Đăng ký thành công!
+          </div>
         </div>
     
         <script>
-            document.getElementById('subscribeForm').addEventListener('submit', function (event) {
-                event.preventDefault();
-                var email = document.getElementById('email').value;
-                if (email) {
-                    document.getElementById('successMessage').style.display = 'block';
-                    setTimeout(function () {
-                        document.getElementById('successMessage').style.display = 'none';
-                    }, 5000);
-                    document.getElementById('email').value = '';
-                }
-            });
+          document.getElementById('subscribeForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var email = document.getElementById('email').value;
+            if (email) {
+              document.getElementById('successMessage').style.display = 'block';
+              setTimeout(function () {
+                document.getElementById('successMessage').style.display = 'none';
+              }, 5000);
+              document.getElementById('email').value = '';
+            }
+          });
         </script>
+    </section>
+    <!-- TIN TỨC CÔNG NGHỆ MỚI -->
+    <section id="tintuccongnghe" class="mb-2">
+        <div class="container_news">
+            <h2 class="text-center mb-4" style="color: #9e2222; padding-top: 1em; animation: blinkingText 1s infinite;">
+                <i class="bi bi-broadcast"> </i>TIN TỨC CÔNG NGHỆ MỚI
+            </h2>
+            <div class="row news-grid">
+                <!-- Bài báo 1 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card news-card h-100">
+                        <a href="./blog.html">
+                            <img src="../images/news/bao1a.jpg" class="card-img-top" alt="AMD Ryzen 7 9800X3D">
+                            <div class="card-body">
+                                <h5 class="card-title">AMD Ryzen 7 9800X3D cháy hàng tại nhiều nơi trên thế giới</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Bài báo 2 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card news-card h-100">
+                        <a href="./blog.html">
+                            <img src="../images/news/bao2a.jpg" class="card-img-top" alt="Dell Inspiron 7445">
+                            <div class="card-body">
+                                <h5 class="card-title">Dell Inspiron 7445 2-in-1 - Sự lựa chọn toàn diện</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Bài báo 3 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card news-card h-100">
+                        <a href="./blog.html">
+                            <img src="../images/news/bao3a.jpg" class="card-img-top" alt="Intel Core Ultra Series">
+                            <div class="card-body">
+                                <h5 class="card-title">Intel ra mắt Core Ultra Series 2 tại Việt Nam</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Bài báo 4 -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card news-card h-100">
+                        <a href="./blog.html">
+                            <img src="../images/news/bao4a.jpg" class="card-img-top" alt="Laptop Gaming Lenovo">
+                            <div class="card-body">
+                                <h5 class="card-title">TOP 3 Laptop Gaming Lenovo được chọn nhiều nhất 2024</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
     </section>
     <!-- Footer -->
     <footer class="bg text-dark pt-4">
@@ -299,9 +352,9 @@
         </div>
     </footer>
     <!-- Bootstrap JS và Popper.js -->
-    <script src="assets/framework/popper.min.js"></script>
-    <script src="assets/framework/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/framework/js/bootstrap.js.map"></script>
+    <script src="../assets/framework/popper.min.js"></script>
+    <script src="../assets/framework/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/framework/js/bootstrap.js.map"></script>
     
     <script src="../js/main.js"></script>
 </body>

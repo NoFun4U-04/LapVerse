@@ -172,18 +172,18 @@
     <!-- GIẢM GIÁ _ SP MỚi -->
     <section class="special-offers">
         <div class="offer">
-            <img src="images/giamgia/1.jpg" alt="Laptop 1" class="offer-image">
+            <a href="Page/khuyen_mai.html"><img src="images/giamgia/1.jpg" alt="Laptop 1" class="offer-image"></a>
             <h3>Ưu Đãi Dịp Lễ</h3>
             <h1>Giảm Giá Lên Đến 30%</h1>
             <p>Các thương hiệu máy tính xách tay được chọn</p>
-            <button>Mua Ngay</button>
+            <a href="Page/khuyen_mai.html"><button>Xem Ngay</button></a>
         </div>
         <div class="offer">
-            <img src="images/giamgia/2.jpg" alt="Laptop 2" class="offer-image">
+          <a href="Page/khuyen_mai.html"><img src="images/giamgia/2.jpg" alt="Laptop 2" class="offer-image"></a>
             <h3>Sản Phẩm Mới</h3>
             <h1>Hiệu Suất Mọi Nơi</h1>
             <p>Các thương hiệu máy tính hàng đầu</p>
-            <button>Mua Ngay</button>
+            <a href="Page/khuyen_mai.html"></a><button>Xem Ngay</button></a>
         </div>
     </section>
     <!-- SẢN PHẨM NỔI BẬT-->
@@ -680,6 +680,14 @@
             </div>
           </div>
     </section>
+
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+          <h2>Thành công!</h2>
+          <p>Đã thêm vào giỏ hàng.</p>
+          <button class="close-btn" id="closeModalBtn">Đóng</button>
+      </div>
+  </div>
 </main>
     <section style="background: #1d1d1d;">
         <div class="logo-container">
@@ -846,12 +854,35 @@
     <script src="assets/framework/js/bootstrap.bundle.min.js"></script>
     <script src="assets/framework/js/bootstrap.js.map"></script>
     <script>
-      const buyNowBtns = document.querySelectorAll('.product .text-start .buy-now-btn');
-buyNowBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        window.location.href = "Page/Chitietsanpham.html"; 
-    });
-});
+      // Lấy các phần tử từ DOM
+      const addToCartBtns = document.querySelectorAll('.me-3 .buy-now-btn');
+      const successModal = document.getElementById('successModal');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+
+      // Duyệt qua tất cả các nút "Thêm vào giỏ" và gán sự kiện cho từng nút
+      addToCartBtns.forEach((btn) => {
+          btn.addEventListener('click', () => {
+              successModal.style.display = 'flex'; 
+          });
+      });
+
+      // Khi người dùng click vào nút "Đóng"
+      closeModalBtn.addEventListener('click', () => {
+          successModal.style.display = 'none';
+      });
+
+      // Đóng modal khi nhấn vào phần nền ngoài modal
+      window.addEventListener('click', (event) => {
+          if (event.target === successModal) {
+              successModal.style.display = 'none';
+          }
+      });
+            const buyNowBtns = document.querySelectorAll('.product .text-start .buy-now-btn');
+      buyNowBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+              window.location.href = "Page/Chitietsanpham.html"; 
+          });
+      });
 
     </script>
     <!-- js pop up start-->

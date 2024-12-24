@@ -633,7 +633,6 @@ input:-webkit-autofill {
 .form-container button:hover {
     background-color: #e63939;
 }
-
 .form-container button i {
     margin-right: 5px;
 }
@@ -652,11 +651,15 @@ input:-webkit-autofill {
         font-size: 14px;
         padding: 8px;
     }
+    .popup-container {
+        width: 300px; 
+    }
 }
 
 @media (max-width: 480px) {
     .logo-container img {
         height: 25px;
+        object-fit: contain; 
     }
 
     .form-container h3 {
@@ -668,15 +671,8 @@ input:-webkit-autofill {
         font-size: 12px;
         padding: 6px;
     }
-}
-@media (max-width: 768px) {
-    .popup-container {
-        width: 300px; 
-    }
-}
-
-@media (max-width: 480px) {
     .popup-image {
         max-width: 90%; 
-    }
+    }  
 }
+
